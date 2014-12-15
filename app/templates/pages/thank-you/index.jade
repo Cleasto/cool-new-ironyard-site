@@ -49,3 +49,22 @@ block content
                 hr
                 p(style="margin-bottom:0;") The Iron Yard exists to create exceptional value for people and their ideas through code education, startup accelerators and coworking spaces. Through our broad, deep and growing network of teachers, programmers, designers, entrepreneurs, investors, employers and coworking spaces we have developed a thriving community where serendipity happens en-masse.
 
+block scripts
+  script
+    :js
+      (function() {
+      var _fbq = window._fbq || (window._fbq = []);
+      if (!_fbq.loaded) {
+      var fbds = document.createElement('script');
+      fbds.async = true;
+      fbds.src = '//connect.facebook.net/en_US/fbds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fbds, s);
+      _fbq.loaded = true;
+      }
+      })();
+      window._fbq = window._fbq || [];
+      window._fbq.push(['track', '6020705546470', {'value':'0.01','currency':'USD'}]);
+
+  noscript
+    img(height="1" width="1" style="display:none;" src="https://www.facebook.com/tr?ev=6020705546470&amp;cd%5Bvalue%5D=0.01&amp;cd%5Bcurrency%5D=USD&amp;noscript=1")
