@@ -1,0 +1,49 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Nashville, TX Code School",
+      description: "Learn to code, get a job. We teach Front End Engineering, Rails Engineering, and Web Design right here in Nashville, TN."
+    })
+
+block content
+  +navigation({
+    title: 'Nashville',
+    color: 'green',
+    image: '/images/locations/nashville/nashville-hero.jpeg',
+    cutout: true
+  })
+
+  .container-fluid(style="padding:0") 
+    .main
+      .container
+        .row
+          .col-sm-9
+            h2 Learn to code.<br>Life's too short for the wrong career.
+            p(style=" margin-top:3px") 
+              | The Iron Yard Academy in Nashville teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Study Ruby on Rails, Mobile Engineering, or Front End Engineering and launch a new career. <strong>Fill out the form to get more information from our team</strong>! 
+            .horizontal-section.gray-light-bg#programs
+              .row(style="width:95%; margin: 0 auto; display: block;")
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Rails Engineering</strong>
+                  p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.            
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>Web Design</strong>
+                  p Learn iOS app development using Xcode, Objective-C and Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+
+          .col-sm-3(style="margin-top:40px")
+            +contact('Nashville Landing')
+block scripts  
+  script(src="//platform.twitter.com/oct.js" type="text/javascript")
+  script(type="text/javascript")
+    :js
+      twttr.conversion.trackPid('l548t');
+  
+  noscript
+    img(height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l548t&p_id=Twitter")
+
+    img(height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l548t&p_id=Twitter")
