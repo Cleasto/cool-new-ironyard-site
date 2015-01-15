@@ -97,6 +97,12 @@ block content
                 li: a.green-text(href="mailto:austin@theironyard.com") austin@theironyard.com
                 li: a.green-text(href="http://eepurl.com/Qq799") Austin Newsletter
                 li: a.green-text(href="tel:+5125962939") (512) 596-2939
+              h4 Address
+              p(style="font-size:16px; margin-top:3px")
+                | 3601 South Congress Avenue<br>
+                | Suite c304<br>
+                | Austin, TX 78704<br>
+                a.green-text(href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/@30.2277138,-97.7599249,17z/data=!3m1!4b1!4m2!3m1!1s0x8644b494df64cf3b:0xef1546de04d9d3ad" target="_blank") Directions
 
       .container  
         .row
@@ -104,7 +110,9 @@ block content
             h3(style="margin-top:0") City Highlights
             p 
               | The secret is out. Everyone who visits Austin these days leaves with something great to say. They can't stop talking about our legendary live music, burgeoning restaurant scene and unique culture. And a list of other things that you just have to experience for yourself to truly understand what makes Austin so Austin. The rest of the country has already taken notice. And it's time you did, too.
+          .col-md-5
+            h4 Recent posts from the blog
+            ul.no-style-type.recent
 
-
-
-
+block scripts
+  +blogFeed('austin')
