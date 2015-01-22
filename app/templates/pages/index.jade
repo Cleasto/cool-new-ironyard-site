@@ -27,15 +27,15 @@ block content
   .container-fluid.gray-light-bg
     .container
       .row
-        .col-md-6.col-xs-12
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/the-atlantic.png" style="max-width:140px; max-height:70px") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/fast-company.png" style="max-width:140px; max-height:70px")
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/cnn.png" style="max-width:140px; max-height:70px") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-crunch.png" style="max-width:140px; max-height:70px")
-        .col-md-6.col-xs-12
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/abc.png" style="max-width:140px; max-height:70px")
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/nbc.png" style="max-width:140px; max-height:70px")
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:140px; max-height:70px") 
+        .col-xs-12.no-padding(style="text-align: center;")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/the-atlantic.png" style="max-width:160px; max-height:90px;") 
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/fast-company.png" style="max-width:160px; max-height:90px;")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/cnn.png" style="max-width:160px; max-height:90px;") 
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-crunch.png" style="max-width:160px; max-height:90px;")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/abc.png" style="max-width:160px; max-height:90px;")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/nbc.png" style="max-width:160px; max-height:90px;")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:160px; max-height:90px;") 
+          //- a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:120px; max-height:90px;") 
 
   .container
     .row
@@ -46,96 +46,33 @@ block content
       .col-md-6.col-xs-12
         p Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo.
         a.btn(href="/stories") Read Our Student Stories
-        hr
-  //- +photoBar({
-  //-   title: 'Intensive Code School',
-  //-   photo: '/images/home/home-academy.jpg'
-  //- })
+
+  .container-fluid.gray-light-bg
 
   .container-fluid.gray-light-bg
     .container
       .row
         .col-md-8.col-xs-12
-          a(style="text-decoration:none; color:#39474e"): h3 Learn to code. <br>Life's too short for the wrong career. 
-          p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
-        .col-md-4.col-xs-12(style="padding-top: 45px;") 
-          a(href="/academy").btn Learn More
-          p
-            | <em>We offer courses in cities across the country. Find a school in a city near you.</em>
-        .col-md-12.col-xs-12
-          hr
-          .row(style="margin-top: 30px;")
-            .col-md-6(style="margin-bottom: 30px;")
-              h4(style="padding-bottom: 0px;"): a(href="/academy/web-design").green-text <img src="/images/academy/web-design-logo.png" style="height:24px"> <strong>Web Design</strong>
-              p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
-              a(href="/academy/web-design").btn.web-design-btn Learn More
-            .col-md-6(style="margin-bottom: 30px;") 
-              h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/academy/mobile-engineering-logo.png" style="height:24px"> <strong>Mobile Engineering</strong>
-              p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
-              a(href="/academy/mobile-engineering").btn.mobile-btn Learn More
+          h1 cool pictures
 
-          .row(style="margin-top: 30px;")                
-            .col-md-6(style="margin-bottom: 50px;")
-              h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/academy/front-end-engineering-logo.png" style="height:24px"> <strong>Front End Engineering</strong>
-              p Learn to build in-browser apps in the Front End Engineering program using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
-              a(href="/academy/front-end-engineering").btn.front-end-btn Learn More
-            .col-md-6(style="margin-bottom: 50px;")
-              h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/academy/rails-engineering-logo.png" style="height:24px"> <strong>Rails Engineering</strong>
-              p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
-              a(href="/academy/rails-engineering").btn.rails-btn Learn More
-
-          .row(style="margin-top: 30px;")                
-            .col-md-6(style="margin-bottom: 30px;")
-              h4(style="padding-bottom: 0px;"): a(href="/academy/python-engineering").green-text <img src="/images/academy/python-engineering-logo.png" style="height:24px"> <strong>Python Engineering</strong>
-              p Learn to analyze data and publish insights using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
-              a(href="/academy/python-engineering").btn.python-btn Learn More
-
-
-  +photoBar({
-    title: 'Startup Accelerator',
-    photo: '/images/home/home-accelerator.jpg'
-  })
 
   .container 
     .row(style='margin-bottom: 60px;')
       .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 We’re interested in building strong, sustainable businesses that add real value to customers' lives.
-        p(style="margin-bottom: 0px;") Speaking the same language? We’d love for you to join us. Whether your goal is a Series A round, building a team and bootstrapping, or utilizing Kickstarter, we have a place for you. We run two programs a year, a digital health program and an education tech program.
+        h2 Intensive Code School
+        p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
+        a.btn(href="/courses") Discover Our Courses
       .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/accelerator").btn Learn More
+        img(src="http://placehold.it/400x200")
         p
           | <em>We run mentorship-driven programs focused on Digital Health and Education.</em>
 
-  +photoBar({
-    title: 'Kids Education',
-    photo: '/images/home/home-kids.jpg'
-  })
-
-  .container
-    .row(style='margin-bottom: 60px;')
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 We believe in investing in the local tech economy for the long-run
-        p(style="margin-bottom: 0px;") ...and that means impacting the next generation. Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy. (Not only does this develop a giving mindset, but it helps them communicate things they’ve learned—an essential skill as they grow into management positions in their careers.)
-      .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/academy#kids").btn Learn More
-        p
-          | <em>Our kids classes range from Scratch and Minecraft to building websites. Find classes in a city near you.</em>  
-  
-  +photoBar({
-    title: 'Events',
-    photo: '/images/home/home-events.jpg'
-  })
-
-  .container
-    .row(style='margin-bottom: 60px;')
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e" href="/events"): h3 We've partnered with Unmatched Style to offer some of the finest design and development events in the country. 
-        p(style="margin-bottom: 0px;") The world doesn't need more conferences, it needs <em>better</em> conferences. We produce high quality events that are worth every dollar you spend on them. Join us for nationally-renowned gatherings like <a href="/events/grok">Grok</a>, <a href="http://unmatchedstyle.com/events">Converge</a> and the brand new <a href="http://outlinesconf.education">Outlines Education conference</a>. 
-      .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/events").btn Learn More
-        p
-          | <em>From South Carolina to Las Vegas, we bring top brass and young talent together to learn, converse and have a whole lotta fun.</em>
-   
+  .container-fluid
+    .container
+      .row(style='margin-bottom: 60px;')
+        .col-md-8.col-xs-12
+          hr
+          h5 photo squares   
 
   .horizontal-section.gray-light-bg.last
     .container
