@@ -11,3 +11,23 @@
 #title3 {
   display:block
 }
+
+// quick fix for temporary homepage
+.hero-banner-home {
+  background: url('/images/home/home-hero-new.jpg') no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  margin-top: -21px;
+  .container {
+    padding-top: 156px;
+    h1, h3 {
+      color: #fff;
+    }
+    h1{
+      margin-bottom: 0;
+    }
+    h3 {
+      margin-top: -10px;
+    }
+  }
+}

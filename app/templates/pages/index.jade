@@ -12,80 +12,83 @@ block content
   +navigation({
     color: 'gray-dark',
     title: '',
-    image: '/images/home/home-hero-new.jpg',
     triangle: false,
     gradient: false,
-    home: true
+    home: true,
   })
-  .container
-    .row
-      .col-md-12.col-xs-12
-        h1 Welcome to The Iron Yard
-        p We are committed to training the highest-quality developers and startups in the world, both in skill and in character. Our mission is to find people who want to pursue the craft and life-long adventure of technology, teach them the tools of the trade, and then release them into the world with the drive and capability to make a difference. We believe that passionate, talented people who love what they do will create great families, jobs, companies and solutions to the world’s problems. 
-        hr
-      .col-md-12.col-xs-12
-        .col-sm-2.col-xs-6(style="text-align:center")  
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/the-atlantic.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
+  .container-fluid.hero-banner-home
+    .container
+      .col-xs-12
+        h1 Learn to Code.
+        h3 Life's too short for the wrong career.
+        a.btn.watch-video 
+          img(src="/images/home/play-icon.png")
+          span Watch the Video
+  .container-fluid.gray-light-bg
+    .container
+      .row
+        .col-md-6.col-xs-12
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/the-atlantic.png" style="max-width:140px; max-height:70px") 
           a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/fast-company.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-republic.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/nbc.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/southern-alpha.png" style="max-width:140px; max-height:70px")
-      .col-md-12.col-xs-12
-        .col-sm-3.col-xs-6(style="text-align:center")  
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/cnn.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/cnn.png" style="max-width:140px; max-height:70px") 
           a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-crunch.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
+        .col-md-6.col-xs-12
           a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/abc.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/venture-beat.png" style="max-width:140px; max-height:70px")
-  +photoBar({
-    title: 'Intensive Code School',
-    photo: '/images/home/home-academy.jpg'
-  })
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/nbc.png" style="max-width:140px; max-height:70px")
+          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:140px; max-height:70px") 
 
   .container
     .row
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 Learn to code. <br>Life's too short for the wrong career. 
-        p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
-      .col-md-4.col-xs-12(style="padding-top: 45px;") 
-        a(href="/academy").btn Learn More
-        p
-          | <em>We offer courses in cities across the country. Find a school in a city near you.</em>
-      .col-md-12.col-xs-12
+      .col-md-6.col-xs-12
+        h1 "The Iron Yard is the beginning of a lifelong journey."
+        p -Lance Putnam, Greenville, SC 
+        p Front End Engineering Graduate
+      .col-md-6.col-xs-12
+        p Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo.
+        a.btn(href="/stories") Read Our Student Stories
         hr
-        .row(style="margin-top: 30px;")
-          .col-md-6(style="margin-bottom: 30px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/web-design").green-text <img src="/images/academy/web-design-logo.png" style="height:24px"> <strong>Web Design</strong>
-            p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
-            a(href="/academy/web-design").btn.web-design-btn Learn More
-          .col-md-6(style="margin-bottom: 30px;") 
-            h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/academy/mobile-engineering-logo.png" style="height:24px"> <strong>Mobile Engineering</strong>
-            p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
-            a(href="/academy/mobile-engineering").btn.mobile-btn Learn More
+  //- +photoBar({
+  //-   title: 'Intensive Code School',
+  //-   photo: '/images/home/home-academy.jpg'
+  //- })
 
-        .row(style="margin-top: 30px;")                
-          .col-md-6(style="margin-bottom: 50px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/academy/front-end-engineering-logo.png" style="height:24px"> <strong>Front End Engineering</strong>
-            p Learn to build in-browser apps in the Front End Engineering program using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
-            a(href="/academy/front-end-engineering").btn.front-end-btn Learn More
-          .col-md-6(style="margin-bottom: 50px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/academy/rails-engineering-logo.png" style="height:24px"> <strong>Rails Engineering</strong>
-            p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
-            a(href="/academy/rails-engineering").btn.rails-btn Learn More
+  .container-fluid.gray-light-bg
+    .container
+      .row
+        .col-md-8.col-xs-12
+          a(style="text-decoration:none; color:#39474e"): h3 Learn to code. <br>Life's too short for the wrong career. 
+          p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
+        .col-md-4.col-xs-12(style="padding-top: 45px;") 
+          a(href="/academy").btn Learn More
+          p
+            | <em>We offer courses in cities across the country. Find a school in a city near you.</em>
+        .col-md-12.col-xs-12
+          hr
+          .row(style="margin-top: 30px;")
+            .col-md-6(style="margin-bottom: 30px;")
+              h4(style="padding-bottom: 0px;"): a(href="/academy/web-design").green-text <img src="/images/academy/web-design-logo.png" style="height:24px"> <strong>Web Design</strong>
+              p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
+              a(href="/academy/web-design").btn.web-design-btn Learn More
+            .col-md-6(style="margin-bottom: 30px;") 
+              h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/academy/mobile-engineering-logo.png" style="height:24px"> <strong>Mobile Engineering</strong>
+              p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+              a(href="/academy/mobile-engineering").btn.mobile-btn Learn More
 
-        .row(style="margin-top: 30px;")                
-          .col-md-6(style="margin-bottom: 30px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/python-engineering").green-text <img src="/images/academy/python-engineering-logo.png" style="height:24px"> <strong>Python Engineering</strong>
-            p Learn to analyze data and publish insights using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
-            a(href="/academy/python-engineering").btn.python-btn Learn More
+          .row(style="margin-top: 30px;")                
+            .col-md-6(style="margin-bottom: 50px;")
+              h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/academy/front-end-engineering-logo.png" style="height:24px"> <strong>Front End Engineering</strong>
+              p Learn to build in-browser apps in the Front End Engineering program using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+              a(href="/academy/front-end-engineering").btn.front-end-btn Learn More
+            .col-md-6(style="margin-bottom: 50px;")
+              h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/academy/rails-engineering-logo.png" style="height:24px"> <strong>Rails Engineering</strong>
+              p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
+              a(href="/academy/rails-engineering").btn.rails-btn Learn More
+
+          .row(style="margin-top: 30px;")                
+            .col-md-6(style="margin-bottom: 30px;")
+              h4(style="padding-bottom: 0px;"): a(href="/academy/python-engineering").green-text <img src="/images/academy/python-engineering-logo.png" style="height:24px"> <strong>Python Engineering</strong>
+              p Learn to analyze data and publish insights using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
+              a(href="/academy/python-engineering").btn.python-btn Learn More
 
 
   +photoBar({
