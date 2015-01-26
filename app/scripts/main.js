@@ -45,3 +45,26 @@ function storiesFeed(url, $el) {
        }
    });
 }
+
+function playVideo(url){
+  $('.watch-video').click(function(){
+    if ($('.vimeo').hasClass('inactive')){
+      $('.vimeo').removeClass('inactive');
+      $('.vimeo').addClass('active');
+      $('.close-video').removeClass('inactive');
+      $('.close-video').addClass('active');
+      $('.vimeo').html('<iframe src="//player.vimeo.com/video/116286145?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>').addClass('active');
+    }
+    $('.close-video').click(function(){
+      if ($('.vimeo').hasClass('active')){
+        $('.vimeo').addClass('inactive');
+        $('.vimeo').html('');
+        $('.close-video').addClass('inactive');
+      }
+    })
+  })
+}
+
+$(document).ready(function(){
+  playVideo();
+})

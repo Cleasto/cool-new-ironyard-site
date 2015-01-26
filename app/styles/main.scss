@@ -80,17 +80,57 @@ $turquoise-new: #6fbbb7;
     cursor: pointer;
   }
 }
-
 // end temp fix
 
 // quick fixes for temporary homepage
+
 .hero-banner-home {
   background: url('/images/home/home-hero-new.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
   margin-top: -21px;
+  position: relative;
   @media only screen {
     height: 550px;
+  }
+  .close-video {
+    top: 20px;
+    right: 60px;
+    opacity: 0;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 3s linear;
+    transition-delay: 3s;
+    &.active {
+      display: block !important;
+      opacity: 1 !important;
+      transition: all 3s linear;
+      transition-delay: 3s;
+    }
+    &.inactive {
+      display: none !important;
+      opacity: 0 !important;
+      transition: all 3s linear;
+      transition-delay: 3s;
+    }
+  }
+  .vimeo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    &.active {
+      display: block !important;
+      opacity: 1 !important;
+    }
+    &.inactive {
+      display: none !important;
+      opacity: 0 !important;
+    }
   }
   .container {
     padding-top: 156px;
