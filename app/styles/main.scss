@@ -80,10 +80,20 @@ $turquoise-new: #6fbbb7;
     cursor: pointer;
   }
 }
+
+.discover-courses {
+  background: $turquoise-new;
+  color: #fff !important;
+  padding: 6px 16px 8px;
+  line-height: 40px;
+  &:hover {
+    background: #5B9D99;
+    cursor: pointer;
+  } 
+}
 // end temp fix
 
 // quick fixes for temporary homepage
-
 .hero-banner-home {
   background: url('/images/home/home-hero-new.jpg') no-repeat center center;
   background-size: cover;
@@ -197,12 +207,55 @@ $turquoise-new: #6fbbb7;
 }
 
 .student-section {
-  padding: 100px inherit;
+  padding-bottom: 50px;
+  img {
+    margin-top: 50px;
+  }
+  .student-copy {
+    margin-top: -32px;
+    p {
+      margin-top: 0;
+      font-size: 16px;
+      &:nth-child(2n+1){
+        font-style: italic;
+        margin-bottom: 0;
+      }
+    }
+    .fee-name, .python-name,
+    .design-name, .rails-name {
+      margin-bottom: 0;
+    }
+    .fee-name, .fee-link {
+      color: #ce832d;
+    }
+    .python-name, .python-link {
+      color: #5bbd7b;
+    }
+    .design-name, .design-link {
+      color: #35a0ad;
+    }
+    .rails-name, .rails-link {
+      color: #b8584c;
+    }
+  }
 }
-.triangle-photo-box {
-  border: 1px solid black;
-  height: 300px;
-  width: 300px;
-  background: url('http://placehold.it/300x300');
-  margin-right: 6px;
+
+.code-school-section {
+  padding-top: 40px;
+  h2 {
+    color: #727d84;
+  }
+  p {
+    width: 80%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .caption {
+    text-align: center;
+    font-size: 12px;
+  }
 }
