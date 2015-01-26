@@ -40,7 +40,6 @@
 }
 
 $turquoise-new: #6fbbb7;
-
 &.apply-now {
   background: $turquoise-new;
   color: #fff !important;
@@ -67,6 +66,18 @@ $turquoise-new: #6fbbb7;
   span {
     vertical-align: top;
     line-height: 54px;
+  }
+}
+
+.read-stories {
+  background: $turquoise-new;
+  color: #fff !important;
+  padding: 6px 20px 8px;
+  line-height: 40px;
+  min-width: 320px;
+  &:hover {
+    background: #5B9D99;
+    cursor: pointer;
   }
 }
 
@@ -102,7 +113,10 @@ $turquoise-new: #6fbbb7;
 .stories-section {
   // padding: 70px 100px;
   @media only screen {
-    padding: 16px 16px  16px 36px;
+    padding: 16px 16px 60px 36px;
+  }
+  @media only screen and (min-width: 767px){
+    padding: 30px 90px 50px 90px;
   }
   h1 {
     color: #727d84;
@@ -112,6 +126,9 @@ $turquoise-new: #6fbbb7;
     quotes: "“" "”" "‘" "’";
     @media only screen {
       width: 100%;
+    }
+    @media only screen and (min-width: 991px){
+      width: 370px;
     }
     &:before {
       content: open-quote;
@@ -129,8 +146,24 @@ $turquoise-new: #6fbbb7;
     @media only screen {
       width: 260px;
       &:nth-child(1){
-        text-indent: -6px;
+        font-style: normal;
+        text-indent: 0px;
+        width: 100%;
+        @media only screen and (min-width: 767px) {
+          margin-top: 40px;
+        }
       }
     }
   }
+}
+
+.student-section {
+  padding: 100px inherit;
+}
+.triangle-photo-box {
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  background: url('http://placehold.it/300x300');
+  margin-right: 6px;
 }
