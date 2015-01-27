@@ -15,6 +15,22 @@
 // The following are quick style edits for a new temporary homepage. Depending on what stays or goes in the longer term design, this will get rolled into Ghost-Shield.
 
 // quick fix for new homepage buttons. will roll all of these into a mixin when refactoring ghost-shield
+@mixin fom-btn($color, $hover-color) {
+  background: $color;
+  padding: 0px 20px 4px;
+  text-transform: capitalize;
+  font-size: 24px;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  bottom: 50px;
+  min-width: 220px;
+  &:hover {
+    background: $hover-color;
+    cursor: pointer;
+  }
+}
+
 .nav {
   @media only screen and (min-width: 1000px){
     padding-top: 0 !important;
@@ -78,6 +94,7 @@ $turquoise-new: #6fbbb7;
     line-height: 54px;
   }
 }
+
 
 .read-stories {
   background: $turquoise-new;
@@ -288,7 +305,8 @@ $turquoise-new: #6fbbb7;
     width: 33.33%;
     text-align: center;
     min-height: 475px;
-    padding: 70px 20px;
+    padding: 50px 20px;
+    position: relative;
     &:nth-child(2n+1){
       // border-left: none;
     }
@@ -298,35 +316,65 @@ $turquoise-new: #6fbbb7;
       font-style: italic;
       padding: 0 20px;
     }
+    .button-container {
+      display: block;
+      margin: 0 auto;
+    }
   }
   .fee-header {
     color: #ce832d;
     text-transform: uppercase;
-    margin: 40px 0 0;
+    margin: 30px 0 0;
     font-size: 18px;
   }
   .design-header {
     color: #35a0ad;
     text-transform: uppercase;
-    margin: 40px 0 0;
+    margin: 30px 0 0;
     font-size: 18px;
   }
   .rails-header {
     color: #b8584c;
     text-transform: uppercase;
-    margin: 40px 0 0;
+    margin: 30px 0 0;
     font-size: 18px;
   }
   .mobile-header {
     color: #d5b810;
     text-transform: uppercase;
-    margin: 40px 0 0;
+    margin: 30px 0 0;
     font-size: 18px;
   }
   .python-header {
     color: #0dc67d;
     text-transform: uppercase;
-    margin: 40px 0 0;
+    margin: 30px 0 0;
     font-size: 18px;
   }
+  .fee-eng {
+    .btn {
+      @include fom-btn(#db820c, #C07209)
+    }
+  }
+  .web-design {
+    .btn {
+      @include fom-btn(#00a5b1, #038B95)
+    }
+  }
+  .rails-eng {
+    .btn {
+      @include fom-btn(#c94e43, #A73E34)
+    }
+  }
+  .mobile-eng {
+    .btn {
+      @include fom-btn(#d5b810, #B49B0C)
+    }
+  }
+  .python-eng {
+    .btn {
+      @include fom-btn(#0dc67d, #06A264)
+    }
+  }
+
 }
