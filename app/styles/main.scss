@@ -293,12 +293,13 @@ $turquoise-new: #6fbbb7;
   .course-box {
     float: left;
     border: 1px solid #d0d1d3;
+    background: #fff;
     text-align: center;
     min-height: 475px;
     padding: 50px 20px;
     position: relative;
     @media only screen {
-      width: 104%;
+      width: 100%;
     }
     @media only screen and (min-width: 640px){
       width: 50%;
@@ -394,27 +395,84 @@ $turquoise-new: #6fbbb7;
   border: 1px solid #d0d1d3;
   width: 80%;
   margin: 60px auto;
+  @media only screen {
+    width: 94%;
+  }
   .questions {
     display: inline-block;
-    width: 49.8%;
     position: relative;
     background: #eee;
     vertical-align: top;
-    padding: 60px 40px;
+    @media only screen {
+      width: 100%;
+    }
+    @media only screen and (min-width: 1025px){
+      width: 49.8%;
+    }
     .top-content {
+      padding: 57px 40px;
     }
-    .email {
+    .bottom-content {
       display: inline-block;
-      width: 49.9%;
-    }
-    .chat {
-      display: inline-block;
-      width: 49.9%;
+      height: 130px;
+      width: 100%;
+      background: white;
+      position: relative;
+      top: 6px;
+      .email, .chat{
+        padding: 36px 0;
+        .content {
+          text-align: center;
+          h3 {
+            color: #fff;
+            font-style: italic;
+            margin: -10px 0;
+            font-size: 24px;
+          }
+        }
+      }
+      .email {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: #727d84;
+      }
+      .chat {
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: #6fbbb7;
+      }
     }
   }
   .phone-numbers {
     display: inline-block;
-    width: 49.8%;
+    @media only screen {
+      width: 100%;
+      padding: 36px 0 0;
+    }
+    @media only screen and (min-width: 1025px){
+      width: 49.8%;
+      padding: 36px 50px 0;
+    }
+    ul {
+      display: inline-block;
+      width: 42%;
+      li {
+        list-style-type: none;
+        margin-bottom: 18px;
+        p {
+          color: #7a8b8f;
+          margin: 0;
+        }
+        a {
+          color: #6fbbb7;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
 
