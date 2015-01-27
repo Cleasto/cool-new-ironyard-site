@@ -259,3 +259,64 @@ $turquoise-new: #6fbbb7;
     font-size: 12px;
   }
 }
+
+
+.courses-section {
+  position: relative;
+  .border-full {
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    right: -2000px;
+    background: #000;
+  }
+  .course-box {
+    float: left;
+    border: 1px solid black;
+    border-top: none;
+    width: 33.33%;
+    text-align: center;
+    min-height: 475px;
+    padding: 70px 20px;
+    &:nth-child(2n+1){
+      // border-left: none;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 0;
+      font-style: italic;
+      padding: 0 20px;
+    }
+  }
+  .fee-header {
+    color: #ce832d;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    font-size: 18px;
+  }
+  .design-header {
+    color: #35a0ad;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    font-size: 18px;
+  }
+  .rails-header {
+    color: #b8584c;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    font-size: 18px;
+  }
+  .mobile-header {
+    color: #d5b810;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    font-size: 18px;
+  }
+  .python-header {
+    color: #0dc67d;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    font-size: 18px;
+  }
+}
