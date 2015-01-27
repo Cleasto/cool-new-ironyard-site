@@ -1,0 +1,53 @@
+extends /layouts/main
+include /mixins/contact
+
+block meta 
+  +meta({
+      title: "The Iron Yard | Indianapolis, IN Code School",
+      description: "Learn to code, get a job. We teach Front End Engineering, Rails Engineering, and Mobile Engineering right here in Indianapolis, IN."
+    })
+
+block content
+  +navigation({
+    title: 'Indianapolis',
+    color: 'green',
+    image: '/images/locations/indianapolis/indianapolis-hero.jpg',
+    cutout: true
+  })
+
+  .container-fluid(style="padding:0") 
+    .main
+      .container
+        .row
+          .col-sm-9
+            h2 Learn to code.<br>Life's too short for the wrong career.
+            p(style=" margin-top:3px") 
+              | The Iron Yard Academy in Indianapolis teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Study Ruby on Rails, Mobile Engineering, or Front End Engineering and launch a new career. <strong>Fill out the form to get more information from our team</strong>! 
+            .horizontal-section.gray-light-bg#programs
+              .row(style="width:95%; margin: 0 auto; display: block;")
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/js-icon.png" style="height:18px"> <strong>Front End Engineering</strong>
+                  p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Rails Engineering</strong>
+                  p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.            
+                .col-md-4
+                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/mobile-icon.png" style="height:18px"> <strong>Mobile Engineering</strong>
+                  p Learn iOS app development using Xcode, Objective-C and Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+          .col-sm-3(style="margin-top:40px;")
+            +contact('Little Rock Landing')
+block scripts  
+  <script type="text/javascript"> 
+  /* <![CDATA[ */ 
+  var google_conversion_id = 967920433; 
+  var google_custom_params = window.google_tag_params; 
+  var google_remarketing_only = true; 
+  /* ]]> */ 
+  </script> 
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"> 
+  </script> 
+  
+  noscript
+    div(style="display:inline")
+    img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967920433/?value=0&amp;guid=ON&amp;script=0")
+
