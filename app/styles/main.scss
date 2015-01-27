@@ -124,11 +124,13 @@ $turquoise-new: #6fbbb7;
 .hero-banner-home {
   background: url('/images/home/home-hero-new.jpg') no-repeat center center;
   background-size: cover;
-  height: 600px;
   margin-top: -21px;
   position: relative;
   @media only screen {
-    height: 550px;
+    height: 450px;
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 600px;
   }
   .close-video {
     top: 20px;
@@ -169,18 +171,32 @@ $turquoise-new: #6fbbb7;
     }
   }
   .container {
-    padding-top: 156px;
     @media only screen {
-      padding-top: 130px;
+      padding-top: 110px;
+    }
+    @media only screen and (min-width: 1025px){
+      padding-top: 156px;
     }
     h1, h3 {
       color: #fff;
     }
     h1{
       margin-bottom: 0;
+      @media only screen {
+        font-size: 40px;
+      }
+      @media only screen and (min-width: 1025px){
+        font-size: 60px;
+      }
     }
     h3 {
       margin-top: -10px;
+      @media only screen {
+        font-size: 16px;
+      }
+      @media only screen and (min-width: 1025px){
+        font-size: 24px;
+      }
     }
   }
 }
