@@ -392,7 +392,7 @@ $turquoise-new: #6fbbb7;
 
 .contact-container {
   border: 1px solid #d0d1d3;
-  width: 85%;
+  width: 80%;
   margin: 60px auto;
   .questions {
     display: inline-block;
@@ -403,9 +403,26 @@ $turquoise-new: #6fbbb7;
     padding: 60px 40px;
     .top-content {
     }
+    .email {
+      display: inline-block;
+      width: 49.9%;
+    }
+    .chat {
+      display: inline-block;
+      width: 49.9%;
+    }
   }
   .phone-numbers {
     display: inline-block;
     width: 49.8%;
+  }
+}
+
+.employers-section {
+  background: #727d84;
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
   }
 }
