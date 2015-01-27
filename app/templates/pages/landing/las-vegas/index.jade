@@ -36,18 +36,15 @@ block content
                   p Learn to analyze and publish data using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry. 
           .col-sm-3(style="margin-top:40px;")
             +contact('Las Vegas Landing')
+            
 block scripts  
-  <script type="text/javascript"> 
-  /* <![CDATA[ */ 
-  var google_conversion_id = 967920433; 
-  var google_custom_params = window.google_tag_params; 
-  var google_remarketing_only = true; 
-  /* ]]> */ 
-  </script> 
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"> 
-  </script> 
+  script(type="text/javascript")
+    :js
+      var google_conversion_id = 967920433; 
+      var google_custom_params = window.google_tag_params; 
+      var google_remarketing_only = true; 
+  script(type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js")
   
   noscript
     div(style="display:inline")
-    img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967920433/?value=0&amp;guid=ON&amp;script=0"")
-
+    img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967920433/?value=0&amp;guid=ON&amp;script=0")

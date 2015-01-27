@@ -37,15 +37,12 @@ block content
           .col-sm-3(style="margin-top:40px;")
             +contact('Little Rock Landing')
 block scripts  
-  <script type="text/javascript"> 
-  /* <![CDATA[ */ 
-  var google_conversion_id = 967920433; 
-  var google_custom_params = window.google_tag_params; 
-  var google_remarketing_only = true; 
-  /* ]]> */ 
-  </script> 
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"> 
-  </script> 
+  script(type="text/javascript")
+    :js
+      var google_conversion_id = 967920433; 
+      var google_custom_params = window.google_tag_params; 
+      var google_remarketing_only = true; 
+  script(type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js")
   
   noscript
     div(style="display:inline")
