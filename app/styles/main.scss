@@ -290,25 +290,9 @@ $turquoise-new: #6fbbb7;
 
 .courses-section {
   position: relative;
-  @media only screen and (min-width: 640px){
-    left: 15px;
-  }
-  @media only screen and (min-width: 1025px){
-    left: 0px;
-  }
-  .border-full {
-    height: 1px;
-    position: absolute;
-    top: 0;
-    left: -2000px;
-    right: -2000px;
-    background: #d0d1d3;
-  }
   .course-box {
     float: left;
     border: 1px solid #d0d1d3;
-    border-top: none;
-    // width: 33.33%;
     text-align: center;
     min-height: 475px;
     padding: 50px 20px;
