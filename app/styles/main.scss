@@ -15,6 +15,11 @@
 // The following are quick style edits for a new temporary homepage. Depending on what stays or goes in the longer term design, this will get rolled into Ghost-Shield.
 
 // quick fix for new homepage buttons. will roll all of these into a mixin when refactoring ghost-shield
+.nav {
+  @media only screen and (min-width: 1000px){
+    padding-top: 0 !important;
+  }
+}
 .primary-nav {
   width: 30% !important;
   @media only screen {
@@ -22,6 +27,7 @@
   }
   @media only screen and (min-width: 1000px){
     width: 45% !important;
+    margin-top: 28px !important;
   }
 }
 
@@ -35,7 +41,11 @@
   }
   @media only screen and (min-width: 1000px){
     width: 55% !important;
-    bottom: 20px;
+    position: relative;
+    top: 8px !important;
+    a {
+      font-size: 14px !important;
+    }
   }
 }
 
