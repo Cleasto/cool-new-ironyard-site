@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+include /mixins/contact-city
 
 block meta 
   +meta({
@@ -33,4 +33,4 @@ block content
                   p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.            
 
           .col-sm-3(style="margin-top:40px")
-            +contact('Charleston Landing', "Charleston")
+            +contact-city('Charleston Landing', "Charleston")
