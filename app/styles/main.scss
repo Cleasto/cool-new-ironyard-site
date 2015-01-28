@@ -506,8 +506,29 @@ $turquoise-new: #6fbbb7;
   }
 }
 
+.employers-section {
+  padding-top: 50px;
+  .employer-icon {
+    text-align: center;
+    img{
+      width: 50%;
+      max-width: 230px;
+    }
+  }
+}
+
 .sponsors-section {
+  padding: 20px;
   h3 {
     text-align: center;
+  }
+}
+
+.media-logo {
+  display: inline-block;
+  width: 14%;
+  padding: 0 4px;
+  img {
+    // max-width: 100px;
   }
 }
