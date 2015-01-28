@@ -1,4 +1,4 @@
-mixin contact (analytics)
+mixin contact (analytics, location)
   div#container.ltr
     form#form1.wufoo.topLabel.page(name="form1" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="https://ironyard.wufoo.com/forms/z5pjhog1vxzm32/#public")
       header#header.info
@@ -26,16 +26,7 @@ mixin contact (analytics)
           label.desc#title4(for="Field4") Which campus are you interested in?
           div
             select#Field4.field.select.medium(name="Field4" tabindex="6")
-              option(value="atlanta" selected="selected") Atlanta, GA
-              option(value="austin") Austin, TX
-              option(value="charleston") Charleston, SC
-              option(value="columbia") Columbia, SC
-              option(value="greenville") Greenville, SC
-              option(value="houston") Houston, TX
-              option(value="orlando") Orlando, FL
-              option(value="durham") Raleigh-Durham, NC
-              option(value="tampa") Tampa Bay, FL
-              option(value="washington-dc") Washington, D.C.
+              option(value=location selected="selected") 
         li.buttons
           div
             input#saveForm.btText.submit.btn.section-headline(name="saveForm" type="submit" value="Submit" onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Information Request', eventLabel: '#{analytics}'});" style="display: block; margin: 0px auto 20px; border:0px; width:155px; font-weight:200;")
