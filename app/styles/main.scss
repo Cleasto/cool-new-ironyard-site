@@ -265,7 +265,7 @@ $turquoise-new: #6fbbb7;
       }
     }
     .fee-name, .python-name,
-    .design-name, .rails-name {
+    .design-name, .rails-name, .mobile-name {
       margin-bottom: 0;
     }
     .fee-name, .fee-link {
@@ -279,6 +279,9 @@ $turquoise-new: #6fbbb7;
     }
     .rails-name, .rails-link {
       color: #b8584c;
+    }
+    .mobile-name, .mobile-link {
+      color:  #d3b42b;
     }
   }
 }
