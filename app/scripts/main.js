@@ -65,6 +65,21 @@ function playVideo(url){
   })
 }
 
+function chatWindow(){
+  $('.chat').click(function(){
+    if ($('.chat-container').hasClass('inactive')){
+      $('.chat-container').removeClass('inactive');
+      $('.chat-container').addClass('active');
+    } else {
+      if ($('.chat-container').hasClass('active')){
+        $('.chat-container').removeClass('active');
+        $('.chat-container').addClass('inactive');
+      }  
+    }
+  })
+}
+
 $(document).ready(function(){
   playVideo();
+  chatWindow();
 })
