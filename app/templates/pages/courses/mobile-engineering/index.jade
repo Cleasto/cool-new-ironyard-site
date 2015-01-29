@@ -1,0 +1,279 @@
+extends /layouts/main
+include /mixins/schema
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Mobile Engineering",
+    description: "The Iron Yard's super-intensive mobile app development course takes students through everything they need to know to start working as mobile developers."
+  })
+
+block content
+  +navigation({
+    title: 'Mobile Engineering',
+    color: 'mobile',
+    links: [
+      {title:"FAQs", url:"/academy/mobile-engineering/faq"},
+      {title:"Schedule", url:"/academy/mobile-engineering#class-schedule"},
+      {title: "Tuition", url: "/academy/tuition"}    ]
+  })
+
+  .container
+    .row
+      .col-md-12
+        h3.mobile-text: em Learn to build iOS apps using Xcode and Objective-C
+      .col-md-8
+        p 
+          | Over the course of three months, a practicing iOS nerd (and skilled instructor) will teach you the ins-and-outs of iOS app development using Xcode, Objective-C and Apple's new programming language, Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps as well.<br><br>
+          | The best part: we’ll help you get a job offer as a mobile developer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+      .col-md-4(style="text-align:center")
+        img.photo(src="/images/academy/mobile-engineering/mobile-eng-image.jpg" style="max-width:500px;")
+
+    .row
+      .callout-box(style="padding-bottom:10px")
+        .row
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/prototype.png")
+            p(style="width:252px; margin:20px auto") Build testable mobile app prototypes quickly
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/apps.png")
+            p(style="width:252px; margin:20px auto") Build fast, production-quality native mobile apps
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/ham.png")
+            p(style="width:252px; margin:20px auto") Learn to craft mobile user experiences and interfaces
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/code.png")
+            p(style="width:252px; margin:20px auto") Go deep into Objective-C methods and classes
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/computers.png")
+            p(style="width:252px; margin:20px auto") Master a mobile-specific development process
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/mobile-engineering/brain-guy.png")
+            p(style="width:252px; margin:20px auto") Most importantly, learn how to learn
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/mobile-engineering/nebula.png")
+      .col-lg-7.col-sm-6
+        h3 Tuition, Financing and Scholarships
+        p Our missions is to help you launch a career in programming. We've partnered with financing companies and developed scholarships to make programming, engineering and computer science available to as many people as possible.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/tuition").btn Learn More
+
+    .row(style="background-color:#e3e7e9")
+      .col-md-12
+        h2.section-headline(style="margin-bottom: 10px;") Questions? Get in touch.
+      .col-md-6(style="padding:0px 20px 20px 30px")
+        p(style="margin-top:0") 
+          | <strong>We'd love to answer your questions</strong>.<br>We love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or talk to a human.
+        ul.no-style-type 
+          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Mobile Engineering course">an email</a> 
+          li • Jump into our <a href="https://www.hipchat.com/gVQZ3qwbv">Academy chat room</a>
+      .col-md-6(style="padding:0px 00px 20px 20px")    
+        .col-md-6
+          ul.no-style-type
+            li • Atlanta:<br> <a href="tel:+7707518046">(770) 751-8046</a> 
+            li • Charleston:<br> <a href="tel:+8435012775">(843) 501-2775</a>
+            li • Durham:<br> <a href="tel:+9195616055">(919) 561-6055</a>
+            li • Greenville:<br> <a href="tel:+8649520099">(864) 952-0099</a>
+        .col-md-6
+          ul.no-style-type 
+            li • Houston:<br> <a href="tel:+7134253797">(713) 425-3797</a>
+            li • Tampa Bay:<br> <a href="tel:+8137752275">(813) 775-2275</a> 
+            li • Orlando:<br> <a href="tel:+4073586683">(407) 358-6683</a> 
+
+  .horizontal-section.gray-light-bg
+    .container
+      .row
+        .col-md-12#class-schedule
+          h3(style="text-align:center").mobile-text: em Class Schedule
+          p(style="max-width:960px; margin:0 auto;") Our intensive Mobile Engineering courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
+    .container  
+      +schemaTable([
+        {
+          date: "January 26th",
+          isoDate: "2015-01-26",
+          location: "Washington, D.C.",
+          analytics: "Mobile Washington DC",
+          instructor: "Coming Soon",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "February 23rd",
+          isoDate: "2015-02-23",
+          location: "Orlando, FL",
+          analytics: "Mobile Orlando",
+          instructor: "Coming Soon",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Atlanta, GA",
+          analytics: "Mobile Atlanta",
+          instructor: "Jo Albright",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Houston, TX",
+          analytics: "Mobile Houston",
+          instructor: "Coming Soon",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Indianapolis, IN",
+          analytics: "Mobile Indianapolis",
+          instructor: "Coming Soon",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Little Rock, AR",
+          analytics: "Mobile Little Rock",
+          instructor: "Coming Soon",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Nashville, TN",
+          analytics: "Mobile Nashville",
+          instructor: "Coming Soon",
+          subject: "mobile-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        }
+      ])
+
+  .container
+    .row(style="text-align:center")
+      img(src="/images/academy/schedule.png" style="max-width:70%")
+
+    .row.divide-container
+      .col-md-6.col-sm-6.col-xs-12.divider-left
+        h3: em Lecture Time
+        p Our lessons are fast-paced, interactive and fun. All of our instructors use a hands-on, live-coding lecture style so that students immediately start developing muscle memory for each new skill. We cover a new subject almost every day, building on previous material. The goal is for you to get your hands dirty absorbing a whole lot of information, then apply it on a real project during lab.
+      .col-md-6.col-sm-6.col-xs-12
+        h3: em Lab Time
+        p You’ll have homework every single day…and it ain’t easy. All assignments are cumulative and ultimately lead up to a final project (unique to each student) that is the crown of your portfolio. If that doesn’t keep you busy enough, we start sending you real, paid freelance work. You’ll have access to the space 24 hours a day, just in case you need to burn some midnight oil.
+    .row(style="margin: 0 auto; max-width:720px")
+      .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+        p(style="font-size:15px")
+          | <strong>Being a programmer is more than just writing code.</strong><br> 
+          | We put serious focus on the qualitative aspects of work, from team projects to mock job interviews. We also partner with guest speakers who cover a variety of topics like design and freelancing, and we take class field trips to real businesses like MailChimp and BMW. Employers have told us our grads are some of the most well-rounded, teachable hires they’ve ever made.
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row
+        h3(style="text-align:center"): em Curriculum Overview
+        p
+          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing Objective-C and Swift doesn’t make you great at building apps; that’s the easy part of mobile development. The emphasis in all of our classes is on helping you think like an engineer. Programming is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level mobile devs. You’ll cover an incredible amount of ground in 3 months, from foundational concepts to complex frameworks. Some topics like Core Libraries will take weeks to cover, while others like Objects and Classes will be taught in just a few lectures. Each instructor and class stays agile so that the curriculum can adapt as tools and languages evolve, but we ensure that each student graduates with the same core skillset.<br><br>
+          | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind. 
+
+      .row.divide-container    
+        .col-md-6.col-sm-6.col-xs-12.divider-left
+          p
+            | <strong>Git and GitHub</strong><br>
+            | Master Git for personal and team workflows. All of your code will live on GitHub from day one.<br><br>
+            | <strong>Objective-C & C</strong><br>
+            | We build a solid foundation on Objective-C and C so you feel comfortable formulating your own scripts from scratch.<br><br>
+            | <strong>Classes and Objects</strong><br>
+            | We dive into the world of Object Oriented Programming (and don’t look back).<br><br>
+            | <strong>Design fundamentals</strong><br>
+            | Every student learns strong fundamentals in layout, typography, color theory, user interface and user experience.<br><br>
+            | <strong>Freelance fundamentals</strong><br>
+            | Seasoned pros show you how to find good work, write contracts, set expectations, price well and communicate like a pro.<br><br>
+            | <strong>MVC Fundamentals</strong><br>
+            | We teach you how to build your apps with proper Model View Controller structure.<br><br>
+            | <strong>Cocoa Design Patterns</strong><br>
+            | We give our students a strong understanding of design patterns, teaching them to write code according to established methods used on mobile dev teams and collaborative projects.<br><br>
+            | <strong>Frameworks & Libraries</strong><br>
+            | We’ll teach you how and when to use these valuable assets, and you’ll even learn to build your own.
+        .col-md-6.col-sm-6.col-xs-12
+          p
+            | <strong>Memory Management & ARC</strong><br>
+            | You’ll learn how memory is managed and best practices for acheiving efficiency, finding memory leaks and troubleshooting problems.<br><br>
+            | <strong>Core Libraries</strong><br>
+            | We’ll work with many of Apple’s core libraries including Core Graphics, Core Data, Core Animation and more.<br><br>
+            | <strong>UI Guidelines</strong><br>
+            | You’ll know what it takes to build apps for multiple iOS versions (6 & 7) & multiple device types (iPhone & iPad). You’ll also learn the proper ways to layout and use your UI.<br><br>
+            | <strong>Xcode IDE</strong><br>
+            | We’ll learn and use Xcode 5 to build our projects, expanding our knowledge as we get deeper into the course.<br><br>
+            | <strong>Interface Builder</strong><br>
+            | You’ll be an expert on how and when to use Storyboards and Xibs.<br><br>
+            | <strong>Deployment : TestFlight & App Store</strong><br>
+            | We’ll teach you how to distribute your app for testing (each project will be deployed), and we’ll also show you how to get your app submitted—our goal is for you to leave class with an app live in the App Store.<br><br>
+            | <strong>Parse as a Backend</strong><br>
+            | With a tool like Parse, our mobile dev can do a massive amount of backend/database work on their mobile apps.<br><br>
+            | <strong>Getting Hired</strong><br>
+            | We do mock interviews, resume writing and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Excited? You’ve come to the right place. Keep reading!
+
+  .container
+    .row
+      .col-md-7
+        h3: em Is this for you?
+        p 
+          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://teamtreehouse.com/library/objectivec-basics">try a few exercises to see.</a><br><br>
+          | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
+        h3: em How Much Does It Cost?
+        p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
+        h3: em Student Stories
+        ul.no-style-type.recent
+
+      .col-md-5
+        h4(style="margin-top:28px;"): em Here are a few things we look for in students:
+        p(style="color:")
+          | <strong>Hard Worker</strong><br>
+          | Like we said above, this won’t be a walk in the park. Prepare for a rigorous course.<br><br>
+          | <strong>Self Motivated</strong><br>
+          | If you need to be micro-managed, this isn’t the place for you.<br><br>
+          | <strong>Works Well With Others</strong><br>
+          | You’ll be assigned to groups for projects, and each person’s role will be crucial.<br><br>
+          | <strong>Interested in Learning</strong><br>
+          | Even if you know basics (or more), you might have to unlearn some things. We’ll start from the ground up as a team, and there won’t be room for egos.<br><br>
+          | <strong>Graceful Problem Solver</strong><br>
+          | We’ll work on some hard, frustrating stuff. Patience and endurance are necessities.<br><br>
+          | <strong>Ready to Have Fun</strong><br>
+          | We work hard, play hard, and laugh every single day. We do the best work we possibly can, but we make sure not to take ourselves too seriously.
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row(style="margin-bottom:20px; margin-top:20px")
+        .col-md-5
+          a(href="https://vimeo.com/69189570"): img(style="max-width:70%" src="/images/academy/mobile-engineering/andrew-quote.jpg")
+        .col-md-7
+          p.mobile-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “When I hired Andrew McIntee to overhaul a handful of our web properties, I was blown away at how much he had learned from The Iron Yard Academy.”
+          p(style="margin-left:10px"): em Dan Waldschmidt,<br> CEO of Waldschmidt Partners
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Want to meet more of our grads? <a href="mailto:academy@theironyard.com?subject=I'd like to speak with one of your graduates">Send us an email</a> to get connected.
+
+    .horizontal-section.mobile-bg(style="margin-bottom:-60px")
+      .container(style="text-align:center")
+        .row
+          .col-md-12
+            h3 <em>Our Sponsors</em>
+            p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+            a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+            a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+            br
+            a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+            a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+            a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')
