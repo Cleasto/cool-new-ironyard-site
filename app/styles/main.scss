@@ -349,6 +349,15 @@ $turquoise-new: #6fbbb7;
         cursor: pointer;
       }
     }
+    .about-tuition {
+      color: #6fbbb7;
+      position: relative;
+      top: 8px;
+      font-size: 18px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   .fee-header {
     color: #ce832d;
@@ -521,6 +530,13 @@ $turquoise-new: #6fbbb7;
   padding: 20px;
   h3 {
     text-align: center;
+  }
+  .sponsors-container {
+    text-align: center;
+    .sponsor-image {
+      display: inline-block;
+      text-align: center;
+    } 
   }
 }
 

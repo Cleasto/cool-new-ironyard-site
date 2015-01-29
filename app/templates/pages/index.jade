@@ -132,7 +132,7 @@ block content
           h2 now accepting applications
           .btn.apply-now apply now
           br
-          a() Learn about Tuition
+          a.about-tuition() Learn about Tuition
 
   .container
     .row
@@ -281,20 +281,21 @@ block content
             img(src="/images/home/employers/validic-logo.png")
   .container.sponsors-section
     .row
-      .col-md-12
+      .col-xs-12
         h3 Our Sponsors
     .row
       .col-xs-12
-        .col-xs-12.col-md-2.col-md-offset-1
-          img(src="/images/home/sponsors/github-logo-gray.png")
-        .col-xs-12.col-md-2
-          img(src="/images/home/sponsors/invision-logo-gray.png")
-        .col-xs-12.col-md-2
-          img(src="/images/home/sponsors/macaw-logo-gray.png")
-        .col-xs-12.col-md-2
-          img(src="/images/home/sponsors/wercker-logo-gray.png")
-        .col-xs-12.col-md-2
-          img(src="/images/home/sponsors/symbolset-logo-gray.png")
+        .sponsors-container
+          .sponsor-image
+              img(src="/images/home/sponsors/github-logo-gray.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/invision-logo-gray.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/macaw-logo-gray.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/wercker-logo-gray.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/symbolset-logo-gray.png")
 
 
 block scripts
