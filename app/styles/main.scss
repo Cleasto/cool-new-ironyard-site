@@ -14,6 +14,10 @@
 
 // The following are quick style edits for a new temporary homepage. Depending on what stays or goes in the longer term design, this will get rolled into Ghost-Shield.
 
+.new-dark-gray-bg {
+  background: #39474E;
+}
+
 // quick fix for new homepage buttons. will roll all of these into a mixin when refactoring ghost-shield
 @mixin fom-btn($color, $hover-color) {
   background: $color;
@@ -42,14 +46,14 @@
     width: 100% !important;
   }
   @media only screen and (min-width: 990px){
-    width: 50% !important;
+    width: 55% !important;
     margin-top: 28px !important;
   }
   ul {
     @media only screen {
       display: inline-block;
     }
-  }
+  } 
 }
 
 .secondary-nav {
@@ -61,14 +65,26 @@
     }
   }
   @media only screen and (min-width: 990px){
-    width: 50% !important;
+    width: 45% !important;
     position: relative;
     top: 8px !important;
     a {
       font-size: 14px !important;
     }
   }
-
+  @media only screen and (min-width: 770px) and (max-width: 990px){
+    bottom: 16px;
+    a {
+      font-size: 14px !important;
+    }
+  }
+  .apply-now {
+    @media only screen and (min-width: 770px) and (max-width: 990px){
+      position: absolute;
+      right: 0;
+      top: -40px;
+    }
+  }
 }
 
 $turquoise-new: #6fbbb7;
