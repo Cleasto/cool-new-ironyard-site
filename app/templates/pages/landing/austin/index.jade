@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+include /mixins/contact-city
 
 block meta 
   +meta({
@@ -36,7 +36,7 @@ block content
                   p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
 
           .col-sm-3(style="margin-top:40px")
-            +contact('Austin Landing')
+            +contact-city('Austin Landing', "Austin")
 block scripts  
   script(src="//platform.twitter.com/oct.js" type="text/javascript")
   script(type="text/javascript")

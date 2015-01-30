@@ -1,0 +1,150 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title: "The Iron Yard - Courses",
+    description: "The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer."
+  })
+
+block content
+  +navigation({
+    title: 'Courses',
+    color: 'gray-dark',
+    image: '/images/academy/academy-header-new.jpg',
+    cutout: true,
+    links: [
+      {title: "FAQs", url: "/courses/faq"},
+      {title: "Tuition", url: "/courses/tuition"}, 
+      {title: "Kids Classes", url: "/academy#kids"}
+    ]
+  })
+  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+
+  .container
+    .row
+      .col-md-12
+        h1.gray-dark-text: em Explore our classes
+        hr 
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/web-design-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Web Design
+        p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/web-design").btn.web-design-btn Learn More
+    hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/python-engineering-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Python Engineering
+        p Learn to analyze and publish data using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/python-engineering").btn.python-btn Learn More
+    hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/mobile-engineering-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Mobile Engineering
+        p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/mobile-engineering").btn.mobile-btn Learn More
+    hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/rails-engineering-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Rails Engineering
+        p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/rails-engineering").btn.rails-btn Learn More
+    hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/front-end-engineering-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Front End Engineering
+        p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/front-end-engineering").btn.front-end-btn Learn More
+
+  .horizontal-section.gray-light-bg
+    .container(style="max-width: 960px; margin-top: 40px;")
+      .row(style="text-align:center")
+        h3 <em>Proven Process, Proven Instructors, Proven Results</em>  
+      .row
+        .col-md-6
+          p 
+            | Choosing the right code education program for you can be difficult. Our courses are designed to help you launch a programming career, and require you to put in the effort and commitment it takes to make that happen.<br><br>
+            | We prefer to let our results speak for us, whether that’s a student changing their life or a happy employer that’s blown away after hiring one of our grads.<br><br>
+            | Learn more about our classes and results:
+          ul 
+            li: a(href="http://theironyard.com/courses/faq") Check out our FAQs
+            li: a(href="http://theironyard.com/courses/faq/#different") Learn more about what makes us different
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with a team member about the Academy") Talk with one of our team members
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with an Academy graduate") Talk with one of our graduates
+            li: a(href="mailto:academy@theironyard.com?subject=I'd like to talk with an Academy employer") Talk with one of our employers
+          a.btn(href="http://theironyard.com/jobs") We're Hiring!
+        .col-md-6
+          p Here are a few of our values when it comes to teaching someone how to be a developer:
+          ul 
+            li 
+              | <strong>Thinking over syntax </strong><br>
+              | <em>We believe syntax is the easy part of programming and that we are successful when we’ve helped someone learn to think like an engineer.</em>
+            li 
+              | <strong>Quality over quantity </strong><br>
+              | <em>We’re interested in training true professionals, not getting as many people into our classes as possible</em>
+            li 
+              | <strong>Real projects over scripted assignments</strong><br>
+              | <em>People learn programming best by tackling hard problems with a mentor, not following a list of steps and taking a quiz.</em>
+            li 
+              | <strong>Instructors as practitioners </strong><br>
+              | <em>Our teachers stay sharp by taking time off in between classes to freelance, build products and run companies, ensuring the latest, greatest curriculum every semester.</em>
+            li 
+              | <strong>Emphasis on open source </strong><br>
+              | <em>We deeply value the open source mindset and intentionally create and contribute to open source projects.</em>
+
+  .container
+    .row
+      .col-md-12#kids
+        h3 Free Code Education for Kids
+        p 
+          | At each of our locations we offer free code classes for kids. We believe in investing in the local tech economy for the long-run, and that means impacting the next generation.<br><br>
+          | Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy. (Not only does this develop a giving mindset, but it helps them communicate things they’ve learned—an essential skill as they grow into management positions in their careers.)
+      hr
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/scratch-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Scratch
+        p With Scratch you can program your own interactive stories, games, and animations — and share your creations with others in the online community.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/scratch").btn Learn More 
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/build-a-website-logo.png")
+      .col-lg-7.col-sm-6
+        h3 Build a Website
+        p Using HTML and CSS, you’ll learn to build your own personal webpage, with awesome interactions and content that you’ve designed.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/courses/build-a-website").btn Learn More  
+
+
+
+
+        

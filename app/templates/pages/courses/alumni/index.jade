@@ -1,0 +1,132 @@
+extends /layouts/main
+
+block meta 
+  +meta ({
+    title: "The Iron Yard | Academy Alumni",
+    description: "The stories we create are what makes our organization unique. Our graduates define our story. See where they have come from and where they are now."
+  })
+
+
+block content
+  +navigation({
+    title: 'Alumni',
+    color: 'gold',
+    links: [
+      {title: "Front End Engineering", url: "#front-end"},
+      {title: "Rails Engineering", url: "#rails"},
+      {title: "Mobile Engineering", url: "#mobile"}
+    ]
+  })
+
+  .container
+    .row(style="text-align:center")
+      h1#front-end Front End Engineering Graduates
+      hr
+    .row(style="margin:0 auto")
+      +bio(
+        [
+          {
+            name: "Alison Miller",
+            title: "Core Front End Dev at Benefit Focus",
+            email: "alisonmllr20@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'I recently graduated from the Iron Yard’s grueling, three-month front-end engineering program. I’ve learned a ton about programming, and it’s been an awesome experience. For all the local foodies out there, I created an app call goLocal for my final project at the Iron Yard. It allows users to share places where they’ve found local food, such as farms and produce stands. When I’m not coding, you can usually find me catching up on the latest news (I have a background in journalism), playing with my golden retriever, Hanna, riding horses or socializing with friends.',
+            photo: '/images/academy/graduates/alison-miller.jpg',
+            links: [
+              {title: "Portfolio", url: "http://alisonelizabeth.github.io/"},
+              {title: "GitHub", url: "http://github.com/alisonelizabeth"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/alisonelizabeth/"},
+              {title:"Resume", url:"http://alisonelizabeth.github.io/resume.html"},
+              {title:"LinkedIn", url:"http://www.linkedin.com/pub/alison-miller/19/b32/138"}
+            ]
+          },
+          {
+            name: "Brandon Miller",
+            title: "UX Dev at School Dude",
+            email: "brandonevanmiller@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'I am a front end developer, Contemporary Northern Traditional Powwow dancer and former Boy Scouts resident camp program director living in the Upstate of South Carolina. I was inspired to become a developer by working with people who were oppressed by the weight of archaic pen-and-paper systems or crazy schedules that software could vastly improve. I’m most proud of my project, DriveTime, an app that schedules your calendar to include traveling time to meetings. I see myself as a problem solver and see each build as a new problem to solve. Being able to build something that meets a need is what drives me to be a developer.',
+            photo: '/images/academy/graduates/brandon-miller.jpg',
+            links: [
+              {title: "Portfolio", url: "http://brandonemiller.github.io/#home"},
+              {title: "GitHub", url: "https://github.com/BrandonEMiller"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/brandonemiller"},
+              {title:"Resume", url:"http://brandonemiller.github.io/#/resume"},
+              {title:"LinkedIn", url:"http://www.linkedin.com/profile/view?id=298253528&trk=nav_responsive_tab_profile"}
+            ]
+          },
+          {
+            name: "Joe Tamburro",
+            title: "Teaching Assistant at The Iron Yard",
+            email: "joetamburro38@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'As a newborn Front End Developer from The Iron Yard Academy, I am excited to continue my newfound passion for programming as a part of their company. The Academy provided me with an exhausting amount of real-world programming skills that I can’t wait to apply towards projects the team is working on. Having a life-long passion for music coupled with a degree in business, my final project resulted in a web-based audio player platform that allows any musician or band to offer an extensive catalog of live recordings to fans in an engaging, user-friendly experience.',
+            photo: '/images/academy/graduates/joe-tamburro.jpg',
+            links: [
+              {title: "Portfolio", url: "http://joetamburro.com/"},
+              {title: "GitHub", url: "https://github.com/joetamburro"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/joetamburro"},
+              {title:"Twitter", url:"https://twitter.com/JoeyTamburro"}
+            ]
+          }                      
+        ])
+    .row(style="text-align:center")
+      h3 Freelancers and Contractors
+    .row(style="margin:0 auto")
+      +bio(
+        [
+          {
+            name: "Andy Flack",
+            email: "flack.ap@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'Having recently completed the Iron Yard Academy’s front end engineering course, I can proudly call myself a web developer. I’ve always been hungry for knowledge, and the ever-expanding world of web development is a great place to be for someone like me. Since taking the course, I’ve found myself thinking with more discipline and intuition than I could have previously imagined. My final project was Instagrab, a web app that allows users to search for user-specific tags (a feature that Instagram currently lacks). When I’m not hacking away at my latest project, I like to make music with my friends or relax at the park with a good book and my dog.',
+            photo: '/images/academy/graduates/andy-flack.jpg',
+            links: [
+              {title: "Portfolio", url: "http://flackap.com"},
+              {title: "GitHub", url: "http://github.com/flackap"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/flackap/"},
+              {title:"LinkedIn", url:"https://www.linkedin.com/pub/andy-flack/5b/501/ba1"}
+            ]
+          },
+          {
+            name: "Keeron Thandroyen",
+            email: "keeronmarc@gmail.com@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'Coming to The Iron Yard was a wild ride. After only 12 weeks, I’m hugely comfortable with everything from putting together an app with a back end (and how to approach and structure that) to something more simple, like data crunching. I can use JavaScript to plug into APIs and get data and then tell that data what to do, which is crazy for me to think about!',
+            photo: '/images/academy/graduates/keeron-thandroyen.jpg',
+            links: [
+              {title: "GitHub", url: "https://github.com/keeronmarc"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/keeronmarc"}
+            ]
+          },
+          {
+            name: "Jake Hendley",
+            email: "joetamburro38@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'I’m an avid rock climber, a stickler for the details, and a generally goofy fella. After a climbing injury in fall ‘12, I moved back to South Carolina where I met the guys at the Iron Yard Academy. They convinced me JavaScript was going to be awesome. They were right, and I’ve been wrangling code ever since.',
+            photo: '/images/academy/graduates/jake-hendley.jpg',
+            links: [
+              {title: "Portfolio", url: "http://jhendley25.github.io/"},
+              {title: "GitHub", url: "https://github.com/jhendley25"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/jhendley25"}
+            ]
+          },
+          {
+            name: "Ryan Poplin",
+            email: "mobileupstate@gmail.com?subject=I found you through The Iron Yard and I'd love to chat",
+            description: 'So, you want more information about me? Awesome! I recently graduated from The Iron Yard Academy. There I learned the ins and outs of front end web engineering. In my free time, I’m learning how to control the MongoDB/Mongoose, Express.js, Backbone.js, and Node.js development stack.',
+            photo: '/images/academy/graduates/ryan-poplin.jpg',
+            links: [
+              {title: "Portfolio", url: "http://ryanpoplin.github.io/"},
+              {title: "GitHub", url: "https://github.com/ryanpoplin"},
+              {title:"Open Source Report Card", url:"http://osrc.dfm.io/ryanpoplin"}
+            ]
+          }                                
+        ])
+    .row(style="text-align:center")
+      h1#rails Rails Engineering Graduates
+      hr
+      p Coming soon!  
+    .row(style="max-width:900px; margin:0 auto")
+      //add bio mixin with Rails student info here
+
+    .row(style="text-align:center")
+      h1#mobile Mobile Engineering Graduates
+      hr
+      p Coming soon!  
+    .row(style="max-width:900px; margin:0 auto")
+      //add bio mixin with Mobile student info here    

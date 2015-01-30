@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+include /mixins/contact-city
 
 block meta 
   +meta({
@@ -41,7 +41,7 @@ block content
      
 
           .col-sm-3
-            +contact('Houston Landing')
+            +contact-city('Houston Landing', "Houston")
 
 block scripts  
   script(src="//platform.twitter.com/oct.js" type="text/javascript")

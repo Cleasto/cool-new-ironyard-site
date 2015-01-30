@@ -1,0 +1,103 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title: 'The Iron Yard | Indianapolis, IN Code School',
+    description: "Learn to code. We teach Front End Engineering, Rails Engineering, and Mobile Engineering right here in Indianapolis, IN."
+  })
+
+
+block content
+  +navigation({
+    title: 'Indianapolis',
+    color: 'green',
+    image: '/images/locations/indianapolis/indianapolis-hero.jpg',
+    cutout: true,
+    links: [
+      {title: "What We Offer", url: "#programs"},
+      {title: "Connect", url: "#connect"}
+    ]
+  })
+
+  .container-fluid(style="padding:0")
+    .main
+      .container
+        .row(style="margin:20px 0")
+          .col-sm-8
+            h1 The Iron Yard In Indianapolis
+            p 
+              | Indianapolis has created a vibrant growth economy around education, healthcare, finance, sports and, most recently, technology. Home to amazing success stories like Exact Target, Indy is poised for significant growth in the software sector.  
+              |<br><br>We're working with the tech companies in the middle of the action to bring tech education to their growing ecosystem.  
+          .col-sm-4#connect
+            h2(style="margin: 28px 0;") Connect
+            hr
+            ul.no-style-type
+              li: a.green-text(href="/jobs") We're Hiring in Indianapolis!
+              li: a.green-text(href="http://blog.theironyard.com") Blog
+              li: a.green-text(href="mailto:indy@theironyard.com") indy@theironyard.com
+              li: a.green-text(href="tel:+3172383988") (317) 238-3988 
+
+      .horizontal-section.gray-light-bg#programs
+        .container
+            .row
+              .col-md-6
+                img.photo(src="/images/locations/indianapolis/indianapolis-academy.jpg")
+              .col-sm-6
+                h4 The Academy
+                p We offer three intensive Academy courses in Indianapolis. Our grads get jobs with amazing local companies as well as awesome shops around the country.  
+                a(href="/academy" class="btn") Enroll Today
+            .row(style="margin-top: 30px;")
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
+                p Learn Front End Engineering using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/locations/icons/rails-icon.png" style="height:24px"> <strong>Rails Engineering</strong>
+                p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
+              .col-md-4
+                h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/locations/icons/mobile-icon.png" style="height:24px"> <strong>Mobile Engineering</strong>
+                p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+                           
+      .horizontal-section
+        .container
+          .row
+            .col-md-6
+              img.photo(src="/images/locations/indianapolis/indianapolis-kids.jpg")
+            .col-sm-6
+              h4 Kids Classes
+              p 
+                | We’ll launch our free code classes for kids in mid 2015. Sign up for the newsletter to be notified when things are ready.
+              a(href="http://eepurl.com/bcskRD " class="btn") Newsletter
+      
+      //- .container  
+      //-   .row
+      //-     .col-sm-7.mobile-container
+      //-       h2 Meet Our Charleston Team
+      //-       .row.left-column
+      //-         .photo-list
+      //-           .photo-container
+      //-             a(href="/about/team#sally"): img.photo-mentor(src="/images/about/sally-kingston.jpg")
+      //-           h3(style="font-size: 24px;") Sally Kingston
+      //-           h4 Campus Director
+      //-         .photo-list
+      //-           .photo-container
+      //-             a(href="/about/team#nick"): img.photo-mentor(src="/images/about/team-nick.jpg")
+      //-           h3(style="font-size: 24px;") Nick Bucciarelli
+      //-           h4 Rails Instructor
+      //-         .photo-list
+      //-           .photo-container
+      //-             a(href="/about/team#calvin"): img.photo-mentor(src="/images/about/team-calvin.jpg")
+      //-           h3(style="font-size: 24px;") Calvin Webster
+      //-           h4 Front End Instructor  
+
+
+      .horizontal-section.gray-light-bg.last
+        .container
+          .row
+            .col-sm-6.col-md-8
+              h4 Recent posts from the blog
+              ul.no-style-type.recent
+            
+
+
+block scripts
+  +blogFeed('blog')

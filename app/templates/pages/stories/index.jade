@@ -1,0 +1,83 @@
+include /mixins/photo-bar
+//- include /mixins/schema
+extends /layouts/main
+
+block meta
+  +meta({
+    title: 'Welcome to The Iron Yard',
+    description: "We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
+  })
+
+block content
+  +navigation({
+    color: 'gray-dark',
+    title: 'Student stories',
+    image: '/images/home/home-hero-new.jpg',
+    triangle: false,
+    gradient: true,
+    home: true
+  })
+
+  .container
+    .row
+      .col-xs-12.col-md-8
+        h2 Featured stories
+        hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/stories/astrid-thumb.jpg")
+            .col-lg-6.col-md-6
+              h3 Astrid Countee
+              p Astrid was a data analyst working in oil and gas and decided to pursue her passion for building software. She now enjoys a succssful freelance career. 
+            .col-lg-3.col-md-4.cta-box
+              a(href="/stories/astrid").btn Read More
+          hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/stories/matt-thumb.jpg")
+            .col-lg-6.col-md-6
+              h3 Matt Bertino
+              p Matt Bertino left a great job in big finance to pursue his dream of building a company. Post graduation he joined our accelerator program.
+            .col-lg-3.col-md-4.cta-box
+              a(href="/stories/matt").btn Read More
+          hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/stories/michelle-thumb.jpg")
+            .col-lg-6.col-md-6
+              h3 Michelle Child
+              p After working as an English teacher abroad, Michelle became enthralled with the web design industry. She joined The Iron Yard and found a job within weeks of graduation. 
+            .col-lg-3.col-md-4.cta-box
+              a(href="/stories/michelle").btn Read More
+          hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/stories/jeremy-thumb.jpg")
+            .col-lg-6.col-md-6
+              h3 Jeremy Butler
+              p Jeremy Butler toured the world playing music, but returned to his first love of programming through The Iron Yard. He now developes apps for State Farm.
+            .col-lg-3.col-md-4.cta-box
+              a(href="/stories/jeremy").btn Read More
+
+      .col-xs-12.col-md-4(style="padding-left: 50px; background-color: ;")
+        h2 Story feed
+        hr
+        p Many of our students write about their experiences at The Iron Yard. We also write about their amazing journies into the world of programming. You can see everything on our <a href="http://stories.theironyard.com">Stories Blog</a> or click through to the latest posts below. 
+        ul.no-style-type.recent2
+
+block scripts
+  +multiBlogFeed([
+    {
+      name: 'stories',
+      element: '.recent2'
+    }
+  ])
+
