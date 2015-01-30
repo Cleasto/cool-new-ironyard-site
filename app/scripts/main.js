@@ -70,16 +70,25 @@ function chatWindow(){
     if ($('.chat-container').hasClass('inactive')){
       $('.chat-container').removeClass('inactive');
       $('.chat-container').addClass('active');
+      // $('#habla_oplink_a').html('<span>x</span>')
     } else {
       if ($('.chat-container').hasClass('active')){
         $('.chat-container').removeClass('active');
         $('.chat-container').addClass('inactive');
-      }  
+      }
+      
     }
   })
+}
+
+function chatWindowColor(){
+  if ($('.habla_conversation_p_item:nth-child(1)').hasClass('habla_conversation_person2')){
+    console.log('person 2');
+  }
 }
 
 $(document).ready(function(){
   playVideo();
   chatWindow();
+  chatWindowColor();
 })
