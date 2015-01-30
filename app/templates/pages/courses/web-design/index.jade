@@ -1,0 +1,234 @@
+extends /layouts/main
+include /mixins/schema
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Web Design",
+    description:"The Iron Yard's super-intensive Web Design course teaches you how to design and build beautiful, user-centric websites and digital products."
+  })
+
+block content
+  +navigation({
+    title: 'Web Design',
+    color: 'web-design',
+    links: [
+      {title:"FAQs", url:"/academy/web-design/faq"},
+      {title:"Schedule", url:"/academy/web-design#class-schedule"},
+      {title: "Tuition", url: "/academy/tuition"}
+    ]
+  })
+
+  .container
+    .row
+      .col-md-12
+        h3.web-design-text: em Learn to design and build beautiful, user-centric websites and digital products
+      .col-md-8
+        p 
+          | Over the course of three months, a practicing web designer (and skilled instructor) will show you the multiple facets of being a web designer, including creative discovery and ideation, design principles, coding in HTML, CSS, and interaction-based Javascript and responsive Web Design. At the end of the class, you’ll be equipped with portfolio of web design projects built from scratch and looking beautiful. <br><br>
+          | The best part: we’ll help you get a job offer as a web designer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level web designer.
+      .col-md-4(style="text-align:center")
+        img.photo(src="/images/academy/web-design/web-design-prototype.jpg" style="max-width:500px;")
+
+    .row
+      .callout-box(style="padding-bottom:10px")
+        .row
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/web-design/sketch.png") 
+            p(style="width:252px; margin:20px auto") Evolve ideas thoroughly from sketching to prototyping
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/web-design/principles.png")
+            p(style="width:252px; margin:20px auto") Master principles of design and learn design thinking
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/front-end-interface.png")
+            p(style="width:252px; margin:20px auto") Produce robust, beautiful, and cohesive design systems
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/web-design/css.png")
+            p(style="width:252px; margin:20px auto") Go deep into HTML, CSS and interaction-based JavaScript
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/web-design/responsive.png")
+            p(style="width:252px; margin:20px auto") Optimize designs for accessibility and the responsive web layouts
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/brain-guy.png")
+            p(style="width:252px; margin:20px auto") Most importantly, learn how to learn
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/mobile-engineering/nebula.png")
+      .col-lg-7.col-sm-6
+        h3 Tuition, Financing and Scholarships
+        p Our missions is to help you launch a career in programming. We've partnered with financing companies and developed scholarships to make programming, engineering and computer science available to as many people as possible.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/tuition").btn Learn More
+
+    .row(style="background-color:#e3e7e9")
+      .col-md-12
+        h2.section-headline(style="margin-bottom: 10px;") Questions? Get in touch.
+      .col-md-6(style="padding:0px 20px 20px 30px")
+        p(style="margin-top:0") 
+          | <strong>We'd love to answer your questions</strong>.<br>We love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or talk to a human.
+        ul.no-style-type 
+          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Web Design course">an email</a> 
+          li • Jump into our <a href="https://www.hipchat.com/gVQZ3qwbv">Academy chat room</a>
+      .col-md-6(style="padding:0px 00px 20px 20px")    
+        .col-md-6
+          ul.no-style-type
+            li • Greenville:<br> <a href="tel:+8649520099">(864) 952-0099</a>
+            li • Columbia:<br> <a href="tel:+8038739299">(803) 873-9299</a>
+            li • Austin:<br> <a href="tel:+5125962939">(512) 596-2939</a>
+
+  .horizontal-section.gray-light-bg
+    .container
+      .row
+        .col-md-12#class-schedule
+          h3(style="text-align:center").web-design-text: em Class Schedule
+          p(style="max-width:960px; margin:0 auto; color: #A59785;") Our intensive Web Design courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
+    .container
+      +schemaTable([
+        {
+          date: "January 5th",
+          isoDate: "2015-01-05",
+          location: "Columbia, SC",
+          analytics: "Web Design Columbia",
+          instructor: "Gio Difeterici",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "January 26th",
+          isoDate: "2015-01-26",
+          location: "Austin, TX",
+          analytics: "Web Design Austin",
+          instructor: "Sam Kapila",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Tampa Bay, FL",
+          analytics: "Web Design Tampa",
+          instructor: "TBA",
+          subject: "web-design",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        }
+      ])
+
+  .container
+    .row(style="text-align:center")
+      img(src="/images/academy/schedule.png" style="max-width:70%")
+
+    .row.divide-container
+      .col-md-6.col-sm-6.col-xs-12.divider-left
+        h3: em Lecture Time
+        p Our lessons are fast-paced, interactive and fun. All of our instructors use a hands-on, live-coding lecture style so that students immediately start developing muscle memory for each new skill. We cover a new subject almost every day, building on previous material. The goal is for you to get your hands dirty absorbing a whole lot of information, then apply it on a real project during lab.
+      .col-md-6.col-sm-6.col-xs-12
+        h3: em Lab Time
+        p You’ll have homework every single day…and it ain’t easy. All assignments are cumulative and ultimately lead up to a final project (unique to each student) that is the crown of your portfolio. If that doesn’t keep you busy enough, we start sending you <em>real, paid freelance work</em>. You’ll have access to the space 24 hours a day, just in case you need to burn some midnight oil.
+    .row(style="margin: 0 auto; max-width:720px")
+      .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+        p(style="font-size:15px")
+          | <strong>Being a web designer is more than just making things pretty.</strong><br> 
+          | We put serious focus on the qualitative aspects of work, from team projects to mock job interviews. We also partner with guest speakers who cover a variety of topics like responsive web design and freelancing, and we take class field trips to real businesses like MailChimp and BMW. Employers have told us our grads are some of the most well-rounded, teachable hires they’ve ever made
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row
+        h3(style="text-align:center"): em Curriculum Overview
+        p
+          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing HTML and CSS doesn’t make you great at designing websites; that’s the easy part of web design. The emphasis in all of our classes is on helping you think like a designer. Web Design is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level web designers. You’ll cover an incredible amount of ground in 3 months, from foundational design concepts to complex interactive JavaScript. Some topics like responsive web design will take weeks to cover, while others like Sass pre-processing will be taught in just a few lectures. Each instructor and class stays agile so that the curriculum can adapt as tools and languages evolve, but we ensure that each student graduates with the same core skillset.<br><br>
+          | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind.  
+
+      .row.divide-container
+        .col-md-6.col-sm-6.col-xs-12.divider-left
+          p
+            | <strong>Discovery</strong><br>
+            | We'll start at the very beginning with content-first thinking, client interviews, content strategy and communication.<br><br>
+            | <strong>UX</strong><br>
+            | Every student will learn how to create user-centered design, creating prototypes, wireframes, and thumbnails, and researching user interaction, behavior and accessibility.<br><br>
+            | <strong>Design Principles</strong><br>
+            | Students learn fundamentals in grid, typography, color theory, branding and templating, and how these elements form a cohesive system.<br><br>
+            | <strong>Design fundamentals</strong><br>
+            | Every student learns strong fundamentals in layout, typography, color theory, user interface and user experience.<br><br>
+            | <strong>Ideation</strong><br>
+            | Learn to produce robust ideas by finding inspiration, problem solving and understanding constraints.<br><br>
+            | <strong>HTML and CSS</strong><br>
+            | We’ll go from HTML foundations to experimental HTML5. In CSS, we'll cover layouts, typography and CSS3 animations. Then, we'll super-charge our CSS with preprocessors like Sass.<br><br>
+            | <strong>Building Responsive Sites</strong><br>
+            | We teach media queries and responsive design early and require almost all assignments to be fully functional across all screen sizes.<br><br>
+        .col-md-6.col-sm-6.col-xs-12
+          p
+            | <strong>JavaScript and jQuery for Interaction</strong><br>
+            | We explore the interaction-side of programming to enhance the design experience.<br><br>
+            | <strong>Git and GitHub</strong><br>
+            | Master Git for personal and team workflows. All of your code will live on GitHub from day one.<br><br>
+            | <strong>Automation and Front End Tools</strong><br>
+            | We'll use industry-standard tools regularly, such as Grunt and Bower, to build sites effectively.<br><br>
+            | <strong>Asset Management</strong><br>
+            | We'll teach you how to produce images and media files for sites and clients that look great and load quickly.<br><br>
+            | <strong>Testing and Deployment</strong><br>
+            | We'll teach you how to test your projects on multiple browsers and devices, as well as how to deploy them.<br><br>
+            | <strong>Freelance Fundamentals</strong><br>
+            | Seasoned pros show you how to find good work, write contracts and proposals, set expectations, price well and communicate like a pro.<br><br>
+            | <strong>Getting Hired</strong><br>
+            | We do mock interviews, resume writing, personal branding and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.<br><br>
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Excited? You’ve come to the right place. Keep reading!
+
+  .container
+    .row
+      .col-md-7
+        h3: em Is this for you?
+        p 
+          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://www.codecademy.com/tracks/web">try a few exercises to see</a>.<br><br>
+          | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
+        h3: em How Much Does It Cost?
+        p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
+        p To ensure students are prepared for the web design industry, we highly recommend that you sign up for an <a href="https://creative.adobe.com/plans">Adobe Creative Cloud</a> subscription, which includes <a href"http://www.adobe.com/creativecloud.html">every Adobe application</a>, including Photoshop, Illustrator, and Typekit (which we will use the most). These are industry standard applications. Depending on which <a href="https://creative.adobe.com/plans">subscription model</a> you choose, the price can vary from $80 a month to $600 a year, and we recommend taking advantage of the 30-day free trial, like we did! There are discounts for recent college grads and upgrades. If you have earlier versions of these programs, that’s okay with us, too, as long as they are CS4 or newer.
+      .col-md-5
+        h4(style="margin-top:28px;"): em Here are a few things we look for in students:
+        p(style="color:")
+          | <strong>Hard Worker</strong><br>
+          | Like we said above, this won’t be a walk in the park. Prepare for a rigorous course.<br><br>
+          | <strong>Self Motivated</strong><br>
+          | If you need to be micro-managed, this isn’t the place for you.<br><br>
+          | <strong>Works Well With Others</strong><br>
+          | You’ll be assigned to groups for projects, and each person’s role will be crucial.<br><br>
+          | <strong>Interested in Learning</strong><br>
+          | Even if you know basics (or more), you might have to unlearn some things. We’ll start from the ground up as a team, and there won’t be room for egos.<br><br>
+          | <strong>Graceful Problem Solver</strong><br>
+          | We’ll work on some hard, frustrating stuff. Patience and endurance are necessities.<br><br>
+          | <strong>Ready to Have Fun</strong><br>
+          | We work hard, play hard, and laugh every single day. We do the best work we possibly can, but we make sure not to take ourselves too seriously.
+        h3: em Student Stories
+        ul.no-style-type.recent 
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row(style="margin-bottom:20px; margin-top:20px")
+        .col-md-5
+          a(href="https://vimeo.com/69189571"): img(src="/images/academy/front-end-engineering/marco-quote.jpg" style="max-width:70%")
+        .col-md-7
+          p.web-design-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “I was amazed at the amount of skill these students had acquired after a month-and-a-half of teaching. These are skills that took me, being self taught, years to learn. It’s a great way to go from not really knowing anything to being the kind of candidate that I would be looking to hire at a company.”
+          p(style="margin-left:10px"): em Marco Suarez,<br> Senior Product Designer at Etsy
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Want to meet more of our grads? <a href="mailto:academy@theironyard.com?subject=I'd like to speak with one of your graduates">Send us an email</a> to get connected.
+
+  .horizontal-section.web-design-bg(style="margin-bottom:-40px; margin-top:-40px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')

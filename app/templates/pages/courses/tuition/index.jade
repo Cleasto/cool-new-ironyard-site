@@ -1,0 +1,99 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title:"The Iron Yard | Tuition",
+    description:" "
+  })
+
+block content
+  +navigation({
+    title: "Invest in Your Future",
+    color: 'gray-dark',
+    links: [
+      {title:"Tuition", url:"#tuition"},
+      {title:"Financing", url:"#financing"},
+      {title:"Scholarships", url:"#scholarships"}
+    ]
+  })
+
+  .container
+    .row#tuition
+      .col-md-12: h1 Tuition
+        //- h4(style="padding-bottom: 0px;") Joining The Iron Yard Family
+        p When you are accepted to The Iron Yard Academy, you join a family that extends far beyond your individual class or campus. Our code school and accelerator graduates comprise a national network of tech professionals, giving you access to people and companies in almost every sphere of the industry. 
+      hr
+      .col-md-6
+        h4(style="padding-bottom: 0px;") Course costs
+        p Tuition is <strong>$12,000</strong>. We have <a href="#financing">financing options</a> and <a href="#scholarships">scholarships</a> available. Our package is one of the most affordable ways to launch and grow a successful programming career. 
+        p • 12 weeks of intensive code education and mentorship<br>• Job placement and career support<br> • Freelance support<br> • Access to The Iron Yard network
+      .col-md-6
+        h4(style="padding-bottom: 23px;") Success stories
+        .col-md-7
+          a(href="https://vimeo.com/69189571")
+            img.photo(src="/images/academy/front-end-engineering/marco-quote.jpg")
+          p Read more on our <a href="http://stories.theironyard.com">Stories Blog</a>.
+        .col-md-5
+          p(style="margin-top: 0px; font-size: 17px;")
+            em "I was amazed at the amount of skill these students had acquired after only a month-and-a-half of teaching."
+            br
+            strong — Marco Suarez, Sr. Product Designer at Etsy
+
+
+  .horizontal-section.gray-light-bg
+    .container
+      .row#financing
+        .col-md-4: h1 Financing
+          p Our goal is to make it as easy as possible for you to launch a successful programming career. Explore our financing options below. 
+          p Each financing option requires a $1000 deposit to reserve your spot in class.
+        .col-md-8
+          blockquote(style="padding-top: 10px;")
+            p(style="font-size: 24px;")
+              “Andy’s skill set coming out of The Iron Yard Academy is nothing short of amazing. The experience he gained applying practical solutions to real world problems over the course of three months is more impressive than the experience most CS students gain in four years."
+            footer  Terry Horner, Data Scientist at Keen IO
+        hr
+      .row(style="margin-bottom: 20px;")
+        .col-md-6(style="background: rgba(190, 190, 190, 0.76);")
+          h3 Finance with Climb Credit
+          p(style="font-size: 15px;") We are excited to offer financing through a partnership with <a href="http://climbcredit.co">Climb Credit</a>. Their plan offers 100% financing over a 3-year period. Once accepted to our program, you can apply for approval. Most applicants find out if they qualify in the same day. 
+        .col-md-6(style="background: rgba(190, 190, 190, 0.53);")
+          h3 Finance with Upstart
+          p(style="font-size: 15px;") We also partner with Upstart, who can help you finance your experience at The Iron Yard. Once you've applied to our program, ask your local Campus Director about this option during the interview process to get details.
+
+  .container  
+    .row#scholarships
+      .col-md-12: h1 Scholarships
+        p We're passionate about supporting a <em>sustainable</em> culture in which programming is welcome to everyone. Our scholarship program provides support to women, people of color, military personnel and people with disabilities.
+      .col-md-4
+        img.photo(src="/images/academy/diversity-scholarship.jpg")
+        p(style="margin-top: 0px; font-size: 17px;") <em>“When I hired Andrew McIntee to overhaul a handful of our web properties, I was blown away at how much he had learned from The Iron Yard Academy.”</em><br><strong>— Dan Waldschmidt, <br>CEO of Waldschmidt Partners</strong>
+        p Read more on our <a href="http://stories.theironyard.com">Stories Blog</a>.
+  
+      .col-md-8
+        h3(style="margin-top: 0px;") The Iron Yard Diversity Scholarship
+        p Each scholarship recipient receives a <strong>$1000 discount on the total cost of tuition</strong> and there is no cap on the number of students per class who can receive support.
+        p The application process is simple: we want to know how you'll support diversity by by making technology more open and available to underrepresented groups. (Applicants must be women—cis or trans, people of color, military personnel or people with disabilities).
+        a(href="https://theironyard.typeform.com/to/VtoUdR").btn Apply Now
+        p <em>Because we care passionately about diversity, The Iron Yard sponsors many scholarships ourselves. If you or your company are interested in partnering with us to provide more opportunities to more people, please <a href="mailto:academy@theironyard.com?subject=I would like to sponsor The Iron Yard's Scholarship Program">send us an email</a>.</em>
+
+        //- .three-col-cta.row(style="margin-top: 0px;")
+        //-   .col-lg-2.col-sm-2
+        //-     .image-box
+        //-       img(src="/images/academy/scholarships/women-in-tech-icon.png")
+        //-   .col-lg-7.col-sm-6
+        //-     h3 Women in Tech
+        //-     p We are passionate about lowering the barrier for women who want to pursue a career in programming. We award one $1500 scholarship per semester, per class.
+        //-   .col-lg-3.col-sm-4.cta-box
+        //-     a(href="https://theironyard.typeform.com/to/K3rllQ").btn Apply Now
+        //- hr    
+        //- .three-col-cta.row
+        //-   .col-lg-2.col-sm-2
+        //-     .image-box
+        //-       img(src="/images/academy/scholarships/military-icon.png")
+        //-   .col-lg-7.col-sm-6
+        //-     h3 Military Discounts
+        //-     p We offer varying discounts to military personnel, including scholarships, awards and attractive payment plans. <a href="http://opcod3.herokuapp.com/">Check out &lt;Operation Code&gt;</a> to connect with people working to allow the GI Bill to be used for code schools like ours.
+        //-   .col-lg-3.col-sm-4.cta-box
+        //-     a(href="mailto:academy@theironyard.com?subject=I want to learn more about the military discount").btn Learn More
+  
+      

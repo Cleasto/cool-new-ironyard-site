@@ -1,0 +1,31 @@
+extends /layouts/main
+include /mixins/stories-contact
+
+block meta
+  +meta({
+      title:"The Iron Yard | Stories",
+      description:"Michelle Child tells us how The Iron Yard helped her land a great job in web design."
+    })
+
+block content
+  +navigation({
+    title: 'Stories: Michelle Child', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container
+    .row(style="margin-top: 60px;")
+      .col-md-8.col-xs-12
+        p(style="font-style: italic;") After working as an English teacher abroad, Michelle became enthralled with the web design industry. She joined The Iron Yard and found a job within weeks of graduation. Here's her story:
+        hr
+        p Before coming to the Iron Yard, I worked as an English Assistant in a small French town near Dijon. When I came home, I had no idea what to do next. A friend suggested I look into the Iron Yard Academy. 
+        p After reviewing their site, I instantly clicked with the design material and self-motivated, fast-paced environment they presented. I was enthralled with the idea of learning a new skill and making a career in web design. 
+        p Throughout the class I was constantly challenged, inspired, and confident I was on the forefront of design/code education, learning from extremely talented people. It's such an exciting time to enter the industry! 
+        p Within a month of finishing the course I was offered a job by a company familiar with the quality education of the Iron Yard Academy. I'm teaching myself new, marketable skills every day, and couldn't be more excited to spend my career as a designer.
+        p(style="font-style: italic;") Ready to start your story? Click <a href="http://theironyard.com/stories/academy/">here</a> to learn more about our courses!
+
+      .col-md-4
+        img.photo(src="/images/stories/michelle-story.jpg" styles="max-width: 310px")
+      .col-md-4 
+        +stories-contact('Stories-Academy Landing')

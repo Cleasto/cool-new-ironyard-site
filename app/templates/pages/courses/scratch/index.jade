@@ -1,0 +1,66 @@
+extends /layouts/main
+
+block meta
+    +meta({
+        title: "The Iron Yard | Scratch",
+        description: "In our Scratch class, kids learn programming fundamentals and video game basics, building their very own video game in the first few nights of class."
+    })
+
+block content
+  +navigation({
+    title: 'Scratch',
+    color: 'gold'
+  })
+
+  .container(style="margin-top:60px")
+    .row
+      .col-md-8
+        img.photo(src="/images/academy/scratch-kids.jpg")
+        h2 Scratch
+        p 
+          | In the video game module, students learn a visual programming language called Scratch (developed by MIT). Kids learn programming fundamentals and video game basics, building their very own video game in the first few nights of class.
+          | <strong>These classes are 100% free and run on the generous donation of volunteers time.</strong> Spots are filled on a first-come-first-serve basis
+        hr
+        h2 Kids Academy Schedules
+        p To find out about upcoming Kids Academy classes, stay in touch with your local campus via the following:
+        h4 Atlanta 
+        p <a href="http://eepurl.com/UZ_7T">Sign up</a> for the Atlanta Kids Academy mailing list.
+        hr
+        h4 Charleston
+        p <a href="http://eepurl.com/U-qWj">Sign up</a> for the Charleston Kids Academy mailing list.
+        hr
+        h4 Greenville
+        p <a href="http://eepurl.com/3o__v">Sign up</a> for the Greenville Kids Academy mailing list.
+        hr
+        h4 Houston
+        p <a href="http://eepurl.com/RByUH">Sign up</a> for the Houston newsletter.
+        hr
+        h4 Orlando
+        p <a href="http://eepurl.com/YcBAD">Sign up</a> for the Orlando newsletter.
+        hr
+        h4 Raleigh-Durham
+        p <a href="http://eepurl.com/JoCJv">Sign up</a> for the Raleigh-Durham newsletter.
+        hr
+        h4 Spartanburg
+        p <a href="http://eepurl.com/RGBm1">Sign up</a> for the Spartanburg Kids Academy mailing list.
+        hr
+        h4 Tampa-St. Petersburg
+        p <a href="http://eepurl.com/VklMr">Sign up</a> for the Tampa-St. Petersburg newsletter.
+        hr
+        h2 FAQ
+        h3 Do I need to be in class with my child?
+        p If your child is younger than 13 years old, we require you to be in the class with them. Watch out, because you might just have more fun than they do.
+        h3 I registered interest in a full class. How will I know if my child gets in? 
+        p If a student in a full class drops out before the course starts, we will give their spot to those who registered interest on a first-come-first serve basis.        
+        h3 Do I need to sign any legal paperwork in order for my child to take the class?        
+        p We require every student to have a waiver/release form signed by a parent or guardian. You will recieve a link to this form when you sign up for a ticket.
+      .col-md-4
+        h3 Ready to learn?
+        p To sign up for a class, check our schedule and reserve a ticket. If the class is full, you can sign up for another session or ‘register your interest’ and we’ll add you to the waitlist.
+        hr
+        h3 Volunteer!
+        p Volunteers allow us to keep these classes free. If you’re passionate about helping kids learn, jump in!
+        ul
+          li: a(href="mailto:coderdojo@theironyard.com") Ask about becoming a volunteer!
+        hr
+        p Questions? <a href="#faq">Read our FAQ</a> or <a href="mailto:coderdojo@theironyard.com">send us an email</a>.

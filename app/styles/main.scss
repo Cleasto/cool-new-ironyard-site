@@ -12,6 +12,717 @@
   display:block
 }
 
-.display-none {
+// The following are quick style edits for a new temporary homepage. Depending on what stays or goes in the longer term design, this will get rolled into Ghost-Shield.
+
+// quick fix for new homepage buttons. will roll all of these into a mixin when refactoring ghost-shield
+@mixin fom-btn($color, $hover-color) {
+  background: $color;
+  padding: 4px 20px 8px;
+  text-transform: capitalize;
+  font-size: 24px;
+  position: absolute;
+  right: 20%;
+  left: 20%;
+  bottom: 50px;
+  min-width: 220px;
+  &:hover {
+    background: $hover-color;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  @media only screen and (min-width: 1000px){
+    padding-top: 0 !important;
+  }
+}
+.primary-nav {
+  width: 30% !important;
+  @media only screen {
+    width: 100% !important;
+  }
+  @media only screen and (min-width: 990px){
+    width: 50% !important;
+    margin-top: 28px !important;
+  }
+  ul {
+    @media only screen {
+      display: inline-block;
+    }
+  }
+}
+
+.secondary-nav {
+  width: 70% !important;
+  @media only screen {
+    width: 100% !important;
+    .apply-now {
+      margin-top: 14px;
+    }
+  }
+  @media only screen and (min-width: 990px){
+    width: 50% !important;
+    position: relative;
+    top: 8px !important;
+    a {
+      font-size: 14px !important;
+    }
+  }
+
+}
+
+$turquoise-new: #6fbbb7;
+&.apply-now {
+  background: $turquoise-new;
+  color: #fff !important;
+  width: 125px;
+  font-size: 14px;
+  &:hover {
+    background: #5B9D99;
+  }
+}
+
+&.watch-video {
+  background: $turquoise-new;
+  color: #fff !important;
+  padding: 0 20px;
+  line-height: 40px;
+  &:hover {
+    background: #5B9D99;
+    cursor: pointer;
+  }
+  img {
+    position: relative;
+    top: 6px;
+  }
+  span {
+    vertical-align: top;
+    line-height: 54px;
+  }
+}
+
+
+.read-stories {
+  background: $turquoise-new;
+  color: #fff !important;
+  padding: 6px 20px 8px;
+  line-height: 40px;
+  min-width: 320px;
+  &:hover {
+    background: #5B9D99;
+    cursor: pointer;
+  }
+}
+
+.discover-courses {
+  background: $turquoise-new;
+  color: #fff !important;
+  padding: 6px 16px 8px;
+  line-height: 40px;
+  &:hover {
+    background: #5B9D99;
+    cursor: pointer;
+  } 
+}
+// end temp fix
+
+// quick fixes for temporary homepage
+.hero-banner-home {
+  background: url('/images/home/home-hero.jpg') no-repeat center center;
+  background-size: cover;
+  margin-top: -21px;
+  position: relative;
+  @media only screen {
+    height: 450px;
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 600px;
+  }
+  .close-video {
+    top: 20px;
+    opacity: 0;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 3s linear;
+    transition-delay: 3s;
+    &.active {
+      display: block !important;
+      opacity: 1 !important;
+      transition: all 3s linear;
+      transition-delay: 3s;
+    }
+    &.inactive {
+      display: none !important;
+      opacity: 0 !important;
+      transition: all 3s linear;
+      transition-delay: 3s;
+    }
+  }
+  .vimeo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    &.active {
+      display: block !important;
+      opacity: 1 !important;
+    }
+    &.inactive {
+      display: none !important;
+      opacity: 0 !important;
+    }
+  }
+  .container {
+    @media only screen {
+      padding-top: 110px;
+    }
+    @media only screen and (min-width: 1025px){
+      padding-top: 156px;
+    }
+    h1, h3 {
+      color: #fff;
+    }
+    h1{
+      margin-bottom: 0;
+      @media only screen {
+        font-size: 40px;
+      }
+      @media only screen and (min-width: 1025px){
+        font-size: 60px;
+      }
+    }
+    h3 {
+      margin-top: -10px;
+      @media only screen {
+        font-size: 16px;
+      }
+      @media only screen and (min-width: 1025px){
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// student stories hot fixes on temp homepage
+.stories-section {
+  // padding: 70px 100px;
+  @media only screen {
+    padding: 16px 16px 60px 36px;
+  }
+  @media only screen and (min-width: 767px){
+    padding: 30px 90px 50px 90px;
+  }
+  h1 {
+    color: #727d84;
+    line-height: 56px;
+    text-indent: -30px;
+    text-decoration: italic;
+    quotes: "“" "”" "‘" "’";
+    @media only screen {
+      width: 100%;
+    }
+    @media only screen and (min-width: 991px){
+      width: 370px;
+    }
+    &:before {
+      content: open-quote;
+    }
+    &:after {
+      content: close-quote;
+    }
+    &::last-line {
+      width: 420px;
+    }
+  }
+  p {
+    color: #727d84;
+    font-style: italic;
+    @media only screen {
+      width: 260px;
+      &:nth-child(1){
+        font-style: normal;
+        text-indent: 0px;
+        width: 100%;
+        @media only screen and (min-width: 767px) {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+.student-section {
+  padding-bottom: 50px;
+  img {
+    margin-top: 50px;
+  }
+  .student-copy {
+    margin-top: -32px;
+    p {
+      margin-top: 0;
+      font-size: 16px;
+      &:nth-child(2n+1){
+        font-style: italic;
+        margin-bottom: 0;
+      }
+    }
+    .fee-name, .python-name,
+    .design-name, .rails-name, .mobile-name {
+      margin-bottom: 0;
+    }
+    .fee-name, .fee-link {
+      color: #ce832d;
+    }
+    .python-name, .python-link {
+      color: #5bbd7b;
+    }
+    .design-name, .design-link {
+      color: #35a0ad;
+    }
+    .rails-name, .rails-link {
+      color: #b8584c;
+    }
+    .mobile-name, .mobile-link {
+      color:  #d3b42b;
+    }
+  }
+}
+
+.code-school-section {
+  padding-top: 40px;
+  h2 {
+    color: #727d84;
+  }
+  p {
+    width: 80%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .caption {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.courses {
+  @media only screen {
+    padding: 0;
+  }
+  @media only screen and (min-width: 760px){
+    padding: 60px 0;
+  }
+}
+
+
+.courses-section {
+  position: relative;
+  .course-box {
+    float: left;
+    border: 1px solid #d0d1d3;
+    background: #fff;
+    text-align: center;
+    min-height: 475px;
+    padding: 50px 20px;
+    position: relative;
+    @media only screen {
+      width: 100%;
+    }
+    @media only screen and (min-width: 640px){
+      width: 50%;
+    }
+    @media only screen and (min-width: 1025px){
+      width: 33.33%
+    }
+    &:nth-child(2n+1){
+      // border-left: none;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 0;
+      font-style: italic;
+      padding: 0 20px;
+    }
+    h2 {
+      font-style: italic;
+      text-transform: capitalize;
+      color: #727D84;
+      line-height: 42px;
+    }
+    .apply-now {
+      background: $turquoise-new;
+      font-size: 24px;
+      padding: 0px 20px 4px;
+      width: 234px;
+      text-transform: capitalize;
+      &:hover{
+        background: #5B9D99;
+        cursor: pointer;
+      }
+    }
+    .about-tuition {
+      color: #6fbbb7;
+      position: relative;
+      top: 8px;
+      font-size: 18px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .fee-header {
+    color: #ce832d;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .design-header {
+    color: #35a0ad;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .rails-header {
+    color: #b8584c;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .mobile-header {
+    color: #d5b810;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .python-header {
+    color: #0dc67d;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+  .fee-eng {
+    .btn {
+      @include fom-btn(#db820c, #C07209)
+    }
+  }
+  .web-design {
+    .btn {
+      @include fom-btn(#00a5b1, #038B95)
+    }
+  }
+  .rails-eng {
+    .btn {
+      @include fom-btn(#c94e43, #A73E34)
+    }
+  }
+  .mobile-eng {
+    .btn {
+      @include fom-btn(#d5b810, #B49B0C)
+    }
+  }
+  .python-eng {
+    .btn {
+      @include fom-btn(#0dc67d, #06A264)
+    }
+  }
+}
+
+.contact-container {
+  border: 1px solid #d0d1d3;
+  width: 80%;
+  margin: 60px auto;
+  @media only screen {
+    width: 94%;
+  }
+  .questions {
+    display: inline-block;
+    position: relative;
+    background: #eee;
+    vertical-align: top;
+    @media only screen {
+      width: 100%;
+    }
+    @media only screen and (min-width: 1025px){
+      width: 49.8%;
+    }
+    .top-content {
+      padding: 94px 40px;
+    }
+    .bottom-content {
+      display: inline-block;
+      height: 130px;
+      width: 100%;
+      background: white;
+      position: relative;
+      top: 6px;
+      .email, .chat{
+        padding: 36px 0;
+        .content {
+          text-align: center;
+          h3 {
+            color: #fff;
+            font-style: italic;
+            margin: -10px 0;
+            font-size: 24px;
+          }
+        }
+      }
+      .email {
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: #727d84;
+      }
+      .chat {
+        float: left;
+        height: 100%;
+        width: 50%;
+        background: #6fbbb7;
+        &:hover {
+          background: #5DAFAB;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .phone-numbers {
+    display: inline-block;
+    position: relative;
+    @media only screen {
+      width: 100%;
+      padding: 36px 0 0;
+    }
+    @media only screen and (min-width: 1025px){
+      width: 49.8%;
+      padding: 36px 50px 0;
+    }
+    .chat-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      transition: all .6s ease;
+      &.active {
+        opacity: 1;
+        transition: all .6s ease;
+      }
+      &.inactive {
+        opacity: 0;
+        transition: all .6s ease;
+      }
+    }
+    ul {
+      display: inline-block;
+      width: 42%;
+      li {
+        list-style-type: none;
+        margin-bottom: 18px;
+        p {
+          color: #7a8b8f;
+          margin: 0;
+        }
+        a {
+          color: #6fbbb7;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.employers-section {
+    background-size: cover;
+    @media only screen {
+      background: #727D84;
+    }
+    @media only screen and (min-width: 990px){
+      background: url('/images/home/employers-image.jpg') no-repeat center center;
+      background-size: cover;
+    }
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    padding: 0 10%;
+  }
+}
+
+.employers-section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .employer-icon {
+    text-align: center;
+    img{
+      width: 50%;
+      max-width: 230px;
+    }
+  }
+}
+
+.sponsors-section {
+  padding: 20px;
+  h3 {
+    text-align: center;
+  }
+  .sponsors-container {
+    text-align: center;
+    .sponsor-image {
+      display: inline-block;
+      text-align: center;
+    } 
+  }
+}
+
+.media-logo {
+  display: inline-block;
+  width: 14%;
+  padding: 0 4px;
+  @media only screen {
+    width: 40%;
+  }
+  @media only screen and (min-width: 400px){
+    width: 30%;
+  }
+  @media only screen and (min-width: 640px){
+    width: 18%;
+  }
+  @media only screen and (min-width: 1050px){
+    width: 13%;
+  }
+  img {
+    // max-width: 100px;
+  }
+}
+
+// #olark-box-container {
+//   height: 100%;
+//   width: 100%;
+//   z-index: 100;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+
+// olark CSS
+.habla-desktop {
+  font-family: "ff-tisa-web-pro",serif;
+  background: white;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.hbl_pal_title_fg {
   display: none;
+}
+#habla_offline_message_span {
+  font-size: 20px;
+  font-weight: 600;
+}
+#habla_window_div {
+  margin: 0 !important;
+  padding: 16px;
+}
+#habla_name_input, #habla_offline_email_input, #habla_wcsend_input  {
+  padding-left: 8px;
+  width: 100%;
+  border: 1px solid #D0D1D3;
+  height: 30px !important;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#habla_offline_body_input {
+  height: 320px !important;
+  border: 1px solid #D0D1D3;
+  border-radius: 2px;
+  width: 100%;
+  padding-left: 8px;
+}
+#habla_offline_submit_input {
+  background: #6FBBB7;
+  border: none;
+  padding: 0px 26px 4px;
+  border-radius: 4px;
+  font-size: 24px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 600;
+  float: right;
+  top: 10px;
+  margin-top: 16px;
+}
+#habla_expanded_div {
+  div:nth-child(0n+2){
+    // display: none;
+  }
+}
+#habla_conversation_div {
+  border: 1px solid #D0D1D3;
+  padding-left: 6px;
+}
+.hbl_pal_title_fg {
+  display: block;
+  color: #39474E;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  bottom: 4px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.habla_conversation_person2 {
+  color: #39474E;
+  font-style: uppercase;
+  font-weight: 600;
+  // background: #eee;
+}
+
+.habla_conversation_p_item {
+  margin: 0;
+  padding: 8px;
+}
+
+// utility class
+.text-center {
+  text-align: center;
+}
+
+.success-stories-btn {
+  background: #6FBBB7;
+  @media only screen {
+    font-size: 18px;
+  }
+  @media only screen and (min-width: 640px){
+    font-size: 22px;
+  }
+  &:hover {
+    background: #5B9D99;
+  }
+}
+
+.header-dimmer {
+  background: none !important;
 }

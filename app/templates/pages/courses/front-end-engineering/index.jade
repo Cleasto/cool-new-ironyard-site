@@ -1,0 +1,341 @@
+extends /layouts/main
+include /mixins/schema
+
+block meta
+  +meta ({
+    title:"The Iron Yard | Front End Engineering",
+    description:"The Iron Yard's super-intensive JavaScript course is aimed at taking students through everything they need to know to start working as Jr. Front End Developers."
+  })
+
+block content
+  +navigation({
+    title: 'Front End Engineering',
+    color: 'front-end',
+    links: [
+      {title:"FAQs", url:"/academy/front-end-engineering/faq"},
+      {title:"Schedule", url:"/academy/front-end-engineering#class-schedule"},
+      {title: "Tuition", url: "/academy/tuition"}
+    ]
+  })
+
+  .container
+    .row
+      .col-md-12
+        h3.front-end-text: em Learn to build web apps with HTML, CSS & JavaScript
+      .col-md-8
+        p 
+          | Over the course of three months, a practicing veteran (and skilled teacher) will show you the ins-and-outs of Front End Engineering using HTML, CSS, a whole lot of JavaScript and some basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.<br><br>
+          | The best part: we’ll help you get a job offer as a front end developer when you graduate. Don’t know any code? Don’t worry. Our proven teachers and process will take you from zero to hero and mentor you into a professional junior-level programmer.
+      .col-md-4(style="text-align:center")
+        img.photo(src="/images/academy/front-end-engineering/mason-teaching.jpg" style="max-width:500px;")
+
+    .row
+      .callout-box(style="padding-bottom:10px")
+        .row
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/clock.png")
+            p(style="width:252px; margin:20px auto") Get prototypes off the ground quickly
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/tetris.png")
+            p(style="width:252px; margin:20px auto") Build fast, production-quality apps
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/front-end-interface.png")
+            p(style="width:252px; margin:20px auto") Create robust, beautiful interfaces
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/lambda.png")
+            p(style="width:252px; margin:20px auto") Go deep into JavaScript functions and objects
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/computers.png")
+            p(style="width:252px; margin:20px auto") Optimize designs for desktop and mobile
+          .col-md-4.col-sm-6.col-xs-12
+            img(src="/images/academy/front-end-engineering/brain-guy.png")
+            p(style="width:252px; margin:20px auto") Most importantly, learn how to learn
+
+    .three-col-cta.row
+      .col-lg-2.col-sm-2
+        .image-box
+          img(src="/images/academy/mobile-engineering/nebula.png")
+      .col-lg-7.col-sm-6
+        h3 Tuition, Financing and Scholarships
+        p Our missions is to help you launch a career in programming. We've partnered with financing companies and developed scholarships to make programming, engineering and computer science available to as many people as possible.
+      .col-lg-3.col-sm-4.cta-box
+        a(href="/academy/tuition").btn Learn More
+
+    .row(style="background-color:#e3e7e9")
+      .col-md-12
+        h2.section-headline(style="margin-bottom: 10px;") Questions? Get in touch.
+      .col-md-6(style="padding:0px 20px 20px 30px")
+        p(style="margin-top:0") 
+          | <strong>We'd love to answer your questions</strong>.<br>We love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or talk to a human.
+        ul.no-style-type 
+          li • Shoot us <a href="mailto:academy@theironyard.com?subject=I want to learn more about the Front End Engineering course">an email</a> 
+          li • Jump into our <a href="https://www.hipchat.com/gVQZ3qwbv">Academy chat room</a>
+      .col-md-6(style="padding:0px 00px 20px 20px")    
+        .col-md-6
+          ul.no-style-type
+            li • Atlanta:<br> <a href="tel:+7707518046">(770) 751-8046</a> 
+            li • Charleston:<br> <a href="tel:+8435012775">(843) 501-2775</a>
+            li • Durham:<br> <a href="tel:+9195616055">(919) 561-6055</a>
+            li • Greenville:<br> <a href="tel:+8649520099">(864) 952-0099</a>
+        .col-md-6
+          ul.no-style-type 
+            li • Houston:<br> <a href="tel:+7134253797">(713) 425-3797</a>
+            li • Orlando:<br> <a href="tel:+4073586683">(407) 358-6683</a>  
+            li • Tampa Bay:<br> <a href="tel:+8137752275">(813) 775-2275</a> 
+            li • Washington, DC:<br> <a href="tel:+5717339744">(571) 733-9744</a>  
+
+  .horizontal-section.gray-light-bg
+    .container
+      .row
+        .col-md-12#class-schedule
+          h3(style="text-align:center").front-end-text: em Class Schedule
+          p(style="max-width:960px; margin:0 auto; color: #A59785;") Our intensive Front End courses run for 12 weeks. The schedule is set up like a typical five-day work week, with lecture in the morning and lab time in the afternoon. Friday is an open lab day where students can work with the instructor to catch up on projects or get a head start on the weekend’s homework.
+    .container
+      +schemaTable([
+
+        {
+          date: "January 26th",
+          isoDate: "2015-01-26",
+          location: "Tampa Bay, FL",
+          analytics: "Front End Tampa",
+          instructor: "JD Isaacks",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "January 26th",
+          isoDate: "2015-01-26",
+          location: "Washington, D.C.",
+          analytics: "Front End Washington DC",
+          instructor: "Kyle Hill",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date:"May 4th",
+          isoDate: "2015-05-04",
+          location: "Atlanta, GA",
+          analytics: "Front End Atlanta",
+          instructor: "Tim Whitacre",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date:"May 4th",
+          isoDate: "2015-05-04",
+          location: "Austin, TX",
+          analytics: "Front End Austin",
+          instructor: "Aaron Larner",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date:"May 4th",
+          isoDate: "2015-05-04",
+          location: "Charleston, SC",
+          analytics: "Front End Charleston",
+          instructor: "Calvin Webster",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Greenville, SC",
+          analytics: "Front End Greenville",
+          instructor: "Jacob Smith",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Houston, TX",
+          analytics: "Front End Houston",
+          instructor: "Matt Keas",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Indianapolis, IN",
+          analytics: "Front End Indianapolis",
+          instructor: "Coming Soon",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Las Vegas, NV",
+          analytics: "Front End Vegas",
+          instructor: "Coming Soon",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Little Rock, AR",
+          analytics: "Front End Little Rock",
+          instructor: "Coming Soon",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Nashville, TN",
+          analytics: "Front End Nashville",
+          instructor: "Coming Soon",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date: "May 4th",
+          isoDate: "2015-05-04",
+          location: "Orlando, FL",
+          analytics: "Front End Orlando",
+          instructor: "David Rogers",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        },
+        {
+          date:"May 4th",
+          isoDate: "2015-05-04",
+          location: "Raleigh-Durham, NC",
+          analytics: "Front End Raleigh",
+          instructor: "Chris Davies",
+          subject: "front-end-engineering",
+          applicationLink: "https://theironyard.typeform.com/to/EcL2Zc"
+        }
+      ])
+
+  .container
+    .row(style="text-align:center")
+      img(src="/images/academy/schedule.png" style="max-width:70%")
+
+    .row.divide-container
+      .col-md-6.col-sm-6.col-xs-12.divider-left
+        h3: em Lecture Time
+        p Our lessons are fast-paced, interactive and fun. All of our instructors use a hands-on, live-coding lecture style so that students immediately start developing muscle memory for each new skill. We cover a new subject almost every day, building on previous material. The goal is for you to get your hands dirty absorbing a whole lot of information, then apply it on a real project during lab.
+      .col-md-6.col-sm-6.col-xs-12
+        h3: em Lab Time
+        p You’ll have homework every single day…and it ain’t easy. All assignments are cumulative and ultimately lead up to a final project (unique to each student) that is the crown of your portfolio. If that doesn’t keep you busy enough, we start sending you <em>real, paid freelance work</em>. You’ll have access to the space 24 hours a day, just in case you need to burn some midnight oil.
+    .row(style="margin: 0 auto; max-width:720px")
+      .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+        p(style="font-size:15px")
+          | <strong>Being a programmer is more than just writing code.</strong><br> 
+          | We put serious focus on the qualitative aspects of work, from team projects to mock job interviews. We also partner with guest speakers who cover a variety of topics like design and freelancing, and we take class field trips to real businesses like MailChimp and BMW. Employers have told us our grads are some of the most well-rounded, teachable hires they’ve ever made.
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row
+        h3(style="text-align:center"): em Curriculum Overview
+        p
+          | Just knowing punctuation doesn’t make you a great writer. In the same sense, just knowing JavaScript doesn’t make you great at building apps; that’s the easy part of front end development. The emphasis in all of our classes is on helping you <em>think like an engineer</em>. Programming is a lifelong study, and our goal is for you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+          | That being said, you’ll leave our class with a toolbox of skills that will set you far apart from other junior-level programmers. You’ll cover an incredible amount of ground in 3 months, from foundational concepts to complex frameworks. Some topics like MVC tools will take weeks to cover, while others like JavaScript templates will be taught in just a few lectures. Each instructor and class stays agile so that the curriculum can adapt as tools and languages evolve, but we ensure that each student graduates with the same core skillset.<br><br>
+          | No matter your learning pace, we keep our class sizes small so that we can spend individual time with each student and make sure no one falls behind.
+
+      .row.divide-container
+        .col-md-6.col-sm-6.col-xs-12.divider-left
+          p
+            | <strong>Git and GitHub</strong><br>
+            | Master Git for personal and team workflows. All of your code will live on GitHub from day one.<br><br>
+            | <strong>HTML and CSS</strong><br>
+            | We’ll go from HTML foundations to HTML5 APIs. In CSS, we cover layouts, typography and CSS3 animations. We’ll also utilize preprocessors like SASS/Compass, Jade and Stylus.<br><br>
+            | <strong>Building Responsive Sites</strong><br>
+            | We teach media queries and responsive design early and require almost every layout to be fully functional across all screen sizes.<br><br>
+            | <strong>Design fundamentals</strong><br>
+            | Every student learns strong fundamentals in layout, typography, user interface and user experience.<br><br>
+            | <strong>Freelance fundamentals</strong><br>
+            | Seasoned pros show you how to find good work, write contracts, set expectations, price well and communicate like a pro.<br><br>
+            | <strong>JavaScript</strong><br>
+            | We dive deep into JS, covering types, functions, objects, scope, closures, constructors, prototypes and much more.<br><br>
+            | <strong>jQuery</strong><br>
+            | You’ll learn everything from DOM manipulation to non-DOM methods ($.extend, $.proxy, etc) to Chaining, Callbacks and Promises.<br><br>
+            | <strong>Underscore.js or Lo-Dash</strong><br>
+            | Our grads are well versed in the functional programming paradigm these libraries unlock.
+        .col-md-6.col-sm-6.col-xs-12
+          p
+            | <strong>Client-side JavaScript Frameworks</strong><br>
+            | There are a variety of MVC-like tools out there and we will explore how they fit in your appliction development. <br><br>
+            | <strong>JavaScript Testing</strong><br>
+            | Our students unit test every JS assignment with tools like Jasmine, Mocha and QUnit, and use continuous integration tools like Wercker and TravisCI.<br><br>
+            | <strong>Languages that compile to JavaScript</strong><br>
+            | We cover CoffeeScript and a few of the other popular languages.<br><br>
+            | <strong>JavaScript Templating</strong><br>
+            | Our students learn the importance of using JS templates for serious browser applications.<br><br>
+            | <strong>Node.js Basics</strong><br>
+            | We utilize Node.js and Express to help our students deploy their applications to Heroku and other services.<br><br>
+            | <strong>Backends as a Service</strong><br>
+            | With tools like Parse and Firebase, our front end students can do a massive amount of backend/database work on their web apps.<br><br>
+            | <strong>Front End Tools</strong><br>
+            | Yeoman, Gulp and Bower are just a few of the tools you'll likely use to speed up development. <br><br>
+            | <strong>Getting Hired</strong><br>
+            | We do mock interviews, resume writing and portfolio building. Grads have weekly meetings with our team to help find exciting jobs and projects.
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Excited? You’ve come to the right place. Keep reading!
+
+  .container
+    .row
+      .col-md-7
+        h3: em Is this for you?
+        p 
+          | Before we get into specifics, we need to let you know that this class is going to be very challenging. The material gets really hard, really fast. All of the work is very do-able, but if you think you’re going to develop professional level skills in a cushy 40 hour week, this isn’t the place for you. (The average student puts in about 60 hours per week, minimum). We don’t require you to know code to start with, but you need to have tried it and enjoyed it. If that’s you, go ahead and <a href="#class-schedule">apply now</a>. If not, <a href="http://www.codecademy.com/tracks/javascript">try a few exercises to see.</a><br><br>
+          | We’re family people, so our goal is for you to work as hard as possible in class so you can find joy in a great job, freelance work, or starting your own company when you’re done. We’re proud of all of the different types of people who have come through The Iron Yard, and we don’t have stereotypes of what a programmer is like. We’ve taught students from 18 to 50 years old, from different countries and all sorts of backgrounds.
+        h3: em How Much Does It Cost?
+        p You can read about tuition, financing and scholarships on our <a href="/academy/tuition">Tuition page</a>. We offer great financing options, have significant discounts for enlisted military personnel/veterans, and sponsor a Women in Tech Scholarship.
+        h3: em Student Stories
+        ul.no-style-type.recent      
+      .col-md-5
+        h4(style="margin-top:28px;"): em Here are a few things we look for in students:
+        p(style="color:")
+          | <strong>Hard Worker</strong><br>
+          | Like we said above, this won’t be a walk in the park. Prepare for a rigorous course.<br><br>
+          | <strong>Self Motivated</strong><br>
+          | If you need to be micro-managed, this isn’t the place for you.<br><br>
+          | <strong>Works Well With Others</strong><br>
+          | You’ll be assigned to groups for projects, and each person’s role will be crucial.<br><br>
+          | <strong>Interested in Learning</strong><br>
+          | Even if you know basics (or more), you might have to unlearn some things. We’ll start from the ground up as a team, and there won’t be room for egos.<br><br>
+          | <strong>Graceful Problem Solver</strong><br>
+          | We’ll work on some hard, frustrating stuff. Patience and endurance are necessities.<br><br>
+          | <strong>Ready to Have Fun</strong><br>
+          | We work hard, play hard, and laugh every single day. We do the best work we possibly can, but we make sure not to take ourselves too seriously.
+
+  .horizontal-section.gray-lighter-bg
+    .container
+      .row(style="margin-bottom:20px; margin-top:20px")
+        .col-md-5
+          a(href="https://vimeo.com/69189571"): img(src="/images/academy/front-end-engineering/marco-quote.jpg" style="max-width:70%")
+        .col-md-7
+          p.front-end-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “I was amazed at the amount of skill these students had acquired after a month-and-a-half of teaching. These are skills that took me, being self taught, years to learn. It’s a great way to go from not really knowing anything to being the kind of candidate that I would be looking to hire at a company.”
+          p(style="margin-left:10px"): em Marco Suarez,<br> Art Director at MailChimp
+      .row(style="margin-bottom:20px")
+        .col-md-5
+          a(href="https://vimeo.com/64245253"): img(src="/images/academy/front-end-engineering/jen-quote.jpg" style="max-width:70%")
+        .col-md-7
+          p.front-end-text(style="margin-left:10px; margin-top:0; font-size:22px"): em “Our latest programmer is an Iron Yard graduate and we’re impressed. She comes to us in learning mode from the Academy and is picking up the languages that we need her to use quickly.”
+          p(style="margin-left:10px"): em William Haynes, ,<br> CEO of Sabai Technology
+      .row(style="margin: 0 auto; max-width:720px")
+        .col-md-12(style="text-align:center; padding: 18px 25px; border: 3px solid #E3E7E9;")
+          p(style="font-size:15px") Want to meet more of our grads? <a href="mailto:academy@theironyard.com?subject=I'd like to speak with one of your graduates">Send us an email</a> to get connected.
+
+  .horizontal-section.front-end-bg(style="margin-bottom:-40px; margin-top:-40px")
+    .container(style="text-align:center")
+      .row
+        .col-md-12
+          h3 <em>Our Sponsors</em>
+          p(style="width:70%; margin: 0 auto; margin-bottom:20px") Our sponsors support our students by offering free accounts, assets, and more. We couldn’t do some of the amazing things we do in class without their generosity. Thank you, friends!
+          a(href="http://github.com"): img(src="/images/academy/github.png" style="width:30%")
+          a(href="http://invisionapp.com"): img(src="/images/academy/invision.png" style="width:30%")
+          br
+          a(href="http://macaw.co"): img(src="/images/academy/macaw.png" style="width:30%")
+          a(href="http://wercker.com"): img(src="/images/academy/wercker.png" style="width:30%")
+          a(href="http://symbolset.com"): img(src="/images/academy/symbolset.png" style="width:30%")
+
+block scripts
+  +storiesFeed('stories')

@@ -12,134 +12,343 @@ block content
   +navigation({
     color: 'gray-dark',
     title: '',
-    image: '/images/home/home-hero-new.jpg',
     triangle: false,
     gradient: false,
-    home: true
+    home: true,
   })
-  .container
-    .row
-      .col-md-12.col-xs-12
-        h1 Welcome to The Iron Yard
-        p We are committed to training the highest-quality developers and startups in the world, both in skill and in character. Our mission is to find people who want to pursue the craft and life-long adventure of technology, teach them the tools of the trade, and then release them into the world with the drive and capability to make a difference. We believe that passionate, talented people who love what they do will create great families, jobs, companies and solutions to the world’s problems. 
-        hr
-      .col-md-12.col-xs-12
-        .col-sm-2.col-xs-6(style="text-align:center")  
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/the-atlantic.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/fast-company.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-republic.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/nbc.png" style="max-width:140px; max-height:70px")
-        .col-sm-2.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/southern-alpha.png" style="max-width:140px; max-height:70px")
-      .col-md-12.col-xs-12
-        .col-sm-3.col-xs-6(style="text-align:center")  
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/cnn.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/tech-crunch.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/abc.png" style="max-width:140px; max-height:70px")
-        .col-sm-3.col-xs-6(style="text-align:center") 
-          a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/venture-beat.png" style="max-width:140px; max-height:70px")
-  +photoBar({
-    title: 'Intensive Code School',
-    photo: '/images/home/home-academy.jpg'
-  })
-
-  .container
-    .row
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 Learn to code. <br>Life's too short for the wrong career. 
-        p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
-      .col-md-4.col-xs-12(style="padding-top: 45px;") 
-        a(href="/academy").btn Learn More
-        p
-          | <em>We offer courses in cities across the country. Find a school in a city near you.</em>
-      .col-md-12.col-xs-12
-        hr
-        .row(style="margin-top: 30px;")
-          .col-md-6(style="margin-bottom: 30px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/web-design").green-text <img src="/images/academy/web-design-logo.png" style="height:24px"> <strong>Web Design</strong>
-            p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more. At the end of class you'll have the skills to understand and add value in almost any digital design role.
-            a(href="/academy/web-design").btn.web-design-btn Learn More
-          .col-md-6(style="margin-bottom: 30px;") 
-            h4(style="padding-bottom: 0px;"): a(href="/academy/mobile-engineering").green-text <img src="/images/academy/mobile-engineering-logo.png" style="height:24px"> <strong>Mobile Engineering</strong>
-            p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
-            a(href="/academy/mobile-engineering").btn.mobile-btn Learn More
-
-        .row(style="margin-top: 30px;")                
-          .col-md-6(style="margin-bottom: 50px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/academy/front-end-engineering-logo.png" style="height:24px"> <strong>Front End Engineering</strong>
-            p Learn to build in-browser apps in the Front End Engineering program using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
-            a(href="/academy/front-end-engineering").btn.front-end-btn Learn More
-          .col-md-6(style="margin-bottom: 50px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/rails-engineering").green-text <img src="/images/academy/rails-engineering-logo.png" style="height:24px"> <strong>Rails Engineering</strong>
-            p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.
-            a(href="/academy/rails-engineering").btn.rails-btn Learn More
-
-        .row(style="margin-top: 30px;")                
-          .col-md-6(style="margin-bottom: 30px;")
-            h4(style="padding-bottom: 0px;"): a(href="/academy/python-engineering").green-text <img src="/images/academy/python-engineering-logo.png" style="height:24px"> <strong>Python Engineering</strong>
-            p Learn to analyze data and publish insights using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
-            a(href="/academy/python-engineering").btn.python-btn Learn More
-
-
-  +photoBar({
-    title: 'Startup Accelerator',
-    photo: '/images/home/home-accelerator.jpg'
-  })
-
-  .container 
-    .row(style='margin-bottom: 60px;')
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 We’re interested in building strong, sustainable businesses that add real value to customers' lives.
-        p(style="margin-bottom: 0px;") Speaking the same language? We’d love for you to join us. Whether your goal is a Series A round, building a team and bootstrapping, or utilizing Kickstarter, we have a place for you. We run two programs a year, a digital health program and an education tech program.
-      .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/accelerator").btn Learn More
-        p
-          | <em>We run mentorship-driven programs focused on Digital Health and Education.</em>
-
-  +photoBar({
-    title: 'Kids Education',
-    photo: '/images/home/home-kids.jpg'
-  })
-
-  .container
-    .row(style='margin-bottom: 60px;')
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e"): h3 We believe in investing in the local tech economy for the long-run
-        p(style="margin-bottom: 0px;") ...and that means impacting the next generation. Students in our intensive courses are required to volunteer, teach and run our Kids programs as a part of their involvement in the Academy. (Not only does this develop a giving mindset, but it helps them communicate things they’ve learned—an essential skill as they grow into management positions in their careers.)
-      .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/academy#kids").btn Learn More
-        p
-          | <em>Our kids classes range from Scratch and Minecraft to building websites. Find classes in a city near you.</em>  
-  
-  +photoBar({
-    title: 'Events',
-    photo: '/images/home/home-events.jpg'
-  })
-
-  .container
-    .row(style='margin-bottom: 60px;')
-      .col-md-8.col-xs-12
-        a(style="text-decoration:none; color:#39474e" href="/events"): h3 We've partnered with Unmatched Style to offer some of the finest design and development events in the country. 
-        p(style="margin-bottom: 0px;") The world doesn't need more conferences, it needs <em>better</em> conferences. We produce high quality events that are worth every dollar you spend on them. Join us for nationally-renowned gatherings like <a href="/events/grok">Grok</a>, <a href="http://unmatchedstyle.com/events">Converge</a> and the brand new <a href="http://outlinesconf.education">Outlines Education conference</a>. 
-      .col-md-4.col-xs-12(style="padding-top: 45px;")  
-        a(href="/events").btn Learn More
-        p
-          | <em>From South Carolina to Las Vegas, we bring top brass and young talent together to learn, converse and have a whole lotta fun.</em>
-   
-
-  .horizontal-section.gray-light-bg.last
+  .container-fluid.hero-banner-home
+    .close-video
+      img(src='/images/close-video.png')
+    .vimeo(class="inactive")
+    .container
+      .col-xs-12
+        h1 Learn to code.
+        h3 Life's too short for the wrong career.
+        a.btn.watch-video 
+          img(src="/images/home/play-icon.png")
+          span Watch the Video
+  .container-fluid.gray-light-bg
     .container
       .row
-        .col-md-12
-          .callout-box(style="margin-bottom:0; padding:30px 0; width:100%")
-            h2 Who We Are
-            hr
-            p(style="margin-bottom:0;") The Iron Yard exists to create exceptional value for people and their ideas through code education, startup accelerators and coworking spaces. Through our broad, deep and growing network of teachers, programmers, designers, entrepreneurs, investors, employers and coworking spaces we have developed a thriving community where serendipity happens en-masse.
+        .col-xs-12.no-padding(style="text-align: center;")
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/atlantic-logo.png") 
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/fastco-logo.png")
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/cnn-logo.png") 
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/tc-logo.png")
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/abc-logo.png")
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/nbc-logo.png")
+          .media-logo
+            a(href="http://theironyard.com/press"): img.photo(src="/images/home/media/wsj-logo.png") 
+          //- a(href="http://news.theironyard.com"): img.photo(src="/images/home/news/wall-street-journal.png" style="max-width:120px; max-height:90px;") 
 
+  .container
+    .row.stories-section
+      .col-xs-12.col-sm-6
+        .big-quote 
+          h1 The Iron Yard is the beginning of a lifelong journey.
+          p -Lance Putnam, Greenville, SC Front End Engineering Graduate
+      .col-xs-12.col-sm-6
+        p. We exist to create exceptional growth and mentorship for our students. Join people from all walks of life pursuing their dream of launching a career in technology.
+        a.btn.read-stories(href="/stories") Read Our Student Stories
+
+  .container-fluid.gray-light-bg.student-section
+    .container
+      .row
+        .col-xs-12.col-sm-6.col-lg-3
+          a(href="/stories/jeremy"): img(src="/images/home/student-jeremy.png")
+          .student-copy
+            h3.mobile-name Jeremy Butler
+            p Mobile Engineering Student
+            p Jeremy Butler toured the world playing music, but returned to his first love of programming through The Iron Yard. He is now developing applications for State Farm.
+            a.mobile-link(href="/stories/jeremy") Read Jeremy's story
+        .col-xs-12.col-sm-6.col-lg-3
+          a(href="/stories/matt"): img(src="/images/home/student-bertino.png")
+          .student-copy
+            h3.fee-name Matt Bertino
+            p Front End Engineering Student
+            p Matt Bertino left a great job in big finance to pursue his dream of building a company. After graduating from The Iron Yard he joined our Digital Health accelerator program.
+            a.fee-link(href="/stories/matt") Read Matt's story
+        .col-xs-12.col-sm-6.col-lg-3
+          a(href="/stories/michelle"): img(src="/images/home/student-michelle.png")
+          .student-copy
+            h3.design-name Michelle Child
+            p Web Design Graduate
+            p After working as an English teacher abroad, Michelle became enthralled with the web design industry. She joined The Iron Yard and found a job within weeks of graduation.
+            a.design-link(href="/stories/michelle") Read Michelle's story
+        .col-xs-12.col-sm-6.col-lg-3  
+          a(href="/stories/astrid"): img(src="/images/home/student-astrid.png")
+          .student-copy
+            h3.rails-name Astrid Countee
+            p Rails Engineering Graduate
+            p Astrid Countee was a data analyst working in oil and gas when she decided to pursue her passion for building software. She now enjoys a succssful freelance career.
+            a.rails-link(href="/stories/astrid") Read Astrid's story
+
+
+  .container.code-school-section 
+    .row(style='margin-bottom: 120px;')
+      .col-md-7.col-xs-12
+        h2 Intensive Code School
+        p(style="margin-bottom: 0px;") The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.
+        a.btn.discover-courses(href="/courses") Discover Our Courses
+      .col-md-5.col-xs-12(style="padding-top: 45px;") 
+        img(src="/images/home/students-home.jpg")
+        .caption Our students come from all walks of life. Join The Iron Yard family! 
+
+  .container-fluid.gray-light-bg.courses
+    .container.courses-section
+      .row
+        .course-box.fee-eng
+          img(src="/images/home/fee-icon.png")
+          .fee-header front end engineering
+          p Learn to build in-browser apps in the Front End Engineering program using HTML, CSS and JavaScript and basic server-side tech. At the end of the class you’ll have the skills to create beautiful, fully functional websites and web applications.
+          a.btn(href="/courses/front-end-engineering") find out more
+        .course-box.web-design
+          img(src="/images/home/wd-icon.png")
+          .design-header web design
+          p Learn Web Design from the ground up, including ideation, UI and UX design, front-end code and a whole lot more.
+          a.btn(href="/courses/web-design") find out more
+        .course-box.rails-eng
+          img(src="/images/home/rails-icon.png")
+          .rails-header rails engineering
+          p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. You’ll know how to build fast, production-quality full-stack apps.
+          a.btn(href="/courses/rails-engineering") find out more
+        .course-box.mobile-eng
+          img(src="/images/home/mobile-icon.png")
+          .mobile-header Mobile Engineering
+          p Learn iOS app development using Xcode 5 and a whole lot of Objective-C. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
+          a.btn(href="/courses/mobile-engineering") find out more
+        .course-box.python-eng
+          img(src="/images/home/python-icon.png")
+          .python-header Python Engineering
+          p Learn to analyze data and publish insights using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry.
+          a.btn(href="/courses/python-engineering") find out more
+        .course-box
+          h2 now accepting applications
+          a.btn.apply-now(href="https://theironyard.typeform.com/to/EcL2Zc") apply now
+          br
+          a.about-tuition(href="/courses/tuition") Learn about tuition
+
+  .container
+    .row
+      .contact-container
+        .questions
+          .top-content
+            h3 Questions? Get in touch.
+            p We'd love to answer your questions. We also love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or call and talk to a human.
+          .bottom-content
+            a(href="mailto:academy@theironyard.com?subject=I have questions about The Iron Yard").email
+              .content
+                img(src="/images/home/email.png")
+                h3 Email Us
+            .chat
+              .content
+                img(src="/images/home/chat-icon.png")
+                h3 Chat with Us
+        .phone-numbers
+          .chat-container(class="inactive")
+            #olark-box-container
+          ul
+            li 
+              p Atlanta:
+              a(href="tel:+7707518046") (770) 751-8046
+            li 
+              p Austin:
+              a(href="tel:+5125962939") (512) 596-2939
+            li 
+              p Charleston:
+              a(href="tel:+8435012775") (843) 501-2775
+            li 
+              p Columbia:
+              a(href="tel:+8038739299") (803) 873-9299
+            li 
+              p Durham:
+              a(href="tel:+9195616055") (919) 561-6055
+            li 
+              p Greenville:
+              a(href="tel:+8649520099") (864) 952-0099
+            li 
+              p Houston:
+              a(href="tel:+7134253797") (713) 425-3797
+          ul
+            li 
+              p Indianapolis:
+              a(href="tel:+3172383988") (317) 238-3988
+            li 
+              p Las Vegas
+              a(href="tel:+7025606797") (702) 560-6797
+            li 
+              p Little Rock
+              a(href="tel:+5012607998") (501) 260-7998
+            li 
+              p Nashville:
+              a(href="tel:+6159530089") (615) 953-0089
+            li 
+              p Orlando:
+              a(href="tel:+4073586683") (407) 358-6683
+            li 
+              p Tampa Bay:
+              a(href="tel:+8137752275") (813) 775-2275
+            li 
+              p Washington D.C.:
+              a(href="tel:+5717339744") (571) 733-9744
+
+  .container-fluid.employers-section
+    .container
+      .row
+        h2 Employers
+        p Our proven career support program and relationships with companies mean our graduates find amazing work. Whether you’re looking to join a startup, work at an agency, or get your foot in the door of a large organziation, our team will support you every step of the way. 
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/ibm-design-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/microsoft-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/github-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/amazon-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/coke-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/att-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/active-network-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/notre-dame-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/ally-bank-logo.png")
+      .row 
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/benefit-focus-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/disruption-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/sparc-logo.png")
+      .row
+        .col-xs-12.col-md-4        
+          .employer-icon
+            img(src="/images/home/employers/boomtown-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/validic-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/redhat-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/emcien-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/path-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/bi-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/bronto-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/fuzzco-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/prismatic-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/spoonflower-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/cloudspace-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/chaione-logo.png")
+      .row
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/poetic-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/cognitect-logo.png")
+        .col-xs-12.col-md-4
+          .employer-icon
+            img(src="/images/home/employers/sparc-logo.png")
+      .row.text-center
+        .col-xs-12
+          .employer-icon
+            img(src="/images/home/employers/validic-logo.png")
+      .row.text-center
+        .col-xs-12   
+          a(href="/stories"): .btn.success-stories-btn Read Our Student Success Stories
+
+  .container.sponsors-section
+    .row
+      .col-xs-12
+        h3 Sponsors
+    .row
+      .col-xs-12
+        .sponsors-container
+          .sponsor-image
+              img(src="/images/home/sponsors/mailchimp.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/facebook.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/twitter.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/squarespace.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/invision.png")
+        .sponsors-container
+          .sponsor-image
+            img(src="/images/home/sponsors/typekit.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/softlayer.png")
+          .sponsor-image
+            img(src="/images/home/sponsors/behance.png")
+
+
+block scripts
+   script(data-cfasync='false', type='text/javascript').
+       /*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+       f[z]=function(){
+       (a.s=a.s||[]).push(arguments)};var a=f[z]._={
+       },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+       f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+       0:+new Date};a.P=function(u){
+       a.p[u]=new Date-a.p[0]};function s(){
+       a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+       hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+       return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+       b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+       b.contentWindow[g].open()}catch(w){
+       c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+       var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+       b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+       loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+       /* custom configuration goes here (www.olark.com/documentation) */
+       olark.configure('box.inline', true);
+       olark.identify('1869-542-10-3368');/*]]>*/
+     noscript
+       a(href='https://www.olark.com/site/1869-542-10-3368/contact', title='Contact us', target='_blank') Questions? Feedback?
+       |  powered by 
+       a(href='http://www.olark.com?welcome', title='Olark live chat software') Olark live chat software

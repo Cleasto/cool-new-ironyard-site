@@ -45,3 +45,50 @@ function storiesFeed(url, $el) {
        }
    });
 }
+
+function playVideo(url){
+  $('.watch-video').click(function(){
+    if ($('.vimeo').hasClass('inactive')){
+      $('.vimeo').removeClass('inactive');
+      $('.vimeo').addClass('active');
+      $('.close-video').removeClass('inactive');
+      $('.close-video').addClass('active');
+      $('.vimeo').html('<iframe src="//player.vimeo.com/video/116286145?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>').addClass('active');
+    }
+    $('.close-video').click(function(){
+      if ($('.vimeo').hasClass('active')){
+        $('.vimeo').addClass('inactive');
+        $('.vimeo').html('');
+        $('.close-video').addClass('inactive');
+      }
+    })
+  })
+}
+
+function chatWindow(){
+  $('.chat').click(function(){
+    if ($('.chat-container').hasClass('inactive')){
+      $('.chat-container').removeClass('inactive');
+      $('.chat-container').addClass('active');
+      // $('#habla_oplink_a').html('<span>x</span>')
+    } else {
+      if ($('.chat-container').hasClass('active')){
+        $('.chat-container').removeClass('active');
+        $('.chat-container').addClass('inactive');
+      }
+      
+    }
+  })
+}
+
+function chatWindowColor(){
+  if ($('.habla_conversation_p_item:nth-child(1)').hasClass('habla_conversation_person2')){
+    console.log('person 2');
+  }
+}
+
+$(document).ready(function(){
+  playVideo();
+  chatWindow();
+  chatWindowColor();
+})
