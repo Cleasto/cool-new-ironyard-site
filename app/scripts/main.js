@@ -70,11 +70,14 @@ function chatWindow(){
     if ($('.chat-container').hasClass('inactive')){
       $('.chat-container').removeClass('inactive');
       $('.chat-container').addClass('active');
+      $('.chat-container').fadeIn(600);
+
       // $('#habla_oplink_a').html('<span>x</span>')
     } else {
       if ($('.chat-container').hasClass('active')){
         $('.chat-container').removeClass('active');
         $('.chat-container').addClass('inactive');
+        $('.chat-container').fadeOut(600);
       }
       
     }

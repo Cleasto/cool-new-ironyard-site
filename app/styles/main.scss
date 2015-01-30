@@ -321,6 +321,7 @@ $turquoise-new: #6fbbb7;
   }
   img {
     width: 100%;
+    max-width: 550px;
   }
   .caption {
     text-align: center;
@@ -531,15 +532,14 @@ $turquoise-new: #6fbbb7;
       right: 0;
       bottom: 0;
       left: 0;
-      opacity: 0;
-      transition: all .6s ease;
+      display: none;
+      // transition: all .6s ease;
       &.active {
-        opacity: 1;
-        transition: all .6s ease;
+        // visibility: visible;
       }
       &.inactive {
-        opacity: 0;
-        transition: all .6s ease;
+        // visibility: hidden;
+        // transition: all .6s ease;
       }
     }
     ul {
@@ -724,7 +724,11 @@ $turquoise-new: #6fbbb7;
 
 .habla_conversation_p_item {
   margin: 0;
-  padding: 8px;
+  padding: 4px 8px;
+}
+
+.olrk_avatar{
+  margin-right: 8px;
 }
 
 // utility class
