@@ -61,28 +61,28 @@ block content
     .container
       .row
         .col-xs-12.col-sm-6.col-lg-3
-          img(src="/images/home/student-jeremy.png")
+          a(href="/stories/jeremy"): img(src="/images/home/student-jeremy.png")
           .student-copy
             h3.mobile-name Jeremy Butler
             p Mobile Engineering Student
             p Jeremy Butler toured the world playing music, but returned to his first love of programming through The Iron Yard. He is now developing applications for State Farm.
             a.mobile-link(href="/stories/jeremy") Read Jeremy's story
         .col-xs-12.col-sm-6.col-lg-3
-          img(src="/images/home/student-bertino.png")
+          a(href="/stories/matt"): img(src="/images/home/student-bertino.png")
           .student-copy
             h3.fee-name Matt Bertino
             p Front End Engineering Student
             p Matt Bertino left a great job in big finance to pursue his dream of building a company. After graduating from The Iron Yard he joined our Digital Health accelerator program.
             a.fee-link(href="/stories/matt") Read Matt's story
         .col-xs-12.col-sm-6.col-lg-3
-          img(src="/images/home/student-michelle.png")
+          a(href="/stories/michelle"): img(src="/images/home/student-michelle.png")
           .student-copy
             h3.design-name Michelle Child
             p Web Design Graduate
             p After working as an English teacher abroad, Michelle became enthralled with the web design industry. She joined The Iron Yard and found a job within weeks of graduation.
             a.design-link(href="/stories/michelle") Read Michelle's story
         .col-xs-12.col-sm-6.col-lg-3  
-          img(src="/images/home/student-astrid.png")
+          a(href="/stories/astrid"): img(src="/images/home/student-astrid.png")
           .student-copy
             h3.rails-name Astrid Countee
             p Rails Engineering Graduate
@@ -100,7 +100,7 @@ block content
         img(src="/images/home/students-home.jpg")
         .caption Our students come from all walks of life. Join The Iron Yard family! 
 
-  .container-fluid.gray-light-bg(style="padding: 60px 0;")
+  .container-fluid.gray-light-bg.courses
     .container.courses-section
       .row
         .course-box.fee-eng
@@ -142,7 +142,7 @@ block content
             h3 Questions? Get in touch.
             p We'd love to answer your questions. We also love explaining what makes us different and our friendly team members want to help you make the best choice possible for your career. Feel free to reach out digitally or call and talk to a human.
           .bottom-content
-            .email
+            a(href="mailto:academy@theironyard.com?subject=I have questions about The Iron Yard").email
               .content
                 img(src="/images/home/email.png")
                 h3 Email Us

@@ -41,9 +41,14 @@
   @media only screen {
     width: 100% !important;
   }
-  @media only screen and (min-width: 1000px){
-    width: 45% !important;
+  @media only screen and (min-width: 990px){
+    width: 50% !important;
     margin-top: 28px !important;
+  }
+  ul {
+    @media only screen {
+      display: inline-block;
+    }
   }
 }
 
@@ -55,14 +60,15 @@
       margin-top: 14px;
     }
   }
-  @media only screen and (min-width: 1000px){
-    width: 55% !important;
+  @media only screen and (min-width: 990px){
+    width: 50% !important;
     position: relative;
     top: 8px !important;
     a {
       font-size: 14px !important;
     }
   }
+
 }
 
 $turquoise-new: #6fbbb7;
@@ -122,7 +128,7 @@ $turquoise-new: #6fbbb7;
 
 // quick fixes for temporary homepage
 .hero-banner-home {
-  background: url('/images/home/home-hero-new.jpg') no-repeat center center;
+  background: url('/images/home/home-hero.jpg') no-repeat center center;
   background-size: cover;
   margin-top: -21px;
   position: relative;
@@ -303,6 +309,15 @@ $turquoise-new: #6fbbb7;
   .caption {
     text-align: center;
     font-size: 12px;
+  }
+}
+
+.courses {
+  @media only screen {
+    padding: 0;
+  }
+  @media only screen and (min-width: 760px){
+    padding: 60px 0;
   }
 }
 
@@ -578,6 +593,18 @@ $turquoise-new: #6fbbb7;
   display: inline-block;
   width: 14%;
   padding: 0 4px;
+  @media only screen {
+    width: 40%;
+  }
+  @media only screen and (min-width: 400px){
+    width: 30%;
+  }
+  @media only screen and (min-width: 640px){
+    width: 18%;
+  }
+  @media only screen and (min-width: 1050px){
+    width: 13%;
+  }
   img {
     // max-width: 100px;
   }
