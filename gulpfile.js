@@ -48,8 +48,8 @@ gulp.task('templates', function() {
 // but blows up the build process, so don't 
 // use it for build.
 gulp.task('smart-templates', function() {
-  return gulp.src('app/templates/pages/{,*/}*{,*/}*.jade')
-  .pipe($.watch('app/templates/pages/{,*/}*{,*/}*.jade'))
+  return gulp.src('app/templates/pages/**/*.jade')
+  .pipe($.watch('app/templates/pages/**/*.jade'))
   .pipe($.jade({
     basedir: "app/templates",
     pretty: true

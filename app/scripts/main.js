@@ -61,34 +61,33 @@ function playVideo(url){
         $('.vimeo').html('');
         $('.close-video').addClass('inactive');
       }
-    })
-  })
+    });
+  });
 }
 
-function chatWindow(){
+function toggleChat(){
   $('.chat').click(function(){
-    if ($('.chat-container').hasClass('inactive')){
-      $('.chat-container').removeClass('inactive');
-      $('.chat-container').addClass('active');
-      // $('#habla_oplink_a').html('<span>x</span>')
-    } else {
-      if ($('.chat-container').hasClass('active')){
-        $('.chat-container').removeClass('active');
-        $('.chat-container').addClass('inactive');
-      }
-      
-    }
-  })
+    $('.chat-container').removeClass('inactive');
+    $('.chat-container').addClass('active');
+    $('.chat-container').fadeIn(600);
+    $('#habla_both_div').append('<div class="close-chat">x</div>');
+    $('.close-chat').click(function(){
+      console.log('clicked closed');
+      $('.chat-container').removeClass('active');
+      $('.chat-container').addClass('inactive');
+      $('.chat-container').fadeOut(600);
+    });
+  }); 
 }
 
 function chatWindowColor(){
-  if ($('.habla_conversation_p_item:nth-child(1)').hasClass('habla_conversation_person2')){
-    console.log('person 2');
+  if ($('.habla_conversation_p_item').hasClass('habla_conversation_person2')){
+  
   }
 }
 
 $(document).ready(function(){
   playVideo();
-  chatWindow();
+  toggleChat();
   chatWindowColor();
-})
+});

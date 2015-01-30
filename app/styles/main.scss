@@ -14,6 +14,10 @@
 
 // The following are quick style edits for a new temporary homepage. Depending on what stays or goes in the longer term design, this will get rolled into Ghost-Shield.
 
+.new-dark-gray-bg {
+  background: #39474E;
+}
+
 // quick fix for new homepage buttons. will roll all of these into a mixin when refactoring ghost-shield
 @mixin fom-btn($color, $hover-color) {
   background: $color;
@@ -42,14 +46,14 @@
     width: 100% !important;
   }
   @media only screen and (min-width: 990px){
-    width: 50% !important;
+    width: 55% !important;
     margin-top: 28px !important;
   }
   ul {
     @media only screen {
       display: inline-block;
     }
-  }
+  } 
 }
 
 .secondary-nav {
@@ -61,14 +65,26 @@
     }
   }
   @media only screen and (min-width: 990px){
-    width: 50% !important;
+    width: 45% !important;
     position: relative;
     top: 8px !important;
     a {
       font-size: 14px !important;
     }
   }
-
+  @media only screen and (min-width: 770px) and (max-width: 990px){
+    bottom: 16px;
+    a {
+      font-size: 14px !important;
+    }
+  }
+  .apply-now {
+    @media only screen and (min-width: 770px) and (max-width: 990px){
+      position: absolute;
+      right: 0;
+      top: -40px;
+    }
+  }
 }
 
 $turquoise-new: #6fbbb7;
@@ -305,6 +321,7 @@ $turquoise-new: #6fbbb7;
   }
   img {
     width: 100%;
+    max-width: 550px;
   }
   .caption {
     text-align: center;
@@ -515,16 +532,7 @@ $turquoise-new: #6fbbb7;
       right: 0;
       bottom: 0;
       left: 0;
-      opacity: 0;
-      transition: all .6s ease;
-      &.active {
-        opacity: 1;
-        transition: all .6s ease;
-      }
-      &.inactive {
-        opacity: 0;
-        transition: all .6s ease;
-      }
+      display: none;
     }
     ul {
       display: inline-block;
@@ -688,8 +696,23 @@ $turquoise-new: #6fbbb7;
   border: 1px solid #D0D1D3;
   padding-left: 6px;
 }
+#habla_both_div {
+  position: relative;
+  .close-chat {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    z-index: 20;
+    font-size: 24px;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .hbl_pal_title_fg {
-  display: block;
+  display: inline-block;
   color: #39474E;
   font-size: 24px;
   font-weight: 600;
@@ -708,7 +731,11 @@ $turquoise-new: #6fbbb7;
 
 .habla_conversation_p_item {
   margin: 0;
-  padding: 8px;
+  padding: 4px 8px;
+}
+
+.olrk_avatar{
+  margin-right: 8px;
 }
 
 // utility class
