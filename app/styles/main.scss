@@ -462,6 +462,12 @@ $turquoise-new: #6fbbb7;
       background: white;
       position: relative;
       top: 6px;
+      a {
+        &:hover {
+          text-decoration: none;
+          background: #575E63;
+        }
+      }
       .email, .chat{
         padding: 36px 0;
         .content {
