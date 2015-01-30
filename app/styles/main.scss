@@ -533,14 +533,6 @@ $turquoise-new: #6fbbb7;
       bottom: 0;
       left: 0;
       display: none;
-      // transition: all .6s ease;
-      &.active {
-        // visibility: visible;
-      }
-      &.inactive {
-        // visibility: hidden;
-        // transition: all .6s ease;
-      }
     }
     ul {
       display: inline-block;
@@ -704,8 +696,23 @@ $turquoise-new: #6fbbb7;
   border: 1px solid #D0D1D3;
   padding-left: 6px;
 }
+#habla_both_div {
+  position: relative;
+  .close-chat {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    z-index: 20;
+    font-size: 24px;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .hbl_pal_title_fg {
-  display: block;
+  display: inline-block;
   color: #39474E;
   font-size: 24px;
   font-weight: 600;
