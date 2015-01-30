@@ -78,6 +78,11 @@
       font-size: 14px !important;
     }
   }
+  ul {
+    @media only screen {
+      margin-left: 0 !important;
+    }
+  }
   .apply-now {
     @media only screen and (min-width: 770px) and (max-width: 990px){
       position: absolute;
@@ -103,6 +108,9 @@ $turquoise-new: #6fbbb7;
   color: #fff !important;
   padding: 0 20px;
   line-height: 40px;
+  @media only screen and (max-width: 400px){
+    font-size: 18px;
+  }
   &:hover {
     background: #5B9D99;
     cursor: pointer;
@@ -127,6 +135,11 @@ $turquoise-new: #6fbbb7;
   &:hover {
     background: #5B9D99;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 400px){
+    min-width: 80px;
+    font-size: 18px;
+    padding: 4px 6px 6px;
   }
 }
 
@@ -205,7 +218,7 @@ $turquoise-new: #6fbbb7;
     h1{
       margin-bottom: 0;
       @media only screen {
-        font-size: 40px;
+        font-size: 33px;
       }
       @media only screen and (min-width: 1025px){
         font-size: 60px;
@@ -240,6 +253,9 @@ $turquoise-new: #6fbbb7;
     quotes: "“" "”" "‘" "’";
     @media only screen {
       width: 100%;
+    }
+    @media only screen and (max-width: 400px){
+      font-size: 30px;
     }
     @media only screen and (min-width: 991px){
       width: 370px;
@@ -315,6 +331,9 @@ $turquoise-new: #6fbbb7;
   }
   p {
     width: 80%;
+    @media only screen and (max-width: 400px){
+      width: 96%;
+    }
   }
   .btn {
     margin-top: 20px;
@@ -426,27 +445,52 @@ $turquoise-new: #6fbbb7;
   }
   .fee-eng {
     .btn {
-      @include fom-btn(#db820c, #C07209)
+      @include fom-btn(#db820c, #C07209);
+      @media only screen and (max-width: 400px){
+        right: 16%;
+        left: 15%;
+        bottom: 40px;
+      }
     }
   }
   .web-design {
     .btn {
-      @include fom-btn(#00a5b1, #038B95)
+      @include fom-btn(#00a5b1, #038B95);
+      @media only screen and (max-width: 400px){
+        right: 16%;
+        left: 15%;
+        bottom: 40px;
+      }
     }
   }
   .rails-eng {
     .btn {
-      @include fom-btn(#c94e43, #A73E34)
+      @include fom-btn(#c94e43, #A73E34);
+      @media only screen and (max-width: 400px){
+        right: 16%;
+        left: 15%;
+        bottom: 40px;
+      }
     }
   }
   .mobile-eng {
     .btn {
-      @include fom-btn(#d5b810, #B49B0C)
+      @include fom-btn(#d5b810, #B49B0C);
+      @media only screen and (max-width: 400px){
+        right: 16%;
+        left: 15%;
+        bottom: 40px;
+      }
     }
   }
   .python-eng {
     .btn {
-      @include fom-btn(#0dc67d, #06A264)
+      @include fom-btn(#0dc67d, #06A264);
+      @media only screen and (max-width: 400px){
+        right: 16%;
+        left: 15%;
+        bottom: 40px;
+      }
     }
   }
 }
