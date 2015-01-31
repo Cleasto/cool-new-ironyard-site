@@ -90,4 +90,12 @@ $(document).ready(function(){
   playVideo();
   toggleChat();
   chatWindowColor();
+  $(".typed-h3").typed({
+      strings: ["Life's too ^400 short for the ^300 wrong career."],
+      contentType: 'html', // or 'text',
+      typeSpeed: 30,
+      startDelay: 800,
+      showCursor: true,
+      cursorChar: "_",
+  });
 });
