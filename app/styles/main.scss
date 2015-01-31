@@ -108,6 +108,7 @@ $turquoise-new: #6fbbb7;
   color: #fff !important;
   padding: 0 20px;
   line-height: 40px;
+  margin-top: 10px;
   @media only screen and (max-width: 400px){
     font-size: 18px;
   }
@@ -212,11 +213,12 @@ $turquoise-new: #6fbbb7;
     @media only screen and (min-width: 1025px){
       padding-top: 156px;
     }
-    h1, h3 {
+    h1, .typed-h3 {
       color: #fff;
+      font-weight: 600;
     }
     h1{
-      margin-bottom: 0;
+      margin-bottom: -20px;
       @media only screen {
         font-size: 33px;
       }
@@ -224,7 +226,7 @@ $turquoise-new: #6fbbb7;
         font-size: 60px;
       }
     }
-    h3 {
+    .typed-h3 {
       margin-top: -10px;
       @media only screen {
         font-size: 16px;
@@ -234,6 +236,30 @@ $turquoise-new: #6fbbb7;
       }
     }
   }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.9s infinite;
+    -moz-animation: blink 0.9s infinite;
+    animation: blink 0.9s infinite;
+    color: #fff;
+    font-size: 34px;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 // student stories hot fixes on temp homepage

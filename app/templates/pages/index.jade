@@ -23,7 +23,8 @@ block content
     .container
       .col-xs-12
         h1 Learn to code.
-        h3 Life's too short for the wrong career.
+        span.typed-h3 
+        br
         a.btn.watch-video 
           img(src="/images/home/play-icon.png")
           span Watch the Video
@@ -324,7 +325,8 @@ block content
 
 
 block scripts
-   script(data-cfasync='false', type='text/javascript').
+  script(src="/bower_components/typed.js/js/typed.js")
+  script(data-cfasync='false', type='text/javascript').
        /*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
        f[z]=function(){
        (a.s=a.s||[]).push(arguments)};var a=f[z]._={
