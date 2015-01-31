@@ -164,9 +164,9 @@ $turquoise-new: #6fbbb7;
   position: relative;
   @media only screen {
     height: 450px;
-    background-position: -278px;
+    background-position: 68%;
   }
-  @media only screen and (min-width: 500px){
+  @media only screen and (min-width: 600px){
     background-position: 0;
   }
   @media only screen and (min-width: 1025px) {
