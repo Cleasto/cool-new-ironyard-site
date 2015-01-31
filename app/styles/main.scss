@@ -164,6 +164,10 @@ $turquoise-new: #6fbbb7;
   position: relative;
   @media only screen {
     height: 450px;
+    background-position: -278px;
+  }
+  @media only screen and (min-width: 500px){
+    background-position: 0;
   }
   @media only screen and (min-width: 1025px) {
     height: 600px;
@@ -218,9 +222,12 @@ $turquoise-new: #6fbbb7;
       font-weight: 600;
     }
     h1{
-      margin-bottom: -20px;
       @media only screen {
         font-size: 33px;
+        margin-bottom: -6px;
+      }
+      @media only screen and (min-width: 400px){
+        margin-bottom: -20px;
       }
       @media only screen and (min-width: 1025px){
         font-size: 60px;
@@ -244,7 +251,12 @@ $turquoise-new: #6fbbb7;
     -moz-animation: blink 0.9s infinite;
     animation: blink 0.9s infinite;
     color: #fff;
-    font-size: 34px;
+    @media only screen {
+      font-size: 18px;
+    }
+    @media only screen and (min-width: 400px){
+      font-size: 34px;
+    }
 }
 @keyframes blink{
     0% { opacity:1; }
