@@ -1,0 +1,60 @@
+extends /layouts/main
+
+block meta
+  +meta({
+    title:"The Iron Yard | Liftoff!",
+    description:""
+  })
+
+block content
+  +navigation({
+    title: "Liftoff!",
+    color: 'gold'
+  })
+
+  .container
+    .row(style="margin-top:40px")
+      .col-md-8
+        img.photo(src="/images/academy/liftoff.gif" style="margin-top: 35px;")
+      .col-md-4
+        h3 Welcome to The Iron Yard Family. A grand adventure lies ahead.
+        p <strong> A few things to get the adrenaline pumping:</strong>
+        ul
+          li: a(href="mailto:academy@theironyard.com?subject=I'd like to refer someone to The Iron Yard Academy") Refer someone to the class for a chance at $150.
+          li: a(href="http://blog.theironyard.com/") Read about students and grads on our Stories Blog.
+          li: a(href="https://twitter.com/theironyard") Follow us on Twitter.
+          li: a(href="http://news.theironyard.com/") See where we've been covered in the press.
+    hr
+    .row
+      .col-md-4
+        p <strong>Need to get in touch?</strong>
+        ul
+          li: a(href="mailto:atlanta@theironyard.com") atlanta@theironyard.com
+          li: a(href="mailto:charleston@theironyard.com") charleston@theironyard.com
+          li: a(href="mailto:dc@theironyard.com") dc@theironyard.com
+          li: a(href="mailto:durham@theironyard.com") durham@theironyard.com
+          li: a(href="mailto:greenville@theironyard.com") greenville@theironyard.com
+          li: a(href="mailto:houston@theironyard.com") houston@theironyard.com
+          li: a(href="mailto:orlando@theironyard.com") orlando@theironyard.com
+          li: a(href="mailto:tampa@theironyard.com") tampa@theironyard.com
+      .col-md-4
+        p <strong>Give us a ring:</strong>
+        ul
+          li Atlanta: <a href="tel:+7707518046">(770) 751-8046</a> 
+          li Charleston: <a href="tel:+8435012775">(843) 501-2775</a>
+          li Durham: <a href="tel:+9195616055">(919) 561-6055</a>
+          li Greenville: <a href="tel:+8649520099">(864) 952-0099</a>
+          li Houston: <a href="tel:+7134253797">(713) 425-3797</a>
+          li Orlando: <a href="tel:+3212098655">(407) 358-6683</a> 
+          li Tampa: <a href="tel:+8137752275">(813) 775-2275</a> 
+          li Washington, DC: <a href="tel:+5717339744">(571) 733-9744 </a> 
+      .col-md-4
+        p <strong>Get to know The Iron Yard:</strong>
+        ul
+          li: a(href="/about") About our company
+          li: a(href="/about/culture") About our culture
+          li: a(href="/about/team") Meet the team
+          li: a(href="http://blog.theironyard.com") Read the main Blog
+          li: a(href="/locations") Our locations
+          
+

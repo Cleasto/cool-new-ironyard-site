@@ -1,5 +1,5 @@
 mixin navigation(meta)  
-  .container-fluid(class="#{meta.color}-bg")
+  .container-fluid(class="new-dark-gray-bg")
     .header-dimmer(class="#{meta.color}-bg")
       .container
         .header
@@ -8,27 +8,31 @@ mixin navigation(meta)
           .nav
             .primary-nav
               ul
+                li
+                  a(href="/courses") Courses
                 li 
                   a(href="/locations") Locations
-                li
-                  a(href="/academy") Academy
+                li 
+                  a(href="/stories") Stories
                 li 
                   a(href="/accelerator") Ventures
-                li 
-                  a(href="/events") Events
-            
+
             .secondary-nav
               ul
                 li
                   a(href="/about") About
-                li 
-                  a(href="/jobs") Jobs
-                li
-                  a(href="/press") Press
                 li
                   a(href="http://blog.theironyard.com") Blog
+                li 
+                  a(href="/events") Events
+                li
+                  a.btn.apply-now(href="https://theironyard.typeform.com/to/EcL2Zc") APPLY NOW
+                //- li 
+                //-   a(href="/jobs") Jobs
+                //- li
+                //-   a(href="/press") Press
     
-    div(class="#{meta.image ? 'image-header' : ''} #{meta.home ? 'image-header-home' : ''}", style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent;' : ''}#{meta.gradient == false ? 'box-shadow: none;' : ''}")
+    div(class="#{meta.image ? 'image-header' : ''} #{meta.color}-bg #{meta.home ? 'image-header-home' : ''}" style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent; background: #{meta.color}' : ''}#{meta.gradient == false ? 'box-shadow: none;' : ''} margin-left: -15px; margin-right: -15px;")
       .container
         .sub-nav
           .col-xs-12

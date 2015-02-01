@@ -1,0 +1,32 @@
+extends /layouts/main
+include /mixins/stories-contact
+
+block meta
+  +meta({
+      title:"The Iron Yard | Stories",
+      description:"Astrid tells the story of how The Iron Yard helped her achieve her dream of freelancing."
+    })
+
+block content
+  +navigation({
+    title: 'Stories: Astrid Countee', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container
+    .row(style="margin-top: 60px;")
+      .col-md-8.col-xs-12
+        p(style="font-style: italic;") Astrid was a data analyst working in oil and gas and decided to pursue her passion for building software. She now enjoys a succssful freelance career. Here's what she said about her experience at The Iron Yard: 
+        p <blockquote>I feel so privileged to be at this place in my life. I feel so blessed to have had this experience. In a way, being able to be employed as a software developer is the least important aspect of this journey. The best part has been the person that I have become in the process. I believe in myself more, and I participate in life more, and I can see so much opportunity that before was invisible to me. I feel like I am crafting my kind of life, where I can do the things that I love, and make a living doing it. I plan to do that by getting more women like me involved, and helping to teach more people to code. How many ways can you say your grateful? I feel like I may never stop.</blockquote>
+        p <blockquote>In many ways I hate to see this part of my life end, but I am so looking forward to where I go from here. I have a feeling that instead of an ending, I am experiencing and expansion, and that somehow all of this will just keep growing and changing. I hope that we all stay connected along the way, cause I already miss these guys so much.</blockquote> 
+        p Here are her thoughts about her new freelancing career: 
+        p <blockquote>Today I had my first kickoff meeting to start my new project as a freelancer. I am getting paid and everything. It is exciting, and a bit scary, but definitely something that I have been wanting to do for a long time. When times got hard at The Iron Yard, and I wanted to give up, I would think about how someday I would be able to work for myself. And really…what better job security can you ask for.</blockquote>
+        p <blockquote>As I sit here in a dark coffee shop, laptop open about to crank out some code, I think that part of that little dream of mine has come true. There were many many days that I sat in an office cube thinking, I wish I could just work from home, cause I knew that I would get so much more done. Now, at least for now, I have that very chance. I couldn’t be more grateful.</blockquote>
+        p(style="font-style: italic;") Ready to start your story? Click <a href="http://theironyard.com/stories/academy/">here</a> to learn more about our courses!
+
+      .col-md-4
+        img.photo(src="/images/stories/astrid-story.jpg" styles="max-width: 310px")
+      .col-md-4 
+        +stories-contact('Stories-Academy Landing')
+        

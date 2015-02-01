@@ -45,3 +45,57 @@ function storiesFeed(url, $el) {
        }
    });
 }
+
+function playVideo(url){
+  $('.watch-video').click(function(){
+    if ($('.vimeo').hasClass('inactive')){
+      $('.vimeo').removeClass('inactive');
+      $('.vimeo').addClass('active');
+      $('.close-video').removeClass('inactive');
+      $('.close-video').addClass('active');
+      $('.vimeo').html('<iframe src="//player.vimeo.com/video/116286145?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>').addClass('active');
+    }
+    $('.close-video').click(function(){
+      if ($('.vimeo').hasClass('active')){
+        $('.vimeo').addClass('inactive');
+        $('.vimeo').html('');
+        $('.close-video').addClass('inactive');
+      }
+    });
+  });
+}
+
+function toggleChat(){
+  $('.chat').click(function(){
+    $('.chat-container').removeClass('inactive');
+    $('.chat-container').addClass('active');
+    $('.chat-container').fadeIn(600);
+    $('#habla_both_div').append('<div class="close-chat">x</div>');
+    $('.close-chat').click(function(){
+      console.log('clicked closed');
+      $('.chat-container').removeClass('active');
+      $('.chat-container').addClass('inactive');
+      $('.chat-container').fadeOut(600);
+    });
+  }); 
+}
+
+function chatWindowColor(){
+  if ($('.habla_conversation_p_item').hasClass('habla_conversation_person2')){
+  
+  }
+}
+
+$(document).ready(function(){
+  playVideo();
+  toggleChat();
+  chatWindowColor();
+  $(".typed-h3").typed({
+      strings: ["Life's too ^400 short for the ^300 wrong career."],
+      contentType: 'html', // or 'text',
+      typeSpeed: 30,
+      startDelay: 800,
+      showCursor: true,
+      cursorChar: "_",
+  });
+});

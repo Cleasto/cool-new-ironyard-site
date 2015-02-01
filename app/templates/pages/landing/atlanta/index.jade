@@ -1,5 +1,5 @@
 extends /layouts/main
-include /mixins/contact
+include /mixins/contact-city
 
 block meta 
   +meta({
@@ -36,4 +36,4 @@ block content
                   p Learn iOS app development using Xcode, Objective-C and Swift. At the end of the class you’ll have the skills to create beautiful, fully functional iOS apps and the foundation to pursue building Mac apps.
 
           .col-sm-3(style="margin-top:40px")
-            +contact('Atlanta Landing')
+            +contact-city('Atlanta Landing', "Atlanta")

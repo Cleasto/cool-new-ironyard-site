@@ -3,7 +3,7 @@ extends /layouts/main
 block meta
   +meta({
     title: 'The Iron Yard | Las Vegas, NV Code School',
-    description: "Learn to code. We teach Front End Engineering, Rails Engineering, Mobile Engineering, and Pything Engineering right here in Las Vegas, NV. "
+    description: "Learn to code. We teach Front End Engineering, Rails Engineering, and Python Engineering right here in Las Vegas, NV."
   })
 
 
@@ -22,20 +22,20 @@ block content
   .container-fluid(style="padding:0")
     .main
       .container
-
         .row(style="margin:20px 0")
           .col-sm-8
             h1 The Iron Yard In Las Vegas
             p 
-              | Nashville is a classic Southern city with a rich heritage in music. As robust as the city’s past is, entrepreneurs and tech companies are working to help build the future and make one of Tennessee’s largest cities one of Southeast’s best places to grow a software company. 
-              |<br><br>We're working directly with Launch Tennessee to bring tech education to the already-robust ecosystem they've built for startups. 
-          .col-sm-4
-            h3(style="margin-top: 20px; font-size: 27px;") Learn to code. Life's too short for the wrong career.
+              | Downtown Las Vegas is on a mission: revitalize the entertainment hub with an intense focus on local businesses and high-tech entrepreneurs. Now in their third year of building the eco-system, startups large and small have built successful businesses and a tangible feeling of entrepreneurial energy.  
+              |<br><br>We're working directly with Zappos and the Downton Project tech education to the already-robust ecosystem they've built for tech businesses. 
+          .col-sm-4#connect
+            h2(style="margin: 28px 0;") Connect
             hr
-            p(style="font-size:16px; margin-top:3px") 
-              | Our intensive coding courses will launch soon in Las Vegas. Study Mobile Engineering, Rails Engineering, Front End Engineering, or Python Engineering and launch a new career. 
-            a(href="/academy" class="btn") 
-              | Enroll Today
+            ul.no-style-type
+              li: a.green-text(href="/jobs") We're Hiring in Las Vegas!
+              li: a.green-text(href="http://blog.theironyard.com") Blog
+              li: a.green-text(href="mailto:vegas@theironyard.com") vegas@theironyard.com
+              li: a.green-text(href="tel:+7025606796") (702) 560-6797 
 
       .horizontal-section.gray-light-bg#programs
         .container
@@ -44,8 +44,8 @@ block content
                 img.photo(src="/images/locations/las-vegas/las-vegas-academy.jpg")
               .col-sm-6
                 h4 The Academy
-                p We offer three intensive Academy courses in Las Vegas. Our grads get jobs with amazing local companies as well as awesome shops around the country. 
-                a(href="/academy" class="btn") Learn More
+                p We offer three intensive Academy courses in Las Vegas. Our grads get jobs with amazing local companies as well as awesome shops around the country.   
+                a(href="/academy" class="btn") Enroll Today
             .row(style="margin-top: 30px;")
               .col-md-4
                 h4(style="padding-bottom: 0px;"): a(href="/academy/front-end-engineering").green-text <img src="/images/locations/icons/js-icon.png" style="height:24px"> <strong>Front End Engineering</strong>
@@ -61,12 +61,13 @@ block content
         .container
           .row
             .col-md-6
-              img.photo(src="/images/locations/nashville/nashville-kids.jpg")
+              img.photo(src="/images/locations/las-vegas/las-vegas-kids.jpg")
             .col-sm-6
               h4 Kids Classes
               p 
                 | We’ll launch our free code classes for kids in mid 2015. Sign up for the newsletter to be notified when things are ready. 
-              a(href="http://eepurl.com/bbu6RX " class="btn") Newsletter
+              a(href="http://eepurl.com/bckgOH" class="btn") Newsletter
+
       
       //- .container  
       //-   .row
@@ -96,6 +97,7 @@ block content
             .col-sm-6.col-md-8
               h4 Recent posts from the blog
               ul.no-style-type.recent
+<<<<<<< HEAD
             .col-sm-6.col-md-4#connect
               h2(style="margin: -10px 0;") Connect
               hr
@@ -104,6 +106,9 @@ block content
                 li: a.green-text(href="http://blog.theironyard.com") Blog
                 li: a.green-text(href="mailto:lasvegas@theironyard.com") lasvegas@theironyard.com
                 //- li: a.green-text(href="tel:+6159530089") (615) 953-0089
+=======
+            
+>>>>>>> 6b9b1a401e6a1fa35458726bbd01a81635e2bc1c
 
 
 block scripts

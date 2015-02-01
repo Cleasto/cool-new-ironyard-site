@@ -1,10 +1,15 @@
 extends /layouts/main
+<<<<<<< HEAD
 include /mixins/contact
+=======
+include /mixins/contact-city
+>>>>>>> 6b9b1a401e6a1fa35458726bbd01a81635e2bc1c
 
 block meta 
   +meta({
       title: "The Iron Yard | Las Vegas, NV Code School",
       description: "Learn to code, get a job. We teach Front End Engineering, Rails Engineering, Mobile Engineering, and Python Engineering right here in Las Vegas, NV."
+
     })
 
 block content
@@ -22,7 +27,7 @@ block content
           .col-sm-9
             h2 Learn to code.<br>Life's too short for the wrong career.
             p(style=" margin-top:3px") 
-              | The Iron Yard Academy in Las Vegas teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Study Ruby on Rails, Mobile Engineering, Front End Engineering, or Python Engineering and launch a new career. <strong>Fill out the form to get more information from our team</strong>! 
+              | The Iron Yard Academy in Las Vegas teaches intensive, three-month courses that mentor you into a professional junior-level programmer. Study Ruby on Rails, Python Engineering, or Front End Engineering and launch a new career. <strong>Fill out the form to get more information from our team</strong>! 
             .horizontal-section.gray-light-bg#programs
               .row(style="width:95%; margin: 0 auto; display: block;")
                 .col-md-4
@@ -32,18 +37,20 @@ block content
                   h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/rails-icon.png" style="height:18px"> <strong>Rails Engineering</strong>
                   p Learn Ruby on Rails, one of the most popular server-side frameworks in the world. At the end of class you’ll know how to build fast, production-quality full-stack apps.            
                 .col-md-4
-                  h4(style="padding-bottom: 0px; font-size: 18px;"): <img src="/images/locations/icons/python-icon.png" style="height:18px"> <strong>Python Engineering</strong>
+                  h4(style="padding-bottom: 0px; font-size:18px;"): <img src="/images/locations/icons/python-icon.png" style="height:18px"> <strong>Python Engineering</strong>
                   p Learn to analyze and publish data using Python and machine learning. At the end of the class you’ll make magic happen with real-world data sets and you'll know how to build web apps to show off your wizardry. 
-
-          .col-sm-3(style="margin-top:40px")
-            +contact('Las Vegas Landing')
+          .col-sm-3(style="margin-top:40px;")
+            +contact-city('Las Vegas Landing', "Las Vegas")
+            
 block scripts  
-  script(src="//platform.twitter.com/oct.js" type="text/javascript")
   script(type="text/javascript")
     :js
-      twttr.conversion.trackPid('l548t');
+      var google_conversion_id = 967920433; 
+      var google_custom_params = window.google_tag_params; 
+      var google_remarketing_only = true; 
+  script(type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js")
   
   noscript
-    img(height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l548t&p_id=Twitter")
+    div(style="display:inline")
+    img(height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967920433/?value=0&amp;guid=ON&amp;script=0")
 
-    img(height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l548t&p_id=Twitter")
