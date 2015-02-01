@@ -104,9 +104,9 @@ $(document).ready(function(){
         // check string array position
         // on the first string, only delete one word
         // the stopNum actually represents the amount of chars to
-        // keep in the current string. In my case it's 3.
+        // keep in the current string. 
         if (self.arrayPos == 1){
-            self.stopNum = 3;
+            // self.stopNum = 3;
         }
         //every other time, delete the whole typed string
         else{
