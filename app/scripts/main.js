@@ -98,7 +98,7 @@ $(document).ready(function(){
     showCursor: true,
     cursorChar: "_",
     loop: true,
-    backDelay: 2000,
+    backDelay: 10000,
     backspace: function(curString,curStringPos) {
       setTimeout(function(){
         // check string array position

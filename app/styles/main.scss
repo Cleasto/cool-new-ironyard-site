@@ -92,6 +92,83 @@
   }
 }
 
+.footer {
+  position: relative;
+  height: inherit;
+  .footer-nav {
+    display: inline-block;
+    @media only screen {
+      padding-top: 0;
+    }
+    @media only screen and (min-width: 401px){
+
+    }
+    ul {
+      text-align: left;
+      @media only screen  {
+        padding: 4px 0;
+      }
+      @media only screen and (min-width: 401px){
+        padding: 10px 0;
+      }
+      @media only screen and (min-width: 600px){
+        width: 70%;
+      }
+      @media only screen and (min-width: 1025px){
+        padding-top: 10px;
+      }
+      @media only screen and (min-width: 1200px){
+        width: 100%;
+        padding-top: 20px;
+      }
+    }
+  } 
+  .copyright {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    @media only screen {
+      width: 80%;
+    }
+    @media only screen and (min-width: 401px){
+      width: 100%;
+    }
+  }
+  .social-nav {
+    ul {
+      text-align: left;
+      @media only screen {
+        margin: 4px 20px 0px 5px;
+      }
+    }
+  }
+  .tiy-logo {
+    position: absolute;
+    @media only screen {
+      right: 10px;
+      bottom: 4px;
+    }
+    @media only screen and (min-width: 640px){
+      top: 36px;
+    }
+    @media only screen and (min-width: 1200px) {
+      top: 34px;
+    }
+    img {
+      @media only screen {
+        height: 58px;
+      }
+      @media only screen and (min-width: 640px) {
+        height: 100px;
+      }
+      @media only screen and (min-width: 1200px) {
+        height: 80px;
+      }
+    }
+  }
+}
+
 $turquoise-new: #6fbbb7;
 &.apply-now {
   background: $turquoise-new;
