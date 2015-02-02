@@ -32,7 +32,7 @@ mixin navigation(meta)
                 //- li
                 //-   a(href="/press") Press
     
-    div(class="#{meta.image ? 'image-header' : ''} #{meta.color}-bg #{meta.home ? 'image-header-home' : ''}" style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent; background: #{meta.color}' : ''}#{meta.gradient == false ? 'box-shadow: none;' : ''} margin-left: -15px; margin-right: -15px;")
+    div(class="#{meta.image ? 'image-header' : ''} #{meta.color}-bg #{meta.home ? 'image-header-home' : ''}" style="#{meta.image ? 'background:url('+meta.image+')   no-repeat center/cover transparent; background: #{meta.color}' : ''}; #{meta.gradient == false ? 'box-shadow: none;' : ''} margin-left: -15px; margin-right: -15px;")
       .container
         .sub-nav
           .col-xs-12
