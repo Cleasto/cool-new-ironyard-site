@@ -74,5 +74,13 @@ block scripts
         whr_embed(13505, {detail: 'titles', base: 'locations', zoom: 'state'});
       });
 
+  script
+    :js
+      $.get('http://www.workable.com/spi/v2/accounts/the-iron-yard/jobs?access_token=fefa860a8286245d0a18b5584c9742d4de752cba7fd6247d8417a096e6053ad1').done(function(data){
+          console.log(data);
+        });
+      mycallback = function(data){
+        alert(data.foo);
+      };
 
-    
+  
