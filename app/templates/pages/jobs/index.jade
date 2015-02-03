@@ -8,19 +8,20 @@ block meta
 
 block content
   +navigation({
-    title: "We're Hiring",
+    title: "Jobs",
     color: 'gray-dark',
+    gradient: false,
+    image: '/images/locations/map-new.jpg', 
+    cutout: true,
     links: [
       {title:"Our mission", url:"#mission"},
-      {title:"Our culture", url:"#culture"},
-      {title:"Open positions", url:"#positions"}
-    //-   {title:"Campus Directors", url:"#directors"}
+      {title:"Our culture", url:"#culture"}
     ]
   })
 
   .container
     .row(style="margin-top:50px")
-      //- #whr_embed_hook
+      #whr_embed_hook
       .col-md-8
         h1#positions Open positions
         ul
@@ -221,12 +222,12 @@ block scripts
     img(height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l58be&p_id=Twitter")
 
   //- job filters
-  // script(src='https://www.workable.com/assets/embed.js' type='text/javascript')
-  // script(type="text/javascript" charset='utf-8')
-  //   :js
-  //     whr(document).ready(function(){
-  //     whr_embed(13505, {detail: 'titles', base: 'locations', zoom: 'state'});
-  //     });
+  script(src='https://www.workable.com/assets/embed.js' type='text/javascript')
+  script(type="text/javascript" charset='utf-8')
+    :js
+      whr(document).ready(function(){
+        whr_embed(13505, {detail: 'titles', base: 'locations', zoom: 'state'});
+      });
 
 
     
