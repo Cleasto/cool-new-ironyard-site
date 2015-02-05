@@ -940,5 +940,12 @@ $turquoise-new: #6fbbb7;
   }
   .whr-items {
     // display: block !important;
+    .whr-title {
+      margin-bottom: 4px;
+      a {
+        color: #39464E;
+        font-size: 24px;
+      }
+    }
   }
 }
