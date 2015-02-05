@@ -923,4 +923,33 @@ $turquoise-new: #6fbbb7;
 .feed-box {
   // background: #eee;
   padding: 20px 10px;
+// Jobs Page temp styles(pre-ghost-shield)
+.jobs-section {
+  select {
+    width: 190px;
+    position: relative;
+    border: 1px solid #000;
+    top: -6px;
+    left: 10px;
+    &:focus {
+      outline-color: #fff;
+    }
+  }
+}
+#whr_embed_hook {
+  h2 {
+    a {
+      color: #39474E;
+    }
+  }
+  .whr-items {
+    // display: block !important;
+    .whr-title {
+      margin-bottom: 4px;
+      a {
+        color: #39464E;
+        font-size: 24px;
+      }
+    }
+  }
 }
