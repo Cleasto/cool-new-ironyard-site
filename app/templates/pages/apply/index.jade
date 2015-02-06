@@ -15,22 +15,22 @@ block content
     triangle: true,
     cutout: true,
     image: '/images/academy/academy-header.jpg',
-
-    cutout: true
+    links: [
+      //- no links
+    ]
   })
 
   .container
     .row
-      .col-md-9
-        h1.gray-dark-text: em Please take a moment to....
+      .col-md-8
+        h1.gray-dark-text: em Please take a moment to fill out our student application.
         p 
           | The Iron Yard Academy teaches intensive, 12-week courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
         hr 
-      .col-md-3(style="padding-right: 0;")
-        +contact-academy('Academy Landing')
-
+      .col-md-4(style="text-align:center; padding-top: 50px;")
+        img.photo(src="/images/academy/front-end-engineering/mason-teaching.jpg" style="max-width:500px;")
     .row
-      .col-xs-12
+      .col-xs-12.col-md-8
         +application('test')
 
 
