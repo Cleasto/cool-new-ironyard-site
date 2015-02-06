@@ -3,10 +3,11 @@ mixin application (analytics)
     form#form4.wufoo.topLabel.page1(name="form4" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="https://ironyard.wufoo.com/forms/the-iron-yard-student-application/")
       ul.no-style-type(style="background-color:#e3e7e9; width: 100%; padding: 20px 0px 1px")
         li#fo4li8.notranslate
-          label.desc#title8(for="Field8") Campus
+          label.desc#title8(for="Field8") Which campus are you interested in?
+            span#req_8.req *
           div
-            select#Field8.field.select.medium(name="Field8" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="1")
-              option(value selected="selected")
+            select#Field8.field.select.medium(name="Field8" tabindex="1" required="")
+              option(value="" selected="selected")
               option(value="atlanta") Atlanta, GA
               option(value="austin") Austin, TX
               option(value="charleston") Charleston, SC
@@ -21,38 +22,41 @@ mixin application (analytics)
               option(value="durham") Raleigh-Durham, NC
               option(value="tampa") Tampa Bay, FL
               option(value="washington-dc") Washington, D.C.
-        li#fo4li10.notranslate
+        li#fo4li110.notranslate
           fieldset
+            legend#title110.desc Which class are you most interested in?<br>(You can change your mind later!)
+              span#req_110.req *
             div
-              input#radioDefault_110(name="Field110" type="hidden" value)
+              input#radioDefault_110(name="Field110" type="hidden" value="" )
               span
-                input#Field110_0.field.radio(name="Field110" type="radio" value="Front End Engineering" tabindex="2" onchange="handleInput(this);" onmouseup="handleInput(this);" required)
+                input#Field110_0.field.radio(name="Field110" required type="radio" value="Front End Engineering" tabindex="2")
                 label.choice(for="Field110_0") 
                   | Front End Engineering
               span
-                input#Field110_1.field.radio(name="Field110_1" type="radio" value="Rails Engineering" tabindex="3" onchange="handleInput(this);" onmouseup="handleInput(this);" required)
+                input#Field110_1.field.radio(name="Field110" required type="radio" value="Rails Engineering" tabindex="3")
                 label.choice(for="Field110_1") 
                   | Rails Engineering
               span
-                input#Field110_2.field.radio(name="Field110_2" type="radio" value="Mobile Engineering" tabindex="4" onchange="handleInput(this);" onmouseup="handleInput(this);" required)
+                input#Field110_2.field.radio(name="Field110" required type="radio" value="Mobile Engineering" tabindex="4")
                 label.choice(for="Field110_2") 
                   | Mobile Engineering
               span
-                input#Field110_3.field.radio(name="Field110_3" type="radio" value="Python Engineering" tabindex="5" onchange="handleInput(this);" onmouseup="handleInput(this);" required)
+                input#Field110_3.field.radio(name="Field110" required type="radio" value="Python Engineering" tabindex="5")
                 label.choice(for="Field110_3") 
                   | Python Engineering
               span
-                input#Field110_4.field.radio(name="Field110_4" type="radio" value="Web Design (offered in Austin, Columbia and Tampa Bay)" tabindex="6" onchange="handleInput(this);" onmouseup="handleInput(this);" required)
+                input#Field110_4.field.radio(name="Field110" required type="radio" value="Web Design (offered in Austin, Columbia and Tampa Bay)" tabindex="6")
                 label.choice(for="Field110_4") 
                   | Web Design
         li#fo4li109.notranslate
           label#title109.desc(for="Field109") Timing
             span#req_109.req *
           div
-            select#Field109.field.select.medium(name="Field109" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="7")
-              option(value="Next available class please!" selected="selected") Next available class please!
-              option(value="Likely 3-6 months from now") Likely 3-6 months from now 
-              option(value="Over 6 months from now") Over 6 month from now
+            select#Field109.field.select.medium(name="Field109" tabindex="7" required="")
+              option(value="" selected="selected" required)
+              option(value="Next available class please!" required) Next available class please!
+              option(value="Likely 3-6 months from now" required) Likely 3-6 months from now 
+              option(value="Over 6 months from now" required) Over 6 month from now
         li#fo4li118.notranslate
           label#title118.desc(for="Field118") Tell us three things you want us to know about you.
             span#req_118.req *
@@ -367,13 +371,13 @@ mixin application (analytics)
           label.desc#title123(for="Field123") What is your educational background?
             span#req_123.req *
           div
-            select#Field123(name="Field123" class="field select medium" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="26")
+            select#Field123(name="Field123" class="field select medium" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="26" required="")
                 option(value="" selected="selected")
-                option(value="High school diploma / GED") High school diploma / GED
-                option(value="Some college, no degree") Some college, no degree
-                option(value="AA or other 2-year degree") AA or other 2-year degree
-                option(value="Bachelor's degree") Bachelor's degree
-                option(value="Graduate degree") Graduate degree
+                option(value="High school diploma / GED" required) High school diploma / GED
+                option(value="Some college, no degree" required) Some college, no degree
+                option(value="AA or other 2-year degree" required) AA or other 2-year degree
+                option(value="Bachelor's degree" required) Bachelor's degree
+                option(value="Graduate degree" required) Graduate degree
         li#fo4li121.notranslate            
           label.desc#title121(for="Field121") We strive to provide the best learning environment possible. Is there anything you would like us to know about your personal learning style or the way you learn?
           div
@@ -386,7 +390,7 @@ mixin application (analytics)
           label.desc#title126(for="Field126") How did you hear about The Iron Yard?
             span#req_126.req *
           div
-            input#Field126(name="Field126" type="text" class="field text medium" value="" maxlength="255" tabindex="29" onkeyup="handleInput(this); " onchange="handleInput(this);" required="")
+            input#Field126(name="Field126" type="text" class="field text medium" value="" maxlength="255" tabindex="29" onkeyup="handleInput(this); " onchange="handleInput(this);" required)
         li#fo4li136.notranslate.hide
           label.desc#title136(for="Field136")
             tags
@@ -405,172 +409,3 @@ mixin application (analytics)
           inputt(type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:&quot;https:\/\/www.google.com\/url?q=https%3A%2F%2Fironyard.wufoo.com%2Fforms%2Fthe-iron-yard-student-application%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH0PBHtf8PUcX7VMStmS8S7Ib2kPw&quot;}")
           input(type="hidden" id="clickOrEnter" name="clickOrEnter" value="")
             
-
-  
-  script
-    :js
-      addEvent(window, 'load', initForm);
-      
-      var highlight_array = new Array();
-      
-      function initForm(){
-        initializeFocus();
-        var activeForm = document.getElementsByTagName('form')[0];
-        addEvent(activeForm, 'submit', disableSubmitButton);
-        ifInstructs();
-        showRangeCounters();
-      }
-      
-      function disableSubmitButton() {
-        document.getElementById('saveForm').disabled = true;
-      }
-      
-      // for radio and checkboxes, they have to be cleared manually, so they are added to the
-      // global array highlight_array so we dont have to loop through the dom every time.
-      function initializeFocus(){
-        var fields = getElementsByClassName(document, "*", "field");
-        
-        for(i = 0; i < fields.length; i++) {
-          if(fields[i].type == 'radio' || fields[i].type == 'checkbox') {
-            fields[i].onclick = function() {highlight(this, 4);};
-            fields[i].onfocus = function() {highlight(this, 4);};
-          }
-          else if(fields[i].className.match('addr') || fields[i].className.match('other')) {
-            fields[i].onfocus = function(){highlight(this, 3);};
-          }
-          else {
-            fields[i].onfocus = function(){highlight(this, 2); };
-          }
-        }
-      }
-      
-      function highlight(el, depth){
-        if(depth == 2){var fieldContainer = el.parentNode.parentNode;}
-        if(depth == 3){var fieldContainer = el.parentNode.parentNode.parentNode;}
-        if(depth == 4){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode;}
-        if(depth == 5){var fieldContainer = el.parentNode.parentNode.parentNode.parentNode.parentNode;}
-        
-        addClassName(fieldContainer, 'focused', true);
-        var focusedFields = getElementsByClassName(document, "*", "focused");
-        
-        for(i = 0; i < focusedFields.length; i++) {
-          if(focusedFields[i] != fieldContainer){
-            removeClassName(focusedFields[i], 'focused');
-          }
-        }
-      }
-      
-      function ifInstructs(){
-        var container = document.getElementById('public');
-        if(container){
-          removeClassName(container,'noI');
-          var instructs = getElementsByClassName(document,"*","instruct");
-          if(instructs == ''){
-            addClassName(container,'noI',true);
-          }
-          if(container.offsetWidth <= 450){
-            addClassName(container,'altInstruct',true);
-          }
-        }
-      }
-      
-      function showRangeCounters(){
-        counters = getElementsByClassName(document, "em", "currently");
-        for(i = 0; i < counters.length; i++) {
-          counters[i].style.display = 'inline';
-        }
-      }
-      
-      function validateRange(ColumnId, RangeType) {
-        if(document.getElementById('rangeUsedMsg'+ColumnId)) {
-          var field = document.getElementById('Field'+ColumnId);
-          var msg = document.getElementById('rangeUsedMsg'+ColumnId);
-      
-          switch(RangeType) {
-            case 'character':
-              msg.innerHTML = field.value.length;
-              break;
-              
-            case 'word':
-              var val = field.value;
-              val = val.replace(/\n/g, " ");
-              var words = val.split(" ");
-              var used = 0;
-              for(i =0; i < words.length; i++) {
-                if(words[i].replace(/\s+$/,"") != "") used++;
-              }
-              msg.innerHTML = used;
-              break;
-              
-            case 'digit':
-              msg.innerHTML = field.value.length;
-              break;
-          }
-        }
-      }
-      
-      /*--------------------------------------------------------------------------*/
-      
-      //http://www.robertnyman.com/2005/11/07/the-ultimate-getelementsbyclassname/
-      function getElementsByClassName(oElm, strTagName, strClassName){
-        var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
-        var arrReturnElements = new Array();
-        strClassName = strClassName.replace(/\-/g, "\\-");
-        var oRegExp = new RegExp("(^|\\s)" + strClassName + "(\\s|$)");
-        var oElement;
-        for(var i=0; i<arrElements.length; i++){
-          oElement = arrElements[i];    
-          if(oRegExp.test(oElement.className)){
-            arrReturnElements.push(oElement);
-          } 
-        }
-        return (arrReturnElements)
-      }
-      
-      //http://www.bigbold.com/snippets/posts/show/2630
-      function addClassName(objElement, strClass, blnMayAlreadyExist){
-         if ( objElement.className ){
-            var arrList = objElement.className.split(' ');
-            if ( blnMayAlreadyExist ){
-               var strClassUpper = strClass.toUpperCase();
-               for ( var i = 0; i < arrList.length; i++ ){
-                  if ( arrList[i].toUpperCase() == strClassUpper ){
-                     arrList.splice(i, 1);
-                     i--;
-                   }
-                 }
-            }
-            arrList[arrList.length] = strClass;
-            objElement.className = arrList.join(' ');
-         }
-         else{  
-            objElement.className = strClass;
-            }
-      }
-      
-      //http://www.bigbold.com/snippets/posts/show/2630
-      function removeClassName(objElement, strClass){
-         if ( objElement.className ){
-            var arrList = objElement.className.split(' ');
-            var strClassUpper = strClass.toUpperCase();
-            for ( var i = 0; i < arrList.length; i++ ){
-               if ( arrList[i].toUpperCase() == strClassUpper ){
-                  arrList.splice(i, 1);
-                  i--;
-               }
-            }
-            objElement.className = arrList.join(' ');
-         }
-      }
-      
-      //http://ejohn.org/projects/flexible-javascript-events/
-      function addEvent( obj, type, fn ) {
-        if ( obj.attachEvent ) {
-          obj["e"+type+fn] = fn;
-          obj[type+fn] = function() { obj["e"+type+fn]( window.event ) };
-          obj.attachEvent( "on"+type, obj[type+fn] );
-        } 
-        else{
-          obj.addEventListener( type, fn, false );  
-        }
-      }
