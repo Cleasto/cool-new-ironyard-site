@@ -1,0 +1,417 @@
+mixin application (analytics)
+  div#container.ltr
+    form#form4.wufoo.topLabel.page1(name="form4" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="https://ironyard.wufoo.com/forms/the-iron-yard-student-application/")
+      ul.no-style-type(style="background-color:#e3e7e9; width: 100%; padding: 20px 0px 1px")
+        li#fo4li8.notranslate
+          label#title8.desc(for="Field8") Which campus are you interested in?
+            span#req_8.req *
+          div
+            select#Field8.field.select.medium(name="Field8" tabindex="1" required="")
+              option(value="" selected="selected")
+              option(value="Alanta") Atlanta, GA
+              option(value="Austin") Austin, TX
+              option(value="Charleston") Charleston, SC
+              option(value="Columbia") Columbia, SC
+              option(value="Durham") Durham, NC
+              option(value="Greenville") Greenville, SC
+              option(value="Houston") Houston, TX
+              option(value="Indianapolis") Indianapolis, IN
+              option(value="Las Vegas") Las Vegas, NV
+              option(value="Little Rock") Little Rock, AR
+              option(value="Nashville") Nashville, TN
+              option(value="Orlando") Orlando, FL
+              option(value="Tampa") Tampa Bay, FL
+              option(value="Washington DC") Washington, D.C.
+        li#fo4li110.notranslate
+          span#title110.desc Which class are you most interested in?<br>(You can change your mind later!)
+          span#req_110.req *
+          fieldset.fieldset
+            div
+              input#radioDefault_110(name="Field110" type="hidden" value="" )
+              span
+                input#Field110_0.field.radio(name="Field110" required type="radio" value="Front End Engineering" tabindex="2")
+                label.choice(for="Field110_0") 
+                  | Front End Engineering
+              span
+                input#Field110_1.field.radio(name="Field110" required type="radio" value="Rails Engineering" tabindex="3")
+                label.choice(for="Field110_1") 
+                  | Rails Engineering
+              span
+                input#Field110_2.field.radio(name="Field110" required type="radio" value="Mobile Engineering" tabindex="4")
+                label.choice(for="Field110_2") 
+                  | Mobile Engineering
+              span
+                input#Field110_3.field.radio(name="Field110" required type="radio" value="Python Engineering" tabindex="5")
+                label.choice(for="Field110_3") 
+                  | Python Engineering
+              span
+                input#Field110_4.field.radio(name="Field110" required type="radio" value="Web Design" tabindex="6")
+                label.choice(for="Field110_4") 
+                  | Web Design
+        li#fo4li109.notranslate
+          label#title109.desc(for="Field109") When do you want to attend?3
+            span#req_109.req *
+          div
+            select#Field109.field.select.medium(name="Field109" tabindex="7" required="")
+              option(value="Please select a timeframe" required)
+              option(value="Next available class please!" required) Next available class please!
+              option(value="Likely 3-6 months from now" required) Likely 3-6 months from now 
+              option(value="Over 6 months from now" required) Over 6 month from now
+        li#fo4li118.notranslate
+          label#title118.desc(for="Field118") Tell us three things you want us to know about you.
+            span#req_118.req *
+          div
+            textarea#Field118.field.textarea.medium(name="Field118" spellcheck="true" rows="10" cols="50" tabindex="8" required="")
+        li#fo4li119.notranslate
+          label.desc#title119(for="Field119") Tell us why you're interested in spending 3 hard months learning with us.
+            span#req_119.req *
+          div
+            textarea#Field119.field.textarea.medium(name="Field119"  spellcheck="true" rows="10" cols="50" tabindex="9" required="")
+        li#fo4li120.notranslate   
+          label.desc#title120(for="Field120") What do you dream of building or making with your new skills? The sky is the limit, so dream big.
+              span#req_120.req *  
+          div
+            textarea#Field120.field.textarea.small(name="Field120" spellcheck="true" rows="10" cols="50" tabindex="10" onkeyup="handleInput(this); " onchange="handleInput(this);" required="")
+        .row
+          .col-xs-12.col-md-6
+            li#fo4li1.notranslate    
+              label.desc#title1(for="Field1") Name
+                span#req_1.req *  
+              div
+                input#Field1.field.text.medium(name="Field1" type="text" value="" maxlength="255" tabindex="11" onkeyup="handleInput(this); " onchange="handleInput(this);" required="")
+          .col-xs-12.col-md-6
+            li#fo4li2.notranslate     
+              label.desc#title2(for="Field2") Email
+                span#req_2.req *
+              div
+                input#Field2(name="Field2" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="12" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+        li#fo4li3.phone.notranslate      
+          label.desc#title3(for="Field3") Phone Number
+            span#req_3.req *
+          span
+            label(for="Field3") 
+            input#Field3(name="Field3" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="13" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+          span.symbol -
+          span
+            input#Field3-1(name="Field3-1" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="14" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+            label(for="Field3-1")
+          span.symbol -
+          span
+            input#Field3-2(name="Field3-2" type="tel" class="field text" value="" size="4" maxlength="4" tabindex="15" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+            label(for="Field3-2")
+
+        li#fo4li138.complex.notranslate     
+          label.desc#title138(for="Field138") Address
+            span#req_138.req * 
+          div
+            .row
+              .col-xs-12.col-sm-6
+                span.full.addr1
+                  input#Field138(name="Field138" type="text" class="field text addr" value="" tabindex="16" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+                  label(for="Field138") Street Address
+              .col-xs-12.col-sm-6
+                span.full.addr2
+                  input#Field139(name="Field139" type="text" class="field text addr" value="" tabindex="17" onkeyup="handleInput(this);" onchange="handleInput(this);")
+                  label(for="Field139") Address Line 2
+            .row
+              .col-xs-12.col-sm-6
+                span.left.city
+                  input#Field140(name="Field140" type="text" class="field text addr" value="" tabindex="18" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+                  label(for="Field140") City
+              .col-xs-12.col-sm-6
+                span.right.state
+                  input#Field141(name="Field141" type="text" class="field text addr" value="" tabindex="19" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+                  label(for="Field141") State / Province / Region
+            .row
+              .col-xs-12.col-sm-6
+                span.left.zip
+                  input#Field142(name="Field142" type="text" class="field text addr" value="" maxlength="15" tabindex="20" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+                  label(for="Field142") Postal / Zip Code
+            .row
+              .col-xs-12.col-sm-6
+                span.right.country
+                  select#Field143(name="Field143" class="field select addr" tabindex="21" onclick="handleInput(this);" onkeyup="handleInput(this);")
+                    option(value="")
+                    option(value="United States" selected="selected") United States
+                    option(value="United Kingdom") United Kingdom
+                    option(value="Australia") Australia
+                    option(value="Canada") Canada
+                    option(value="France") France
+                    option(value="New Zealand") New Zealand
+                    option(value="India") India
+                    option(value="Brazil") Brazil
+                    option(value="----") ----
+                    option(value="Afghanistan") Afghanistan
+                    option(value="Åland Islands") Åland Islands
+                    option(value="Albania") Albania
+                    option(value="Algeria") Algeria
+                    option(value="American Samoa") American Samoa
+                    option(value="Andorra") Andorra
+                    option(value="Angola") Angola
+                    option(value="Anguilla") Anguilla
+                    option(value="Antarctica") Antarctica
+                    option(value="Antigua and Barbuda") Antigua and Barbuda
+                    option(value="Argentina") Argentina
+                    option(value="Armenia") Armenia
+                    option(value="Aruba") Aruba
+                    option(value="Austria") Austria
+                    option(value="Azerbaijan") Azerbaijan
+                    option(value="Bahamas") Bahamas
+                    option(value="Bahrain") Bahrain
+                    option(value="Bangladesh") Bangladesh
+                    option(value="Barbados") Barbados
+                    option(value="Belarus") Belarus
+                    option(value="Belgium") Belgium
+                    option(value="Belize") Belize
+                    option(value="Benin") Benin
+                    option(value="Bermuda") Bermuda
+                    option(value="Bhutan") Bhutan
+                    option(value="Bolivia") Bolivia
+                    option(value="Bosnia and Herzegovina") Bosnia and Herzegovina
+                    option(value="Botswana") Botswana
+                    option(value="British Indian Ocean Territory") British Indian Ocean Territory
+                    option(value="Brunei Darussalam") Brunei Darussalam
+                    option(value="Bulgaria") Bulgaria
+                    option(value="Burkina Faso") Burkina Faso
+                    option(value="Burundi") Burundi
+                    option(value="Cambodia") Cambodia
+                    option(value="Cameroon") Cameroon
+                    option(value="Cape Verde") Cape Verde
+                    option(value="Cayman Islands") Cayman Islands
+                    option(value="Central African Republic") Central African Republic
+                    option(value="Chad") Chad
+                    option(value="Chile") Chile
+                    option(value="China") China
+                    option(value="Colombia") Colombia
+                    option(value="Comoros") Comoros
+                    option(value="Democratic Republic of the Congo") Democratic Republic of the Congo
+                    option(value="Republic of the Congo") Republic of the Congo
+                    option(value="Cook Islands") Cook Islands
+                    option(value="Costa Rica") Costa Rica
+                    option(value="Côte d'Ivoire") Côte d'Ivoire
+                    option(value="Croatia") Croatia
+                    option(value="Cuba") Cuba
+                    option(value="Cyprus") Cyprus
+                    option(value="Czech Republic") Czech Republic
+                    option(value="Denmark") Denmark
+                    option(value="Djibouti") Djibouti
+                    option(value="Dominica") Dominica
+                    option(value="Dominican Republic") Dominican Republic
+                    option(value="East Timor") East Timor
+                    option(value="Ecuador") Ecuador
+                    option(value="Egypt") Egypt
+                    option(value="El Salvador") El Salvador
+                    option(value="Equatorial Guinea") Equatorial Guinea
+                    option(value="Eritrea") Eritrea
+                    option(value="Estonia") Estonia
+                    option(value="Ethiopia") Ethiopia
+                    option(value="Faroe Islands") Faroe Islands
+                    option(value="Fiji") Fiji
+                    option(value="Finland") Finland
+                    option(value="Gabon") Gabon
+                    option(value="Gambia") Gambia
+                    option(value="Georgia") Georgia
+                    option(value="Germany") Germany
+                    option(value="Ghana") Ghana
+                    option(value="Gibraltar") Gibraltar
+                    option(value="Greece") Greece
+                    option(value="Grenada") Grenada
+                    option(value="Guatemala") Guatemala
+                    option(value="Guinea") Guinea
+                    option(value="Guinea-Bissau") Guinea-Bissau
+                    option(value="Guyana") Guyana
+                    option(value="Haiti") Haiti
+                    option(value="Honduras") Honduras
+                    option(value="Hong Kong") Hong Kong
+                    option(value="Hungary") Hungary
+                    option(value="Iceland") Iceland
+                    option(value="Indonesia") Indonesia
+                    option(value="Iran") Iran
+                    option(value="Iraq") Iraq
+                    option(value="Ireland") Ireland
+                    option(value="Israel") Israel
+                    option(value="Italy") Italy
+                    option(value="Jamaica") Jamaica
+                    option(value="Japan") Japan
+                    option(value="Jordan") Jordan
+                    option(value="Kazakhstan") Kazakhstan
+                    option(value="Kenya") Kenya
+                    option(value="Kiribati") Kiribati
+                    option(value="North Korea") North Korea
+                    option(value="South Korea") South Korea
+                    option(value="Kuwait") Kuwait
+                    option(value="Kyrgyzstan") Kyrgyzstan
+                    option(value="Laos") Laos
+                    option(value="Latvia") Latvia
+                    option(value="Lebanon") Lebanon
+                    option(value="Lesotho") Lesotho
+                    option(value="Liberia") Liberia
+                    option(value="Libya") Libya
+                    option(value="Liechtenstein") Liechtenstein
+                    option(value="Lithuania") Lithuania
+                    option(value="Luxembourg") Luxembourg
+                    option(value="Macedonia") Macedonia
+                    option(value="Madagascar") Madagascar
+                    option(value="Malawi") Malawi
+                    option(value="Malaysia") Malaysia
+                    option(value="Maldives") Maldives
+                    option(value="Mali") Mali
+                    option(value="Malta") Malta
+                    option(value="Marshall Islands") Marshall Islands
+                    option(value="Mauritania") Mauritania
+                    option(value="Mauritius") Mauritius
+                    option(value="Mexico") Mexico
+                    option(value="Micronesia") Micronesia
+                    option(value="Moldova") Moldova
+                    option(value="Monaco") Monaco
+                    option(value="Mongolia") Mongolia
+                    option(value="Montenegro") Montenegro
+                    option(value="Morocco") Morocco
+                    option(value="Mozambique") Mozambique
+                    option(value="Myanmar") Myanmar
+                    option(value="Namibia") Namibia
+                    option(value="Nauru") Nauru
+                    option(value="Nepal") Nepal
+                    option(value="Netherlands") Netherlands
+                    option(value="Netherlands Antilles") Netherlands Antilles
+                    option(value="Nicaragua") Nicaragua
+                    option(value="Niger") Niger
+                    option(value="Nigeria") Nigeria
+                    option(value="Norway") Norway
+                    option(value="Oman") Oman
+                    option(value="Pakistan") Pakistan
+                    option(value="Palau") Palau
+                    option(value="Palestine") Palestine
+                    option(value="Panama") Panama
+                    option(value="Papua New Guinea") Papua New Guinea
+                    option(value="Paraguay") Paraguay
+                    option(value="Peru") Peru
+                    option(value="Philippines") Philippines
+                    option(value="Poland") Poland
+                    option(value="Portugal") Portugal
+                    option(value="Puerto Rico") Puerto Rico
+                    option(value="Qatar") Qatar
+                    option(value="Romania") Romania
+                    option(value="Russia") Russia
+                    option(value="Rwanda") Rwanda
+                    option(value="Saint Kitts and Nevis") Saint Kitts and Nevis
+                    option(value="Saint Lucia") Saint Lucia
+                    option(value="Saint Vincent and the Grenadines") Saint Vincent and the Grenadines
+                    option(value="Samoa") Samoa
+                    option(value="San Marino") San Marino
+                    option(value="Sao Tome and Principe") Sao Tome and Principe
+                    option(value="Saudi Arabia") Saudi Arabia
+                    option(value="Senegal") Senegal
+                    option(value="Serbia") Serbia
+                    option(value="Seychelles") Seychelles
+                    option(value="Sierra Leone") Sierra Leone
+                    option(value="Singapore") Singapore
+                    option(value="Slovakia") Slovakia
+                    option(value="Slovenia") Slovenia
+                    option(value="Solomon Islands") Solomon Islands
+                    option(value="Somalia") Somalia
+                    option(value="South Africa") South Africa
+                    option(value="Spain") Spain
+                    option(value="Sri Lanka") Sri Lanka
+                    option(value="Sudan") Sudan
+                    option(value="Suriname") Suriname
+                    option(value="Swaziland") Swaziland
+                    option(value="Sweden") Sweden
+                    option(value="Switzerland") Switzerland
+                    option(value="Syria") Syria
+                    option(value="Taiwan") Taiwan
+                    option(value="Tajikistan") Tajikistan
+                    option(value="Tanzania") Tanzania
+                    option(value="Thailand") Thailand
+                    option(value="Togo") Togo
+                    option(value="Tonga") Tonga
+                    option(value="Trinidad and Tobago") Trinidad and Tobago
+                    option(value="Tunisia") Tunisia
+                    option(value="Turkey") Turkey
+                    option(value="Turkmenistan") Turkmenistan
+                    option(value="Tuvalu") Tuvalu
+                    option(value="Uganda") Uganda
+                    option(value="Ukraine") Ukraine
+                    option(value="United Arab Emirates") United Arab Emirates
+                    option(value="United States Minor Outlying Islands") United States Minor Outlying Islands
+                    option(value="Uruguay") Uruguay
+                    option(value="Uzbekistan") Uzbekistan
+                    option(value="Vanuatu") Vanuatu
+                    option(value="Vatican City") Vatican City
+                    option(value="Venezuela") Venezuela
+                    option(value="Vietnam") Vietnam
+                    option(value="Virgin Islands, British") Virgin Islands, British
+                    option(value="Virgin Islands, U.S.") Virgin Islands, U.S.
+                    option(value="Yemen") Yemen
+                    option(value="Zambia") Zambia
+                    option(value="Zimbabwe") Zimbabwe        
+                  br
+                  label(for="Field143") Country
+        li#fo4li117.date.notranslate      
+          label.desc#title117(for="Field117") Birthday
+            span#req_117.req *
+          span
+            //- label(for="Field117-1") MM
+            input#Field117-1(name="Field117-1" type="text" class="field text" placeholder="MM" value="" size="2" maxlength="2" tabindex="22" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+          span.symbol /
+          span
+            //- label(for="Field117-2") DD
+            input#Field117-2(name="Field117-2" type="text" class="field text" placeholder="DD" value="" size="2" maxlength="2" tabindex="23" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+          span.symbol /
+          span
+            //- label(for="Field117") YYYY
+            input#Field117(name="Field117" type="text" class="field text" placeholder="YYYY" value="" size="4" maxlength="4" tabindex="24" onkeyup="handleInput(this);" onchange="handleInput(this);" required="")
+          //- span#cal117
+          //-   img#pick117.datepicker(src="/images/icons/calendar.png" alt="Pick a date." data-date-format="yyyy-mm-dd" data-date="2015-02-05")
+        li#fo4li124.notranslate      
+          label.desc#title124(for="Field124") Twitter
+          div
+            input#Field124(name="Field124" type="text" class="field text medium" value="" maxlength="255" tabindex="25" onkeyup="handleInput(this); " onchange="handleInput(this);")
+        li#fo4li123.notranslate       
+          label.desc#title123(for="Field123") What is your educational background?
+            span#req_123.req *
+          div
+            select#Field123(name="Field123" class="field select medium" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="26" required="")
+                option(value="" selected="selected")
+                option(value="High school diploma / GED" required) High school diploma / GED
+                option(value="Some college, no degree" required) Some college, no degree
+                option(value="AA or other 2-year degree" required) AA or other 2-year degree
+                option(value="Bachelor's degree" required) Bachelor's degree
+                option(value="Graduate degree" required) Graduate degree
+        li#fo4li121.notranslate            
+          label.desc#title121(for="Field121") We strive to provide the best learning environment possible. Is there anything you would like us to know about your personal learning style or the way you learn?
+          div
+            textarea#Field121(name="Field121" class="field textarea small" spellcheck="true" rows="10" cols="50" tabindex="27" onkeyup="handleInput(this); " onchange="handleInput(this);")
+        li#fo4li128.notranslate     
+          label.desc#title128(for="Field128") Diversity Scholarship application<a href="/courses/tuition/#scholarships" style="margin-left: 4px;" target="_blank">(learn more)</a>:
+          div
+            textarea#Field128(name="Field128" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="28")
+        li#fo4li126.notranslate
+          label.desc#title126(for="Field126") How did you hear about The Iron Yard?
+            span#req_126.req *
+          div
+            input#Field126(name="Field126" type="text" class="field text medium" value="" maxlength="255" tabindex="29" required)
+        li#fo4li136.notranslate.hide
+          label.desc#title136(for="Field136")
+            tags
+          div
+            input#Field136(name="Field136" type="text" class="field text medium" value="" maxlength="255" tabindex="30")
+        li.buttons
+          div
+            input(type="hidden" name="currentPage" id="currentPage" value="MTZKUSmZOwzkiJ8wUfKjDRYB4nR7FssEaZ1MCwuBe59Ozo=")
+            input#saveForm.btn.btTxt.submit(name="saveForm" type="submit" value="Submit")
+        
+        //- this should be hidden, but is necessary for wufoo to send form data.
+        li.hide
+          label(for="comment") Do Not Fill This Out
+          textarea(name="comment" id="comment" rows="1" cols="1")
+          input(type="hidden" id="idstamp" name="idstamp" value="awIlNAvwT+caeuSeXq9r0x1y3yJd4yH28gjTmXeUOu4=")
+          input#stats(type='hidden', name='stats', value='{"errors":0,"startTime":0,"endTime":0,"referer":null}')
+          input(type="hidden" id="clickOrEnter" name="clickOrEnter" value="")
+
+
+
+
+        
+            
+

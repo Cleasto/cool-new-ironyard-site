@@ -954,3 +954,66 @@ $turquoise-new: #6fbbb7;
     }
   }
 }
+
+// application form temp styles
+
+#form4 {
+  textarea {
+    width: 100%;
+  }
+  #fo4li1, #fo4li2 {
+    input {
+      width: 100%;
+    }
+  }
+  #fo4li110 {
+    max-width: 320px;
+    fieldset {
+      span {
+        display: block;
+      }
+    }
+  }
+  #fo4li138 {
+    .col-sm-6 {
+      margin-top: 20px;
+    }
+    div {
+      span {
+        &:nth-child(1){
+          input {
+            margin-top: 4px;
+            margin-bottom: 4px;
+          }
+        }
+        input {
+          margin-top: 20px;
+          display: block;
+          width: 100%;
+        }
+        label {
+          // display: block;
+          font-style: italic;
+          color: #707F86;
+        }
+      }
+    }
+    .country {
+      select {
+        margin-top: 20px;
+      }
+    }
+  }
+  #fo4li117 {
+    label {
+      &:nth-child(1){
+        display: block;
+      }
+    }
+  }
+  .buttons {
+    .btn {
+      margin-left: 18px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+extends /layouts/main
+include /mixins/contact-academy
+include /mixins/application
+
+block meta
+  +meta({
+    title: "The Iron Yard- Academy",
+    description: "Join people from all walks of life pursuing their dream of launching a career in technology."
+  })
+
+block content
+  +navigation({
+    title: 'Apply now',
+    color: 'gray-dark',
+    triangle: true,
+    cutout: true,
+    image: '/images/academy/academy-header.jpg',
+    links: [
+      //- no links
+    ]
+  })
+
+  .container
+    .row
+      .col-md-8
+        h1.gray-dark-text: em Please take a moment to fill out our student application.
+        p 
+          | The Iron Yard Academy teaches intensive, 12-week courses that mentor you into a professional junior-level programmer. Our program goes far beyond tactical skills and teaches you to think like a software engineer. Programming is a lifelong study, and our process shows you to learn how to learn so you remain highly valuable for the rest of your career.<br><br>
+        hr 
+      .col-md-4(style="text-align:center; padding-top: 50px;")
+        img.photo(src="/images/home/home-hero-new.jpg" style="max-width:500px;")
+    .row
+      .col-xs-12.col-md-8
+        +application('test')
+
+
+block scripts
+  script
+    :js
+      // string concat for wufoo form tags
+      $('#form4').submit(function(){
+        var campus = $('#Field8').val();
+        var course = $('.fieldset').find('span input:checked').val();
+        var scholarship = $('#Field128').val();
+        if (scholarship == ""){
+          scholarship = '';
+        } else {
+          scholarship = ', Diversity Scholarship Applicant';
+        }
+        string = 'Campus: ' + campus + ', Class: ' + course + scholarship;
+        console.log($('#Field136').attr("value", string))
+      })
+
+
+
+
