@@ -3,7 +3,7 @@ mixin application (analytics)
     form#form4.wufoo.topLabel.page1(name="form4" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" action="https://ironyard.wufoo.com/forms/the-iron-yard-student-application/")
       ul.no-style-type(style="background-color:#e3e7e9; width: 100%; padding: 20px 0px 1px")
         li#fo4li8.notranslate
-          label.desc#title8(for="Field8") Which campus are you interested in?
+          label#title8.desc(for="Field8") Which campus are you interested in?
             span#req_8.req *
           div
             select#Field8.field.select.medium(name="Field8" tabindex="1" required="")
@@ -23,9 +23,9 @@ mixin application (analytics)
               option(value="tampa") Tampa Bay, FL
               option(value="washington-dc") Washington, D.C.
         li#fo4li110.notranslate
+          span#title110.desc Which class are you most interested in?<br>(You can change your mind later!)
+          span#req_110.req *
           fieldset
-            legend#title110.desc Which class are you most interested in?<br>(You can change your mind later!)
-              span#req_110.req *
             div
               input#radioDefault_110(name="Field110" type="hidden" value="" )
               span
@@ -49,11 +49,11 @@ mixin application (analytics)
                 label.choice(for="Field110_4") 
                   | Web Design
         li#fo4li109.notranslate
-          label#title109.desc(for="Field109") Timing
+          label#title109.desc(for="Field109") When do you want to attend?3
             span#req_109.req *
           div
             select#Field109.field.select.medium(name="Field109" tabindex="7" required="")
-              option(value="" selected="selected" required)
+              option(value="Please select a timeframe" required)
               option(value="Next available class please!" required) Next available class please!
               option(value="Likely 3-6 months from now" required) Likely 3-6 months from now 
               option(value="Over 6 months from now" required) Over 6 month from now
@@ -61,12 +61,12 @@ mixin application (analytics)
           label#title118.desc(for="Field118") Tell us three things you want us to know about you.
             span#req_118.req *
           div
-            textarea#Field118.field.textarea.medium(name="Field118" class="" spellcheck="true" rows="10" cols="50" tabindex="8" onkeyup="handleInput(this); " onchange="handleInput(this);" required="")
+            textarea#Field118.field.textarea.medium(name="Field118" spellcheck="true" rows="10" cols="50" tabindex="8" required="")
         li#fo4li119.notranslate
           label.desc#title119(for="Field119") Tell us why you're interested in spending 3 hard months learning with us.
             span#req_119.req *
           div
-            textarea#Field119.field.textarea.medium(name="Field119" class="" spellcheck="true" rows="10" cols="50" tabindex="9" onkeyup="handleInput(this); " onchange="handleInput(this);" required="")
+            textarea#Field119.field.textarea.medium(name="Field119"  spellcheck="true" rows="10" cols="50" tabindex="9" required="")
         li#fo4li120.notranslate   
           label.desc#title120(for="Field120") What do you dream of building or making with your new skills? The sky is the limit, so dream big.
               span#req_120.req *  
@@ -399,13 +399,13 @@ mixin application (analytics)
         li.buttons
           div
             input(type="hidden" name="currentPage" id="currentPage" value="MTZKUSmZOwzkiJ8wUfKjDRYB4nR7FssEaZ1MCwuBe59Ozo=")
-            input#saveForm.btn(name="saveForm" class="btTxt submit" type="submit" value="Submit" onmousedown="doSubmitEvents();")
+            input#saveForm.btn.btTxt.submit(name="saveForm" type="submit" value="Submit")
         
         //- this should be hidden, but is necessary for wufoo to send form data.
         li.hide
           label(for="comment") Do Not Fill This Out
           textarea(name="comment" id="comment" rows="1" cols="1")
-          input(type="hidden" id="idstamp" name="idstamp" value="EnsHIbRFnw/Hy5koWd1nWSQjkEd8CQ8BGNEiOFq39UY=")
-          inputt(type="hidden" id="stats" name="stats" value="{&quot;errors&quot;:0,&quot;startTime&quot;:0,&quot;endTime&quot;:0,&quot;referer&quot;:&quot;https:\/\/www.google.com\/url?q=https%3A%2F%2Fironyard.wufoo.com%2Fforms%2Fthe-iron-yard-student-application%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH0PBHtf8PUcX7VMStmS8S7Ib2kPw&quot;}")
+          input(type="hidden" id="idstamp" name="idstamp" value="awIlNAvwT+caeuSeXq9r0x1y3yJd4yH28gjTmXeUOu4=")
+          input#stats(type='hidden', name='stats', value='{"errors":0,"startTime":0,"endTime":0,"referer":null}')
           input(type="hidden" id="clickOrEnter" name="clickOrEnter" value="")
             
