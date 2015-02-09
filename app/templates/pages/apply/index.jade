@@ -37,11 +37,8 @@ block content
 block scripts
   script
     :js
-      // wufooTags()
+      // string concat for wufoo form tags
       $('#form4').submit(function(){
-        
-      })
-      $('.submit').click(function(){
         var campus = $('#Field8').val();
         var course = $('.fieldset').find('span input:checked').val();
         var scholarship = $('#Field128').val();
