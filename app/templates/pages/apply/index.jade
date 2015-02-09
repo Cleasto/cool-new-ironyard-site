@@ -45,11 +45,13 @@ block scripts
         var campus = $('#Field8').val();
         var course = $('.fieldset').find('span input:checked').val();
         var scholarship = $('#Field128').val();
-        console.log(campus);
-        console.log(course);
-        console.log(scholarship);
-        string = 'Campus: ' + campus + ',Class: ' + course + ',' + scholarship
-        console.log(string)
+        if (scholarship == ""){
+          scholarship = '';
+        } else {
+          scholarship = ', Diversity Scholarship Applicant';
+        }
+        string = 'Campus: ' + campus + ', Class: ' + course + scholarship;
+        console.log($('#Field136').attr("value", string))
       })
 
 
