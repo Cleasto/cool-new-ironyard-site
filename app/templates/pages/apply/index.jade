@@ -33,9 +33,24 @@ block content
       .col-xs-12.col-md-8
         +application('test')
 
+
 block scripts
-  script(src="/scripts/form.js")
-  
+  script
+    :js
+      // wufooTags()
+      $('#form4').submit(function(){
+        
+      })
+      $('.submit').click(function(){
+        var campus = $('#Field8').val();
+        var course = $('.fieldset').find('span input:checked').val();
+        var scholarship = $('#Field128').val();
+        console.log(campus);
+        console.log(course);
+        console.log(scholarship);
+        string = 'Campus: ' + campus + ',Class: ' + course + ',' + scholarship
+        console.log(string)
+      })
 
 
 
