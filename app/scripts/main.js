@@ -86,13 +86,6 @@ function chatWindowColor(){
   }
 }
 
-function wufooTags (campus, course , scholarship){
-  $('#form4').submit(function(){
-    string = 'Campus: ' + campus + ',Class: ' + course + ',' + scholarship
-    console.log(string)
-  })
-}
-
 $(document).ready(function(){
   playVideo();
   toggleChat();
