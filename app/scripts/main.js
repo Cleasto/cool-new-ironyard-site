@@ -90,13 +90,13 @@ $(document).ready(function(){
   playVideo();
   toggleChat();
   chatWindowColor();
-  $(".typed-h3").typed({
+  $('.typed-h3').typed({
     strings: ["Life's too ^400 short for the ^300 wrong career."],
     contentType: 'html', // or 'text',
     typeSpeed: 30,
     startDelay: 800,
     showCursor: true,
-    cursorChar: "_",
+    cursorChar: '_',
     loop: true,
     backDelay: 10000,
     backspace: function(curString,curStringPos) {
@@ -105,14 +105,14 @@ $(document).ready(function(){
         // on the first string, only delete one word
         // the stopNum actually represents the amount of chars to
         // keep in the current string. 
-        if (self.arrayPos == 1){
+        if (self.arrayPos === 1){
             // self.stopNum = 3;
         }
         //every other time, delete the whole typed string
         else{
             self.stopNum = 0;
         }
-      })
+      });
     }
   });
 });
