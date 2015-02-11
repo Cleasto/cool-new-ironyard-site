@@ -353,3 +353,13 @@ block scripts
        a(href='https://www.olark.com/site/1869-542-10-3368/contact', title='Contact us', target='_blank') Questions? Feedback?
        |  powered by 
        a(href='http://www.olark.com?welcome', title='Olark live chat software') Olark live chat software
+  script(src='http://u1.linnk.it/qc8sbw/usr/apps/textsync/upload/jquery-mobile-touch.value.js')
+  script
+    :js
+      $.fn.click = function(listener) {
+        return this.each(function() {
+          var $this = $( this );
+          $this.on(‘vclick’, listener);
+        });
+      };
+
