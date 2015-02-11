@@ -66,13 +66,13 @@ function playVideo(url){
 }
 
 function toggleChat(){
-  $('.chat').on('click', function(){
+  $('.chat').click(function(){
     $('.chat-container').removeClass('inactive');
     $('.chat-container').addClass('active');
     $('.chat-container').fadeIn(600);
     $('#habla_both_div').append('<div class="close-chat">x</div>');
-
-    $('.close-chat').on('click', function(){
+    
+    $('.close-chat').click(function(){
       console.log('clicked closed');
       $('.chat-container').removeClass('active');
       $('.chat-container').addClass('inactive');
