@@ -66,19 +66,17 @@ function playVideo(url){
 }
 
 function toggleChat(){
-  $(document).on('click','.chat', function(){
+  $('.chat').click(function(){
     $('.chat-container').removeClass('inactive');
     $('.chat-container').addClass('active');
     $('.chat-container').fadeIn(600);
     $('#habla_both_div').append('<div class="close-chat">x</div>');
-    
-    $(document).on('click','.close-chat',function(){
-      console.log('clicked closed');
-      $('.chat-container').removeClass('active');
-      $('.chat-container').addClass('inactive');
-      $('.chat-container').fadeOut(600);
-    });
   }); 
+  $('.close-chat').click(function(){ 
+    $('.chat-container').removeClass('active');
+    $('.chat-container').addClass('inactive');
+    $('.chat-container').fadeOut(600);
+  });
 }
 
 function chatWindowColor(){
@@ -117,4 +115,3 @@ $(document).ready(function(){
     }
   });
 });
-
