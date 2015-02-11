@@ -71,12 +71,12 @@ function toggleChat(){
     $('.chat-container').addClass('active');
     $('.chat-container').fadeIn(600);
     $('#habla_both_div').append('<div class="close-chat">x</div>');
+    $('.close-chat').click(function(){ 
+      $('.chat-container').removeClass('active');
+      $('.chat-container').addClass('inactive');
+      $('.chat-container').fadeOut(600);
+    });
   }); 
-  $('.close-chat').click(function(){ 
-    $('.chat-container').removeClass('active');
-    $('.chat-container').addClass('inactive');
-    $('.chat-container').fadeOut(600);
-  });
 }
 
 function chatWindowColor(){
