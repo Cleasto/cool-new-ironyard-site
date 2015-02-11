@@ -383,9 +383,12 @@ $turquoise-new: #6fbbb7;
     quotes: "“" "”" "‘" "’";
     @media only screen {
       width: 100%;
+      font-size: 24px;
+      line-height: 32px;
     }
-    @media only screen and (max-width: 400px){
+    @media only screen and (min-width: 400px){
       font-size: 30px;
+      line-height: initial;
     }
     @media only screen and (min-width: 991px){
       width: 370px;
@@ -458,6 +461,12 @@ $turquoise-new: #6fbbb7;
   padding-top: 40px;
   h2 {
     color: #727d84;
+    @media only screen {
+      font-size: 27px;
+    }
+    @media only screen and (min-width: 500px){
+      font-size: 34px;
+    }
   }
   p {
     width: 80%;
@@ -637,6 +646,7 @@ $turquoise-new: #6fbbb7;
     position: relative;
     background: #eee;
     vertical-align: top;
+    min-height: 600px;
     @media only screen {
       width: 100%;
     }
@@ -652,7 +662,22 @@ $turquoise-new: #6fbbb7;
       width: 100%;
       background: white;
       position: relative;
-      top: 6px;
+      top: 28px;
+      @media only screen and (min-width: 600px){
+        top: 58px;
+      }
+      @media only screen and (min-width: 990px){
+        top: 54px;
+      }
+      @media only screen and (min-width: 1000px){
+        top: 82px;
+      }
+      @media only screen and (min-width: 1025px){
+        top: 6px;
+      }
+      @media only screen and (min-width: 1200px){
+        top: 28px;
+      }
       a {
         &:hover {
           text-decoration: none;
@@ -693,6 +718,7 @@ $turquoise-new: #6fbbb7;
   .phone-numbers {
     display: inline-block;
     position: relative;
+    min-height: 600px;
     @media only screen {
       width: 100%;
       padding: 36px 0 0;
@@ -712,18 +738,38 @@ $turquoise-new: #6fbbb7;
     }
     ul {
       display: inline-block;
-      width: 42%;
+      width: 40%;
+      margin: 0 0 25px 22px;
+      @media only screen and (min-width: 400px){
+        margin: 32px 6px 12px 29px;
+      }
+      @media only screen and (min-width: 990px) {
+        margin: 24px 8px 12px 10px;
+        width: 44%;
+      }
       li {
         list-style-type: none;
         margin-bottom: 18px;
         p {
           color: #7a8b8f;
           margin: 0;
+          @media only screen {
+            font-size: 15px;
+          }
+          @media only screen and (min-width: 500px){
+            font-size: 18px;
+          }
         }
         a {
           color: #6fbbb7;
           &:hover {
             cursor: pointer;
+          }
+          @media only screen {
+            font-size: 15px;
+          }
+          @media only screen and (min-width: 500px){
+            font-size: 18px;
           }
         }
       }
