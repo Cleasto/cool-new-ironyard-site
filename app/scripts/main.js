@@ -66,7 +66,7 @@ function playVideo(url){
 }
 
 function toggleChat(){
-  $(document).on('click','.chat'.function(){
+  $(document).on('click','.chat', function(){
     $('.chat-container').removeClass('inactive');
     $('.chat-container').addClass('active');
     $('.chat-container').fadeIn(600);
