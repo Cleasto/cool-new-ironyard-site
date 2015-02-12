@@ -4,7 +4,8 @@
   "dependencies": {
     "modernizr": "~2.6.2",
     "jquery": "~1.11.1",
-    "ghost-shield": "0.2.11"
+    "ghost-shield": "0.2.11",
+    "underscore": "~1.7.0"
   },
   "devDependencies": {}
 }

@@ -51,6 +51,12 @@ block scripts
         console.log($('#Field136').attr("value", string))
       })
 
+  script
+    :js
+      $( "#Field8" ).change(function() {
+        var city = $( "#Field8" ).val();
+        showCityCourses(city);
+      });
 
 
 
