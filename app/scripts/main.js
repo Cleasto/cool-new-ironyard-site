@@ -152,7 +152,6 @@ function showCityCourses (selected){
     }
   })
   var coursesNotOffered = _.difference(courseList, selectedCourses);
-  console.log(coursesNotOffered);
   var elemsToHide = []
   coursesNotOffered.forEach(function(course){
     switch (course){
@@ -173,7 +172,6 @@ function showCityCourses (selected){
         break
     }
   })
-  console.log(elemsToHide);
   $('.show-course-js').show();
   elemsToHide.forEach(function(elem){
     $(elem).hide();
