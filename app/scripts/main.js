@@ -186,11 +186,11 @@ function showCityCourses (selected){
 function toggleScholarship(){
   $('.fieldset span input').click(function(){
     if (this.value == 'Front End Engineering'){
-      $('#fo4li1281').hide();
-      $('#fo4li1280').show();
+      $('#fo4li146').hide();
+      $('#fo4li145').show();
     } else if (this.value == 'Rails Engineering') {
-      $('#fo4li1280').hide();
-      $('#fo4li1281').show();
+      $('#fo4li145').hide();
+      $('#fo4li146').show();
     } 
   })
 }
