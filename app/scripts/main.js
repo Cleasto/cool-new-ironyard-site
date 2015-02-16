@@ -88,68 +88,71 @@ function chatWindowColor(){
 function showCityCourses (selected){
   var cities = [
     {
-      city: "Atlanta",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Atlanta',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     },
     {
-      city: "Austin",
-      courses: ["Rails Engineering", "Front End Engineering", "Web Design"]
+      city: 'Austin',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Web Design']
     },
     {
-      city: "Charleston",
-      courses: ["Rails Engineering", "Front End Engineering"]
+      city: 'Charleston',
+      courses: ['Rails Engineering', 'Front End Engineering']
     },
     {
-      city: "Columbia",
-      courses: ["Web Design"]
+      city: 'Columbia',
+      courses: ['Web Design']
     },
     {
-      city: "Durham",
-      courses: ["Rails Engineering", "Front End Engineering", "Python Engineering"]
+      city: 'Durham',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Python Engineering']
     },
     {
-      city: "Greenville",
-      courses: ["Rails Engineering", "Front End Engineering", "Python Engineering"]
+      city: 'Greenville',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Python Engineering']
     },
     {
-      city: "Houston",
-      courses: ["Rails Engineering", "Front End Engineering"]
+      city: 'Houston',
+      courses: ['Rails Engineering', 'Front End Engineering']
     },
     {
-      city: "Indianapolis",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Indianapolis',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     },
     {
-      city: "Las Vegas",
-      courses: ["Rails Engineering", "Front End Engineering", "Python Engineering"]
+      city: 'Las Vegas',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Python Engineering']
     },
     {
-      city: "Little Rock",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Little Rock',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     },
     {
-      city: "Nashville",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Nashville',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     },
     {
-      city: "Orlando",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Orlando',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     },
     {
-      city: "Tampa",
-      courses: ["Rails Engineering", "Front End Engineering"]
+      city: 'Tampa',
+      courses: ['Rails Engineering', 'Front End Engineering']
     },
     {
-      city: "Washington DC",
-      courses: ["Rails Engineering", "Front End Engineering", "Mobile Engineering"]
+      city: 'Washington DC',
+      courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     }
   ]
-  var courseList = ["Rails Engineering", "Front End Engineering", "Mobile Engineering", "Python Engineering", "Web Design"]
+  var courseList = ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering', 'Python Engineering', 'Web Design']
   var selectedCourses = []; 
   var location = cities.forEach(function(obj){
     if (obj.city == selected){
       selectedCourses = obj.courses
     }
+    if (selected == 'Tampa'){
+      toggleScholarship();
+    } 
   })
   var coursesNotOffered = _.difference(courseList, selectedCourses);
   var elemsToHide = []
@@ -178,9 +181,24 @@ function showCityCourses (selected){
   })
 }
 
+function toggleScholarship(){
+  $('.fieldset span input').click(function(){
+    if (this.value == 'Front End Engineering'){
+      $('#fo4li146').hide();
+      $('#fo4li145').show();
+    } else if (this.value == 'Rails Engineering') {
+      $('#fo4li145').hide();
+      $('#fo4li146').show();
+    } 
+  })
+}
+
+
+
 $(document).ready(function(){
   playVideo();
   toggleChat();
+  toggleScholarship();
   chatWindowColor();
   $('.typed-h3').typed({
     strings: ["Life's too ^400 short for the ^300 wrong career."],

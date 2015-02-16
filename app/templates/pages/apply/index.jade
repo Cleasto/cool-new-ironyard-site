@@ -53,10 +53,16 @@ block scripts
 
   script
     :js
+      $('#fo4li145').hide();
+      $('#fo4li146').hide();
       $( "#Field8" ).change(function() {
+        $('#fo4li145').hide();
+        $('#fo4li146').hide();
         var city = $( "#Field8" ).val();
         showCityCourses(city);
       });
+
+
 
 
 
