@@ -152,9 +152,7 @@ function showCityCourses (selected){
     }
     if (selected == 'Tampa'){
       toggleScholarship();
-    } else {
-      $('#fo4li1280').hide();
-    }
+    } 
   })
   var coursesNotOffered = _.difference(courseList, selectedCourses);
   var elemsToHide = []
