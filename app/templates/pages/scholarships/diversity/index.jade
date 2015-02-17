@@ -15,10 +15,13 @@ block content
   })
 
   .container  
-    .row#scholarships
+    .row
       .col-md-8: h2 About the scholarship
         p The Iron Yard is offering a $3000 discount to Rails Engineering students at our Tampa campus. The discount is applied to the total cost of tuition. Apply now and provide a short 250 word essay explaining what you would build when you graduate from The Iron Yard.
       .col-md-4 
         img(src="/images/scholarships/st-pete-chamber-logo.jpg" style="height: 100%; width: 100%;")
+    .row
+      .col-md-8
+        +scholarship-app()
 
       
