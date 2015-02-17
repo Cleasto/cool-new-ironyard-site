@@ -1,0 +1,24 @@
+extends /layouts/main
+include /mixins/scholarship-app
+
+block meta
+  +meta({
+      title:"The Iron Yard | Scholarships",
+      description:"We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
+    })
+
+block content
+  +navigation({
+    title: 'St. Petersburg Chamber Scholarship', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container  
+    .row#scholarships
+      .col-md-8: h2 About the scholarship
+        p The St. Petersburg Chamber is offering a $3000 discount to Rails Engineering students at our Tampa campus. The discount is applied to the total cost of tuition. Apply now and provide a short 250 word essay explaining what you would build when you graduate from The Iron Yard.
+      .col-md-4
+        img(src="/images/scholarships/st-pete-chamber-logo.jpg" style="height: 100%; width: 100%;")
+    .row
+      +scholarship-app()
