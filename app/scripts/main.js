@@ -193,8 +193,6 @@ function toggleScholarship(){
   })
 }
 
-
-
 $(document).ready(function(){
   playVideo();
   toggleChat();
