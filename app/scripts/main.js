@@ -143,19 +143,19 @@ function showCityCourses (selected){
       city: 'Washington DC',
       courses: ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering']
     }
-  ]
-  var courseList = ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering', 'Python Engineering', 'Web Design']
+  ];
+  var courseList = ['Rails Engineering', 'Front End Engineering', 'Mobile Engineering', 'Python Engineering', 'Web Design'];
   var selectedCourses = []; 
   var location = cities.forEach(function(obj){
-    if (obj.city == selected){
-      selectedCourses = obj.courses
+    if (obj.city === selected){
+      selectedCourses = obj.courses;
     }
-    if (selected == 'Tampa'){
+    if (selected === 'Tampa'){
       toggleScholarship();
     } 
-  })
+  });
   var coursesNotOffered = _.difference(courseList, selectedCourses);
-  var elemsToHide = []
+  var elemsToHide = [];
   coursesNotOffered.forEach(function(course){
     switch (course){
       case 'Rails Engineering':
@@ -163,42 +163,47 @@ function showCityCourses (selected){
         break;
       case 'Front End Engineering':
         elemsToHide.push('.fee-course');
-        break
+        break;
       case 'Mobile Engineering':
         elemsToHide.push('.mobile-course');
-        break
+        break;
       case 'Python Engineering':
         elemsToHide.push('.python-course');
-        break
+        break;
       case 'Web Design':
         elemsToHide.push('.design-course');
-        break
+        break;
     }
-  })
+  });
   $('.show-course-js').show();
   elemsToHide.forEach(function(elem){
     $(elem).hide();
-  })
+  });
 }
 
-function toggleScholarship(){
+function toggleScholarship (courseSelected){
+  console.log(courseSelected);
+  if (courseSelected === 'Rails Engineering'){
+    $('#fo4li145').hide();
+    $('#fo4li146').show();
+  } else if (courseSelected === 'Front End Engineering'){
+    $('#fo4li146').hide();
+    $('#fo4li145').show();
+  }
   $('.fieldset span input').click(function(){
-    if (this.value == 'Front End Engineering'){
+    if (this.value === 'Front End Engineering'){
       $('#fo4li146').hide();
       $('#fo4li145').show();
-    } else if (this.value == 'Rails Engineering') {
+    } else if (this.value === 'Rails Engineering') {
       $('#fo4li145').hide();
       $('#fo4li146').show();
     } 
-  })
+  });
 }
-
-
 
 $(document).ready(function(){
   playVideo();
   toggleChat();
-  toggleScholarship();
   chatWindowColor();
   $('.typed-h3').typed({
     strings: ["Life's too ^400 short for the ^300 wrong career."],

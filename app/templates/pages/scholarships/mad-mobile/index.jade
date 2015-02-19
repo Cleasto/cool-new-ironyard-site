@@ -1,0 +1,30 @@
+extends /layouts/main
+include /mixins/scholarship-app
+
+block meta
+  +meta({
+      title:"The Iron Yard | Scholarships",
+      description:"We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
+    })
+
+block content
+  +navigation({
+    title: 'Mad Mobile Scholarship', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container  
+    .row(style="padding: 40px 0;")
+      .col-md-8: h2 About the scholarship
+        p Mad Mobile is offering a <strong>$3000 discount</strong> to Rails Engineering students at our Tampa campus. The discount is applied to the total cost of tuition. Apply now and provide a short 250 word essay explaining what you would build when you graduate from The Iron Yard.
+      .col-md-4
+        img(src="/images/scholarships/mad-mobile-logo.png" style="width: 100%; height: 100%; max-width: 260px; margin-top: 30px;")
+    .row(style="padding-bottom: 40px;")
+      .col-md-8
+        +scholarship-app()
+
+block scripts
+  script(type="text/javascript")
+    :js
+      $('.diversity-schol-js, .st-pete-schol-js').hide();

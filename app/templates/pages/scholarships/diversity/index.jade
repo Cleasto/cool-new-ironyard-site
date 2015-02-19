@@ -1,0 +1,32 @@
+extends /layouts/main
+include /mixins/scholarship-app
+
+block meta
+  +meta({
+      title:"The Iron Yard | Scholarships",
+      description:"We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
+    })
+
+block content
+  +navigation({
+    title: 'Diversity Scholarship', 
+    color: 'gray-dark',
+    font: '40px'
+  })
+
+  .container  
+    .row(style="padding: 40px 0;")
+      .col-md-8: h2 About the scholarship
+        p The Iron Yard is offering each scholarship recipient a <strong>$1000 discount</strong> on the total cost of tuition, and there is no cap on the number of students per class who can receive support. Applicants must be women, people of color, military personnel or people with disabilities. Apply now and provide a short 250 word essay explaining how you'll support diversity by making technology more open and available to underrepresented groups.
+      .col-md-4 
+        img(src="/images/home/tiy-logo.png" style="width: 50%; max-width: 200px; margin-top: 50px; margin-left: 40px;")
+    .row(style="padding-bottom: 40px;")
+      .col-md-8
+        +scholarship-app()
+
+block scripts
+  script(type="text/javascript")
+    :js
+      $('.mad-mobile-schol-js, .st-pete-schol-js').hide();
+
+      

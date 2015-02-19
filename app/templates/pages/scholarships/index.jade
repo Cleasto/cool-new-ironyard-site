@@ -1,0 +1,70 @@
+include /mixins/photo-bar
+//- include /mixins/schema
+extends /layouts/main
+
+block meta
+  +meta({
+    title: 'The Iron Yard | Scholarships',
+    description: "We run an intensive code school, a startup accelerator, kids's programming classes, and organize tech conferences and events."
+  })
+
+block content
+  +navigation({
+    color: 'gray-dark',
+    title: 'Scholarships',
+    image: '/images/home/home-hero-new.jpg',
+    triangle: true,
+    cutout: true,
+    gradient: true,
+    home: true,
+    links: [
+      //- no links
+    ]
+  })
+
+  .container
+    .row
+      .col-xs-12
+        //- h2 Cool copy about saving money!
+        //- p Bacon ipsum dolor amet corned beef rump landjaeger ham hock ground round. Beef capicola prosciutto corned beef, filet mignon turducken pork chop swine sausage cupim. Drumstick leberkas sirloin ham, pork chop shoulder doner swine frankfurter ball tip pork shankle biltong prosciutto. Sausage fatback shank pig landjaeger t-bone biltong ball tip drumstick leberkas short ribs shoulder salami cupim ribeye. Sausage tail chuck tri-tip, short ribs capicola brisket hamburger. Kevin t-bone capicola corned beef cupim jowl bacon doner.
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/home/tiy-logo.png" style="width: 55%;")
+            .col-lg-6.col-md-6
+              h3 Iron Yard Diversity Scholarship
+              p The Iron Yard offers each scholarship recipient a $1000 discount on the total cost of tuition and there is no cap on the number of students per class who can receive support.  We believe in making technology more open and available to underrepresented groups. (Applicants must be women, people of color, military personnel or people with disabilities).
+            .col-lg-3.col-md-4.cta-box
+              a(href="/scholarships/diversity").btn Apply Now
+          hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/scholarships/mad-mobile-logo.png" style="width: 96%; height: 100%;")
+            .col-lg-6.col-md-6
+              h3 Mad Mobile Scholarship 
+              p Mad Mobile in Tampa, FL is offering a $3000 discount to Front End Engineering students at our Tampa campus. The discount is applied to the total cost of tuition. Apply now and provide a short 250 word essay explaining what you would build when you graduate from The Iron Yard.
+            .col-lg-3.col-md-4.cta-box
+              a(href="/scholarships/mad-mobile").btn Apply Now
+          hr
+        .row
+          .three-col-cta.row
+            .col-lg-3.col-md-2
+              .image-box
+                img(src="/images/scholarships/st-pete-chamber-logo.jpg" style="height: 100%; width: 100%;")
+            .col-lg-6.col-md-6
+              h3 St. Petersburg Chamber Scholarship
+              p The St. Petersburg Chamber is offering a $3000 discount to Rails Engineering students at our Tampa campus. The discount is applied to the total cost of tuition. Apply now and provide a short 250 word essay explaining what you would build when you graduate from The Iron Yard.
+            .col-lg-3.col-md-4.cta-box
+              a(href="/scholarships/st-pete-chamber").btn Apply Now
+
+block scripts
+  +multiBlogFeed([
+    {
+      name: 'stories',
+      element: '.recent2'
+    }
+  ])
+
