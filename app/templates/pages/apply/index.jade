@@ -58,10 +58,16 @@ block scripts
       $( "#Field8" ).change(function() {
         $('#fo4li145').hide();
         $('#fo4li146').hide();
-        var city = $( "#Field8" ).val();
+        var city = $('#Field8').val();
+        var courseSelected = $('.fieldset span input:checked').val();
         showCityCourses(city);
+        if (city == 'Tampa') {
+          toggleScholarship(courseSelected);
+        } else {
+          $('#fo4li145').hide();
+          $('#fo4li146').hide();
+        }
       });
-
 
 
 
