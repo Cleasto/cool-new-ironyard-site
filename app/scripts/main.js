@@ -137,7 +137,7 @@ function showCityCourses (selected){
     },
     {
       city: 'Tampa',
-      courses: ['Rails Engineering', 'Front End Engineering']
+      courses: ['Rails Engineering', 'Front End Engineering', 'Web Design']
     },
     {
       city: 'Washington DC',
